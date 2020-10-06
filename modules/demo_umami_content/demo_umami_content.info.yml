@@ -1,8 +1,7 @@
-name: 'Umami demo: Content'
-description: Imports the content for the Umami demo.
+name: 'AZR: azr.ua content'
+description: Imports the content for the azr.ua.
 type: module
-# version: VERSION
-package: 'Core (Experimental)'
+core_version_requirement: ^8.8 || ^9
 hidden: true
 dependencies:
   - drupal:field
@@ -14,8 +13,3 @@ dependencies:
   - drupal:taxonomy
   - drupal:text
   - drupal:user
-
-# Information added by Drupal.org packaging script on 2020-10-02
-version: '9.1.x-dev'
-project: 'drupal'
-datestamp: 1601672537

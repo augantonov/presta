@@ -1,7 +1,7 @@
-name: 'Demo: Umami Food Magazine (Experimental)'
+name: 'AZR: azr.ua'
 type: profile
-description: 'Install an example site that shows off some of Drupal’s capabilities.'
-# version: VERSION
+description: 'Install azr.ua site.'
+core_version_requirement: ^8.8 || ^9
 install:
   - node
   - history
@@ -52,8 +52,3 @@ themes:
   - seven
   - umami
 keep_english: true
-
-# Information added by Drupal.org packaging script on 2020-10-02
-version: '9.1.x-dev'
-project: 'drupal'
-datestamp: 1601672537
