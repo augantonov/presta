@@ -1,18 +1,18 @@
-umami.mobile:
+azr.mobile:
   label: mobile
   mediaQuery: ''
   weight: 0
   multipliers:
     - 1x
     - 2x
-umami.narrow:
+azr.narrow:
   label: narrow
   mediaQuery: 'all and (min-width: 768px)'
   weight: 1
   multipliers:
     - 1x
     - 2x
-umami.wide:
+azr.wide:
   label: wide
   mediaQuery: 'all and (min-width: 960px)'
   weight: 2

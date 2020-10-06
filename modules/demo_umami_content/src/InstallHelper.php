@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\demo_umami_content;
+namespace Drupal\demo_azr_content;
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
@@ -16,7 +16,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Defines a helper class for importing default content.
  *
  * @internal
- *   This code is only for use by the Umami demo: Content module.
+ *   This code is only for use by the AZR demo: Content module.
  */
 class InstallHelper implements ContainerInjectionInterface {
 
@@ -162,7 +162,7 @@ class InstallHelper implements ContainerInjectionInterface {
    * @return $this
    */
   protected function getModulePath() {
-    $this->module_path = $this->moduleHandler->getModule('demo_umami_content')->getPath();
+    $this->module_path = $this->moduleHandler->getModule('demo_azr_content')->getPath();
     return $this;
   }
 
@@ -794,7 +794,7 @@ class InstallHelper implements ContainerInjectionInterface {
    * @return $this
    */
   public function deleteImportedContent() {
-    $uuids = $this->state->get('demo_umami_content_uuids', []);
+    $uuids = $this->state->get('demo_azr_content_uuids', []);
     $by_entity_type = array_reduce(array_keys($uuids), function ($carry, $uuid) use ($uuids) {
       $entity_type_id = $uuids[$uuid];
       $carry[$entity_type_id][] = $uuid;
@@ -871,8 +871,8 @@ class InstallHelper implements ContainerInjectionInterface {
    *   type.
    */
   protected function storeCreatedContentUuids(array $uuids) {
-    $uuids = $this->state->get('demo_umami_content_uuids', []) + $uuids;
-    $this->state->set('demo_umami_content_uuids', $uuids);
+    $uuids = $this->state->get('demo_azr_content_uuids', []) + $uuids;
+    $this->state->set('demo_azr_content_uuids', $uuids);
   }
 
 }

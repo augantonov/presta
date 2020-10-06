@@ -50,7 +50,7 @@ global:
   js:
     js/components/navigation/menu-main/menu-main.js: {}
   dependencies:
-    - umami/demo-umami-tour
+    - azr/demo-azr-tour
 
 messages:
   css:
@@ -108,7 +108,7 @@ view-mode-card:
     theme:
       css/components/content/card/card.css: {}
   dependencies:
-    - umami/more-link
+    - azr/more-link
 
 view-mode-card-common:
   css:
@@ -116,7 +116,7 @@ view-mode-card-common:
       css/components/content/card/card.css: {}
       css/components/content/card-common/card-common.css: {}
   dependencies:
-    - umami/more-link
+    - azr/more-link
 
 view-mode-card-common-alt:
   css:
@@ -124,9 +124,9 @@ view-mode-card-common-alt:
       css/components/content/card/card.css: {}
       css/components/content/card-common-alt/card-common-alt.css: {}
   dependencies:
-    - umami/more-link
+    - azr/more-link
 
-demo-umami-tour:
+demo-azr-tour:
   css:
    theme:
       css/components/tour/tour.theme.css: {}

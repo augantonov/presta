@@ -7,9 +7,9 @@ dependencies:
     - node
     - views
   theme:
-    - umami
+    - azr
 id: views_block__articles_aside_block_1
-theme: umami
+theme: azr
 region: sidebar
 weight: -7
 provider: null

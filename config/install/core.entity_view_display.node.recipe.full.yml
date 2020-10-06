@@ -22,7 +22,7 @@ dependencies:
     - text
     - user
   theme:
-    - umami
+    - azr
 third_party_settings:
   layout_builder:
     sections:

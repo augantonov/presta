@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - umami
-id: umami_footer
-theme: umami
+    - azr
+id: azr_footer
+theme: azr
 region: footer
 weight: 0
 provider: null

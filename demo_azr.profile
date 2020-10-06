@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Enables modules and site configuration for a demo_umami site installation.
+ * Enables modules and site configuration for a demo_azr site installation.
  */
 
 use Drupal\contact\Entity\ContactForm;
@@ -13,26 +13,26 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Allows the profile to alter the site configuration form.
  */
-function demo_umami_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
-  $form['site_information']['site_name']['#default_value'] = 'Umami Food Magazine';
-  $form['#submit'][] = 'demo_umami_form_install_configure_submit';
+function demo_azr_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+  $form['site_information']['site_name']['#default_value'] = 'AZR Food Magazine';
+  $form['#submit'][] = 'demo_azr_form_install_configure_submit';
 }
 
 /**
  * Submission handler to sync the contact.form.feedback recipient.
  */
-function demo_umami_form_install_configure_submit($form, FormStateInterface $form_state) {
+function demo_azr_form_install_configure_submit($form, FormStateInterface $form_state) {
   $site_mail = $form_state->getValue('site_mail');
   ContactForm::load('feedback')->setRecipients([$site_mail])->trustData()->save();
 
   $password = $form_state->getValue('account')['pass'];
-  demo_umami_set_users_passwords($password);
+  demo_azr_set_users_passwords($password);
 }
 
 /**
  * Sets the password of admin to be the password for all users.
  */
-function demo_umami_set_users_passwords($admin_password) {
+function demo_azr_set_users_passwords($admin_password) {
   // Collect the IDs of all users with roles editor or author.
   $ids = \Drupal::entityQuery('user')
     ->condition('roles', ['author', 'editor'], 'IN')
@@ -49,7 +49,7 @@ function demo_umami_set_users_passwords($admin_password) {
 /**
  * Implements hook_toolbar().
  */
-function demo_umami_toolbar() {
+function demo_azr_toolbar() {
   // Add a warning about using an experimental profile.
   // @todo This can be removed once a generic warning for experimental profiles
   //   has been introduced. https://www.drupal.org/project/drupal/issues/2934374
@@ -71,7 +71,7 @@ function demo_umami_toolbar() {
         'more_info_link' => 'https://www.drupal.org/node/2941833',
       ],
       '#attached' => [
-        'library' => ['demo_umami/toolbar-warning'],
+        'library' => ['demo_azr/toolbar-warning'],
       ],
     ];
   }

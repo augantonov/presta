@@ -1,6 +1,6 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: core/profiles/demo_umami/themes/umami/favicon.ico
+  path: core/profiles/demo_azr/themes/azr/favicon.ico
   url: ''
   use_default: false
 features:

@@ -1,20 +1,20 @@
 <?php
 
-namespace Drupal\Tests\demo_umami\Functional;
+namespace Drupal\Tests\demo_azr\Functional;
 
 use Drupal\FunctionalTests\Installer\InstallerTestBase;
 
 /**
- * Tests the multilingual installer installing the Umami profile.
+ * Tests the multilingual installer installing the AZR profile.
  *
  * @group Installer
  */
-class UmamiMultilingualInstallTest extends InstallerTestBase {
+class AZRMultilingualInstallTest extends InstallerTestBase {
 
   /**
    * {@inheritdoc}
    */
-  protected $profile = 'demo_umami';
+  protected $profile = 'demo_azr';
 
   /**
    * {@inheritdoc}
@@ -22,9 +22,9 @@ class UmamiMultilingualInstallTest extends InstallerTestBase {
   protected $langcode = 'es';
 
   /**
-   * Ensures that Umami can be installed with Spanish as the default language.
+   * Ensures that AZR can be installed with Spanish as the default language.
    */
-  public function testUmami() {
+  public function testAZR() {
     $this->drupalGet('');
     // cSpell:disable-next-line
     $this->assertSession()->pageTextContains('Quiche mediterráneo profundo');

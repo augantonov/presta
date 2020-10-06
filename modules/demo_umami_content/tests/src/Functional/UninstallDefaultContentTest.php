@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\demo_umami_content\Functional;
+namespace Drupal\Tests\demo_azr_content\Functional;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Tests\BrowserTestBase;
@@ -8,14 +8,14 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests that uninstalling default content removes created content.
  *
- * @group demo_umami_content
+ * @group demo_azr_content
  */
 class UninstallDefaultContentTest extends BrowserTestBase {
 
   /**
    * {@inheritdoc}
    */
-  protected $profile = 'demo_umami';
+  protected $profile = 'demo_azr';
 
   /**
    * Tests uninstalling content removes created entities.
@@ -38,7 +38,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
     $this->assertGreaterThan(0, $count);
 
     // Uninstall the module.
-    $module_installer->uninstall(['demo_umami_content']);
+    $module_installer->uninstall(['demo_azr_content']);
 
     // Reset storage cache.
     $block_storage->resetCache();
@@ -69,7 +69,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
     $this->assertEquals(0, $count);
 
     // Re-install and assert imported content.
-    $module_installer->install(['demo_umami_content']);
+    $module_installer->install(['demo_azr_content']);
     $this->assertRecipesImported($node_storage);
     $this->assertArticlesImported($node_storage);
     $this->assertImportedCustomBlock($block_storage);
@@ -105,7 +105,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
       ->count()
       ->execute();
     $this->assertGreaterThan(0, $count);
-    $nodes = $node_storage->loadByProperties(['title' => 'The umami guide to our favorite mushrooms']);
+    $nodes = $node_storage->loadByProperties(['title' => 'The azr guide to our favorite mushrooms']);
     $this->assertCount(1, $nodes);
     $node = reset($nodes);
     $this->assertStringContainsString('One of the best things about mushrooms is their versatility', $node->body->value);
@@ -153,7 +153,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
         'type' => 'banner_block',
         'uuid' => '9aadf4a1-ded6-4017-a10d-a5e043396edf',
         'unique_text' => 'A wholesome pasta bake is the ultimate comfort food.',
-        'image_css_selector' => '#block-umami-banner-home img',
+        'image_css_selector' => '#block-azr-banner-home img',
         'image_alt_text' => 'Mouth watering vegetarian pasta bake with rich tomato sauce and cheese toppings',
       ],
       [
@@ -161,7 +161,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
         'type' => 'banner_block',
         'uuid' => '4c7d58a3-a45d-412d-9068-259c57e40541',
         'unique_text' => 'These sumptuous brownies should be gooey on the inside and crisp on the outside. A perfect indulgence!',
-        'image_css_selector' => '#block-umami-banner-recipes img',
+        'image_css_selector' => '#block-azr-banner-recipes img',
         'image_alt_text' => 'A stack of chocolate and pecan brownies, sprinkled with pecan crumbs and crushed walnut, fresh out of the oven',
       ],
       [
@@ -175,8 +175,8 @@ class UninstallDefaultContentTest extends BrowserTestBase {
         'type' => 'footer_promo_block',
         'uuid' => '924ab293-8f5f-45a1-9c7f-2423ae61a241',
         'unique_text' => 'Magazine exclusive articles, recipes and plenty of reasons to get your copy today.',
-        'image_css_selector' => '#block-umami-footer-promo img',
-        'image_alt_text' => '3 issue bundle of the Umami food magazine',
+        'image_css_selector' => '#block-azr-footer-promo img',
+        'image_alt_text' => '3 issue bundle of the AZR food magazine',
       ],
     ];
   }

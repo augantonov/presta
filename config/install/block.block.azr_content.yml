@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - umami
-id: umami_content
-theme: umami
+    - azr
+id: azr_content
+theme: azr
 region: content
 weight: -7
 provider: null

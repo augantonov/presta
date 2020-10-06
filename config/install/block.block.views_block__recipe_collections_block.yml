@@ -6,9 +6,9 @@ dependencies:
   module:
     - views
   theme:
-    - umami
+    - azr
 id: views_block__recipe_collections_block
-theme: umami
+theme: azr
 region: content_bottom
 weight: 0
 provider: null

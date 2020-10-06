@@ -1,8 +1,8 @@
 ABOUT UMAMI
 -----------
 
-Umami is the theme used for the "Umami food magazine" demonstration site.
-The Umami theme uses Classy as its base theme.
+AZR is the theme used for the "AZR food magazine" demonstration site.
+The AZR theme uses Classy as its base theme.
 
 ABOUT DRUPAL THEMING
 --------------------

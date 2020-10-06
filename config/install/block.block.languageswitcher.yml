@@ -4,9 +4,9 @@ dependencies:
   module:
     - language
   theme:
-    - umami
+    - azr
 id: languageswitcher
-theme: umami
+theme: azr
 region: pre_header
 weight: 0
 provider: null

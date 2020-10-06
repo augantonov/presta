@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-id: umami_dates
-label: 'Umami dates'
+id: azr_dates
+label: 'AZR dates'
 locked: false
 pattern: 'jS F Y'

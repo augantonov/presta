@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\demo_umami\Functional;
+namespace Drupal\Tests\demo_azr\Functional;
 
 use Drupal\Core\Config\FileStorage;
 use Drupal\Core\Config\InstallStorage;
@@ -11,11 +11,11 @@ use Drupal\Core\Session\AccountInterface;
 use Drupal\Component\Render\FormattableMarkup;
 
 /**
- * Tests demo_umami profile.
+ * Tests demo_azr profile.
  *
- * @group demo_umami
+ * @group demo_azr
  */
-class DemoUmamiProfileTest extends BrowserTestBase {
+class DemoAZRProfileTest extends BrowserTestBase {
   use AssertConfigTrait;
 
   /**
@@ -30,10 +30,10 @@ class DemoUmamiProfileTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected $profile = 'demo_umami';
+  protected $profile = 'demo_azr';
 
   /**
-   * Tests demo_umami profile warnings shown on Status Page.
+   * Tests demo_azr profile warnings shown on Status Page.
    */
   public function testWarningsOnStatusPage() {
     $account = $this->drupalCreateUser(['administer site configuration']);
@@ -52,10 +52,10 @@ class DemoUmamiProfileTest extends BrowserTestBase {
     // the cache layer.
     $active_config_storage = $this->container->get('config.storage');
 
-    $default_config_storage = new FileStorage(drupal_get_path('profile', 'demo_umami') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY, InstallStorage::DEFAULT_COLLECTION);
+    $default_config_storage = new FileStorage(drupal_get_path('profile', 'demo_azr') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY, InstallStorage::DEFAULT_COLLECTION);
     $this->assertDefaultConfig($default_config_storage, $active_config_storage);
 
-    $default_config_storage = new FileStorage(drupal_get_path('profile', 'demo_umami') . '/' . InstallStorage::CONFIG_OPTIONAL_DIRECTORY, InstallStorage::DEFAULT_COLLECTION);
+    $default_config_storage = new FileStorage(drupal_get_path('profile', 'demo_azr') . '/' . InstallStorage::CONFIG_OPTIONAL_DIRECTORY, InstallStorage::DEFAULT_COLLECTION);
     $this->assertDefaultConfig($default_config_storage, $active_config_storage);
   }
 
@@ -131,7 +131,7 @@ class DemoUmamiProfileTest extends BrowserTestBase {
   }
 
   /**
-   * Tests that the Umami theme is available on the Appearance page.
+   * Tests that the AZR theme is available on the Appearance page.
    */
   public function testAppearance() {
     $account = $this->drupalCreateUser(['administer themes']);
@@ -139,7 +139,7 @@ class DemoUmamiProfileTest extends BrowserTestBase {
     $webassert = $this->assertSession();
 
     $this->drupalGet('admin/appearance');
-    $webassert->pageTextContains('Umami');
+    $webassert->pageTextContains('AZR');
   }
 
   /**

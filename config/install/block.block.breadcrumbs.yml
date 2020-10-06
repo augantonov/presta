@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - umami
+    - azr
 id: breadcrumbs
-theme: umami
+theme: azr
 region: breadcrumbs
 weight: 0
 provider: null

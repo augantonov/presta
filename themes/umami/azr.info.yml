@@ -4,12 +4,12 @@ base theme: false
 description: 'The theme used for the azr.ua site.'
 core_version_requirement: ^8.8 || ^9
 libraries:
-  - umami/classy.base
+  - azr/classy.base
   - core/normalize
-  - umami/global
-  - umami/messages
-  - umami/webfonts-open-sans
-  - umami/webfonts-scope-one
+  - azr/global
+  - azr/messages
+  - azr/webfonts-open-sans
+  - azr/webfonts-scope-one
 
 libraries-override:
   layout_builder/twocol_section:
@@ -27,27 +27,27 @@ libraries-override:
 
 libraries-extend:
   tour/tour-styling:
-    - umami/demo-umami-tour
+    - azr/demo-azr-tour
   core/drupal.dialog:
-    - umami/classy.dialog
+    - azr/classy.dialog
   core/drupal.dropbutton:
-    - umami/classy.dropbutton
+    - azr/classy.dropbutton
   core/drupal.progress:
-    - umami/classy.progress
+    - azr/classy.progress
   file/drupal.file:
-    - umami/classy.file
+    - azr/classy.file
   filter/drupal.filter.admin:
-    - umami/filter
+    - azr/filter
   filter/drupal.filter:
-    - umami/filter
+    - azr/filter
   media/media_embed_ckeditor_theme:
-    - umami/classy.media_embed_ckeditor_theme
+    - azr/classy.media_embed_ckeditor_theme
   media_library/view:
-    - umami/classy.media_library
+    - azr/classy.media_library
   media_library/widget:
-    - umami/classy.media_library
+    - azr/classy.media_library
   user/drupal.user:
-    - umami/user
+    - azr/user
 
 regions:
   pre_header: Pre-header

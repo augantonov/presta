@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - umami
-id: umami_messages
-theme: umami
+    - azr
+id: azr_messages
+theme: azr
 region: highlighted
 weight: -8
 provider: null

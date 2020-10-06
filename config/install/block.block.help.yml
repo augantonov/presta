@@ -4,9 +4,9 @@ dependencies:
   module:
     - help
   theme:
-    - umami
+    - azr
 id: help
-theme: umami
+theme: azr
 region: highlighted
 weight: 0
 provider: null

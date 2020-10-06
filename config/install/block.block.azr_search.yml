@@ -4,9 +4,9 @@ dependencies:
   module:
     - search
   theme:
-    - umami
-id: umami_search
-theme: umami
+    - azr
+id: azr_search
+theme: azr
 region: pre_header
 weight: 1
 provider: null

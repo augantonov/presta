@@ -50,5 +50,5 @@ install:
   - content_translation
 themes:
   - seven
-  - umami
+  - azr
 keep_english: true

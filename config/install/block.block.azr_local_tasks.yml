@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - umami
-id: umami_local_tasks
-theme: umami
+    - azr
+id: azr_local_tasks
+theme: azr
 region: tabs
 weight: -7
 provider: null
