@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vid_raboty
+id: node.vid_raboty.title
+field_name: title
+entity_type: node
+bundle: vid_raboty
+label: 'Vid_raboty Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

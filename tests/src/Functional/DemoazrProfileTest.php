@@ -112,7 +112,7 @@ class DemoAZRProfileTest extends BrowserTestBase {
   public function testEditNodesByAdmin() {
     $permissions = [
       'administer nodes',
-      'edit any recipe content',
+      'edit any vid_raboty content',
       'use editorial transition create_new_draft',
     ];
     $account = $this->drupalCreateUser($permissions);
@@ -127,7 +127,7 @@ class DemoAZRProfileTest extends BrowserTestBase {
     $this->drupalGet($node->toUrl('edit-form'));
     $webassert->statusCodeEquals('200');
     $this->submitForm([], "Save");
-    $webassert->pageTextContains('Recipe Deep mediterranean quiche has been updated.');
+    $webassert->pageTextContains('Vid_raboty Deep mediterranean quiche has been updated.');
   }
 
   /**
@@ -150,8 +150,8 @@ class DemoAZRProfileTest extends BrowserTestBase {
       'access content overview',
       'access toolbar',
       'administer nodes',
-      'edit any recipe content',
-      'create recipe content',
+      'edit any vid_raboty content',
+      'create vid_raboty content',
       'use editorial transition create_new_draft',
     ];
     $account = $this->drupalCreateUser($permissions);
@@ -170,7 +170,7 @@ class DemoAZRProfileTest extends BrowserTestBase {
     $web_assert->pageTextContains('This site is intended for demonstration purposes.');
 
     // Check when adding a node, the warning is visible.
-    $this->drupalGet('node/add/recipe');
+    $this->drupalGet('node/add/vid_raboty');
     $web_assert->statusCodeEquals('200');
     $web_assert->pageTextContains('This site is intended for demonstration purposes.');
 

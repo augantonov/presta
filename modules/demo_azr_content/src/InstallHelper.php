@@ -69,7 +69,7 @@ class InstallHelper implements ContainerInjectionInterface {
    *
    * Used to store term IDs created in the import process against
    * vocabulary and row in the source CSV files. This allows the created terms
-   * to be cross referenced when creating articles and recipes.
+   * to be cross referenced when creating articles and vidy_rabot.
    *
    * @var array
    */
@@ -80,7 +80,7 @@ class InstallHelper implements ContainerInjectionInterface {
    *
    * Used to store media image CSV IDs created in the import process.
    * This allows the created media images to be cross referenced when creating
-   * article, recipes and blocks.
+   * article, vidy_rabot and blocks.
    *
    * @var array
    */
@@ -148,7 +148,7 @@ class InstallHelper implements ContainerInjectionInterface {
       ->importContentFromFile('taxonomy_term', 'tags')
       ->importContentFromFile('taxonomy_term', 'recipe_category')
       ->importContentFromFile('media', 'image')
-      ->importContentFromFile('node', 'recipe')
+      ->importContentFromFile('node', 'vid_raboty')
       ->importContentFromFile('node', 'article')
       ->importContentFromFile('node', 'page')
       ->importContentFromFile('block_content', 'disclaimer_block')
@@ -423,17 +423,17 @@ class InstallHelper implements ContainerInjectionInterface {
   }
 
   /**
-   * Process recipe data into recipe node structure.
+   * Process vid_raboty data into vid_raboty node structure.
    *
    * @param array $data
    *   Data of line that was read from the file.
    *
    * @return array
-   *   Data structured as a recipe node.
+   *   Data structured as a vid_raboty node.
    */
   protected function processRecipe(array $data, $langcode) {
     $values = [
-      'type' => 'recipe',
+      'type' => 'vid_raboty',
       // Title field.
       'title' => $data['title'],
       'moderation_state' => 'published',
@@ -448,7 +448,7 @@ class InstallHelper implements ContainerInjectionInterface {
       $values['path'] = [['alias' => '/' . $data['slug']]];
     }
     // Save node alias
-    $this->saveNodePath($langcode, 'recipe', $data['id'], $data['slug']);
+    $this->saveNodePath($langcode, 'vid_raboty', $data['id'], $data['slug']);
     // Set field_media_image field.
     if (!empty($data['image_reference'])) {
       $values['field_media_image'] = [
@@ -684,7 +684,7 @@ class InstallHelper implements ContainerInjectionInterface {
    */
   protected function processContent($bundle_machine_name, array $content, $langcode) {
     switch ($bundle_machine_name) {
-      case 'recipe':
+      case 'vid_raboty':
         $structured_content = $this->processRecipe($content, $langcode);
         break;
 
@@ -743,7 +743,7 @@ class InstallHelper implements ContainerInjectionInterface {
     $key = array_search('en', $translated_languages);
     unset($translated_languages[$key]);
 
-    // Start the loop with English (default) recipes.
+    // Start the loop with English (default) vidy_rabot.
     foreach ($all_content['en'] as $current_content) {
       // Process data into its relevant structure.
       $structured_content = $this->processContent($bundle_machine_name, $current_content, 'en');

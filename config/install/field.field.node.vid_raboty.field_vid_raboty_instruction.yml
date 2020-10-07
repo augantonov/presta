@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recipe_instruction
+    - node.type.vid_raboty
+  module:
+    - text
+id: node.vid_raboty.field_recipe_instruction
+field_name: field_recipe_instruction
+entity_type: node
+bundle: vid_raboty
+label: 'Vid_raboty instruction'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

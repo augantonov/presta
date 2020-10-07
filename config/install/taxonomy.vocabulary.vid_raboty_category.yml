@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Vid_raboty category'
+vid: recipe_category
+description: 'Use this taxonomy to group vidy_rabot of the same type together.'
+weight: 0
