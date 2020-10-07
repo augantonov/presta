@@ -1,0 +1,11 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for AZR footer Promo block.
+ */
+#}
+{% block content %}
+  {{ attach_library('azr/quicklinks') }}
+  {{ content }}
+{% endblock %}
