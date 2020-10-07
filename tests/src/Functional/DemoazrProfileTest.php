@@ -127,7 +127,7 @@ class DemoAZRProfileTest extends BrowserTestBase {
     $this->drupalGet($node->toUrl('edit-form'));
     $webassert->statusCodeEquals('200');
     $this->submitForm([], "Save");
-    $webassert->pageTextContains('Recipe Deep mediterranean quiche has been updated.');
+    $webassert->pageTextContains('Vidy_rabot Deep mediterranean quiche has been updated.');
   }
 
   /**

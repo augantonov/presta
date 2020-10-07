@@ -9,7 +9,7 @@ id: node.recipe.field_recipe_category
 field_name: field_recipe_category
 entity_type: node
 bundle: recipe
-label: 'Recipe category'
+label: 'Vidy_rabot category'
 description: ''
 required: false
 translatable: true
