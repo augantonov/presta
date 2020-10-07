@@ -69,7 +69,7 @@ class InstallHelper implements ContainerInjectionInterface {
    *
    * Used to store term IDs created in the import process against
    * vocabulary and row in the source CSV files. This allows the created terms
-   * to be cross referenced when creating articles and vidy_rabot.
+   * to be cross referenced when creating articles and recipes.
    *
    * @var array
    */
@@ -80,7 +80,7 @@ class InstallHelper implements ContainerInjectionInterface {
    *
    * Used to store media image CSV IDs created in the import process.
    * This allows the created media images to be cross referenced when creating
-   * article, vidy_rabot and blocks.
+   * article, recipes and blocks.
    *
    * @var array
    */
@@ -431,7 +431,7 @@ class InstallHelper implements ContainerInjectionInterface {
    * @return array
    *   Data structured as a recipe node.
    */
-  protected function processVidy_rabot(array $data, $langcode) {
+  protected function processRecipe(array $data, $langcode) {
     $values = [
       'type' => 'recipe',
       // Title field.
@@ -685,7 +685,7 @@ class InstallHelper implements ContainerInjectionInterface {
   protected function processContent($bundle_machine_name, array $content, $langcode) {
     switch ($bundle_machine_name) {
       case 'recipe':
-        $structured_content = $this->processVidy_rabot($content, $langcode);
+        $structured_content = $this->processRecipe($content, $langcode);
         break;
 
       case 'article':
@@ -743,7 +743,7 @@ class InstallHelper implements ContainerInjectionInterface {
     $key = array_search('en', $translated_languages);
     unset($translated_languages[$key]);
 
-    // Start the loop with English (default) vidy_rabot.
+    // Start the loop with English (default) recipes.
     foreach ($all_content['en'] as $current_content) {
       // Process data into its relevant structure.
       $structured_content = $this->processContent($bundle_machine_name, $current_content, 'en');

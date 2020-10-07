@@ -11,7 +11,7 @@ dependencies:
     - system
   theme:
     - azr
-id: azr_banner_vidy_rabot
+id: azr_banner_recipes
 theme: azr
 region: banner_top
 weight: -8
@@ -19,7 +19,7 @@ provider: null
 plugin: 'block_content:4c7d58a3-a45d-412d-9068-259c57e40541'
 settings:
   id: 'block_content:4c7d58a3-a45d-412d-9068-259c57e40541'
-  label: 'AZR Vidy_rabot Banner'
+  label: 'AZR Recipes Banner'
   provider: block_content
   label_display: '0'
   status: true
@@ -28,6 +28,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/vidy_rabot\r\n"
+    pages: "/recipes\r\n"
     negate: false
     context_mapping: {  }

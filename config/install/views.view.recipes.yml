@@ -8,10 +8,10 @@ dependencies:
   module:
     - node
     - user
-id: vidy_rabot
-label: Vidy_rabot
+id: recipes
+label: Recipes
 module: views
-description: 'Vidy_rabot listing'
+description: 'Recipes listing'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -217,7 +217,7 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: standard
-      title: Vidy_rabot
+      title: Recipes
       header: {  }
       footer: {  }
       empty: {  }
@@ -245,10 +245,10 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: vidy_rabot
+      path: recipes
       menu:
         type: normal
-        title: Vidy_rabot
+        title: Recipes
         description: ''
         expanded: false
         parent: ''

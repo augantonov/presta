@@ -7,7 +7,7 @@ id: node.recipe.title
 field_name: title
 entity_type: node
 bundle: recipe
-label: 'Vidy_rabot Name'
+label: 'Recipe Name'
 description: ''
 required: true
 translatable: true

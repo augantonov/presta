@@ -7,7 +7,7 @@ dependencies:
     - taxonomy
     - user
 id: recipe_collections
-label: 'Vidy_rabot Collections'
+label: 'Recipe Collections'
 module: views
 description: ''
 tag: ''
@@ -181,7 +181,7 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: standard
-      title: 'Vidy_rabot collections'
+      title: 'Recipe collections'
       header: {  }
       footer: {  }
       empty: {  }

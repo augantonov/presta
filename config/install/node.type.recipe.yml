@@ -7,7 +7,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Vidy_rabot
+name: Recipe
 type: recipe
 description: 'Add a new recipe to the site.'
 help: ''
