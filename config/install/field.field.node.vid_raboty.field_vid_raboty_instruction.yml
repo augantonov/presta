@@ -10,7 +10,7 @@ id: node.vid_raboty.field_vid_raboty_instruction
 field_name: field_vid_raboty_instruction
 entity_type: node
 bundle: vid_raboty
-label: 'Vid_raboty instruction'
+label: 'Vid-raboty instruction'
 description: ''
 required: true
 translatable: true

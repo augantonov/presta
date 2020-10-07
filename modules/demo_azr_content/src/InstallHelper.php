@@ -431,7 +431,7 @@ class InstallHelper implements ContainerInjectionInterface {
    * @return array
    *   Data structured as a vid_raboty node.
    */
-  protected function processVid_raboty(array $data, $langcode) {
+  protected function processVid-raboty(array $data, $langcode) {
     $values = [
       'type' => 'vid_raboty',
       // Title field.
@@ -685,7 +685,7 @@ class InstallHelper implements ContainerInjectionInterface {
   protected function processContent($bundle_machine_name, array $content, $langcode) {
     switch ($bundle_machine_name) {
       case 'vid_raboty':
-        $structured_content = $this->processVid_raboty($content, $langcode);
+        $structured_content = $this->processVid-raboty($content, $langcode);
         break;
 
       case 'article':

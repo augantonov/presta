@@ -7,7 +7,7 @@ id: node.vid_raboty.title
 field_name: title
 entity_type: node
 bundle: vid_raboty
-label: 'Vid_raboty Name'
+label: 'Vid-raboty Name'
 description: ''
 required: true
 translatable: true

@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-name: 'Vid_raboty category'
+name: 'Vid-raboty category'
 vid: vid_raboty_category
 description: 'Use this taxonomy to group vidy_rabot of the same type together.'
 weight: 0

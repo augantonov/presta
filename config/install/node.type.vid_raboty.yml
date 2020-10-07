@@ -7,7 +7,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Vid_raboty
+name: Vid-raboty
 type: vid_raboty
 description: 'Add a new vid_raboty to the site.'
 help: ''
