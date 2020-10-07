@@ -69,7 +69,7 @@ class InstallHelper implements ContainerInjectionInterface {
    *
    * Used to store term IDs created in the import process against
    * vocabulary and row in the source CSV files. This allows the created terms
-   * to be cross referenced when creating articles and vid_rabotys.
+   * to be cross referenced when creating articles and vidy_rabot.
    *
    * @var array
    */
@@ -80,7 +80,7 @@ class InstallHelper implements ContainerInjectionInterface {
    *
    * Used to store media image CSV IDs created in the import process.
    * This allows the created media images to be cross referenced when creating
-   * article, vid_rabotys and blocks.
+   * article, vidy_rabot and blocks.
    *
    * @var array
    */
@@ -743,7 +743,7 @@ class InstallHelper implements ContainerInjectionInterface {
     $key = array_search('en', $translated_languages);
     unset($translated_languages[$key]);
 
-    // Start the loop with English (default) vid_rabotys.
+    // Start the loop with English (default) vidy_rabot.
     foreach ($all_content['en'] as $current_content) {
       // Process data into its relevant structure.
       $structured_content = $this->processContent($bundle_machine_name, $current_content, 'en');

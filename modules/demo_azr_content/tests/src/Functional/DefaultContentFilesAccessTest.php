@@ -17,7 +17,7 @@ class DefaultContentFilesAccessTest extends BrowserTestBase {
   protected $defaultTheme = 'stark';
 
   /**
-   * Tests that sample images, vid_rabotys and articles are not accessible.
+   * Tests that sample images, vidy_rabot and articles are not accessible.
    */
   public function testAccessDeniedToFiles() {
     // The demo_azr profile should not be used because we want to ensure that

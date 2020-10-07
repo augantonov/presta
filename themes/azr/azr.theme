@@ -84,7 +84,7 @@ function azr_preprocess_breadcrumb(&$variables) {
   }
   // Since we are printing the 'Current Page Title', add the URL cache context.
   // If we don't, then we might end up with something like
-  // "Home > Articles" on the Vid_rabotys page, which should read "Home > Vid_rabotys".
+  // "Home > Articles" on the Vidy_rabot page, which should read "Home > Vidy_rabot".
   $variables['#cache']['contexts'][] = 'url';
 }
 

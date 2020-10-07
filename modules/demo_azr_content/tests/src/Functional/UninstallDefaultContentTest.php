@@ -29,7 +29,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
 
     // Test imported nodes on profile install.
     $node_storage = $this->container->get('entity_type.manager')->getStorage('node');
-    $this->assertVid_rabotysImported($node_storage);
+    $this->assertVidy_rabotImported($node_storage);
 
     $count = $node_storage->getQuery()
       ->condition('type', 'article')
@@ -70,18 +70,18 @@ class UninstallDefaultContentTest extends BrowserTestBase {
 
     // Re-install and assert imported content.
     $module_installer->install(['demo_azr_content']);
-    $this->assertVid_rabotysImported($node_storage);
+    $this->assertVidy_rabotImported($node_storage);
     $this->assertArticlesImported($node_storage);
     $this->assertImportedCustomBlock($block_storage);
   }
 
   /**
-   * Assert vid_rabotys are imported.
+   * Assert vidy_rabot are imported.
    *
    * @param \Drupal\Core\Entity\EntityStorageInterface $node_storage
    *   Node storage.
    */
-  protected function assertVid_rabotysImported(EntityStorageInterface $node_storage) {
+  protected function assertVidy_rabotImported(EntityStorageInterface $node_storage) {
     $count = $node_storage->getQuery()
       ->condition('type', 'vid_raboty')
       ->count()
@@ -157,24 +157,24 @@ class UninstallDefaultContentTest extends BrowserTestBase {
         'image_alt_text' => 'Mouth watering vegetarian pasta bake with rich tomato sauce and cheese toppings',
       ],
       [
-        'path' => '/vid_rabotys',
+        'path' => '/vidy_rabot',
         'type' => 'banner_block',
         'uuid' => '4c7d58a3-a45d-412d-9068-259c57e40541',
         'unique_text' => 'These sumptuous brownies should be gooey on the inside and crisp on the outside. A perfect indulgence!',
-        'image_css_selector' => '#block-azr-banner-vid_rabotys img',
+        'image_css_selector' => '#block-azr-banner-vidy_rabot img',
         'image_alt_text' => 'A stack of chocolate and pecan brownies, sprinkled with pecan crumbs and crushed walnut, fresh out of the oven',
       ],
       [
-        'path' => '/vid_rabotys',
+        'path' => '/vidy_rabot',
         'type' => 'disclaimer_block',
         'uuid' => '9b4dcd67-99f3-48d0-93c9-2c46648b29de',
         'unique_text' => 'is a fictional magazine and publisher for illustrative purposes only',
       ],
       [
-        'path' => '/vid_rabotys',
+        'path' => '/vidy_rabot',
         'type' => 'footer_promo_block',
         'uuid' => '924ab293-8f5f-45a1-9c7f-2423ae61a241',
-        'unique_text' => 'Magazine exclusive articles, vid_rabotys and plenty of reasons to get your copy today.',
+        'unique_text' => 'Magazine exclusive articles, vidy_rabot and plenty of reasons to get your copy today.',
         'image_css_selector' => '#block-azr-footer-promo img',
         'image_alt_text' => '3 issue bundle of the AZR food magazine',
       ],
