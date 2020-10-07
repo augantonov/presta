@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: azr_dates
-label: 'AZR dates'
-locked: false
-pattern: 'jS F Y'
