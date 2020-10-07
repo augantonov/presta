@@ -4,8 +4,8 @@ dependencies:
   module:
     - node
     - taxonomy
-id: node.field_recipe_category
-field_name: field_recipe_category
+id: node.field_vid_raboty_category
+field_name: field_vid_raboty_category
 entity_type: node
 type: entity_reference
 settings:

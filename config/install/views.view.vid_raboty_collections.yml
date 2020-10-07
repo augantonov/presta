@@ -6,7 +6,7 @@ dependencies:
   module:
     - taxonomy
     - user
-id: recipe_collections
+id: vid_raboty_collections
 label: 'Vid_raboty Collections'
 module: views
 description: ''

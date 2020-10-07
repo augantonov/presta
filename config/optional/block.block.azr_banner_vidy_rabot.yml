@@ -11,7 +11,7 @@ dependencies:
     - system
   theme:
     - azr
-id: azr_banner_recipes
+id: azr_banner_vidy_rabot
 theme: azr
 region: banner_top
 weight: -8

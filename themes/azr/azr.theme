@@ -34,7 +34,7 @@ function azr_preprocess_field(&$variables, $hook) {
   // Add class to label and items fields to be styled using the meta styles.
   if (isset($element['#field_name'])) {
     if (
-      $element['#field_name'] == 'field_recipe_category' ||
+      $element['#field_name'] == 'field_vid_raboty_category' ||
       $element['#field_name'] == 'field_tags' ||
       $element['#field_name'] == 'field_difficulty') {
       $variables['attributes']['class'] = 'label-items';

@@ -9,8 +9,8 @@ dependencies:
     - field.field.node.vid_raboty.field_media_image
     - field.field.node.vid_raboty.field_number_of_servings
     - field.field.node.vid_raboty.field_preparation_time
-    - field.field.node.vid_raboty.field_recipe_category
-    - field.field.node.vid_raboty.field_recipe_instruction
+    - field.field.node.vid_raboty.field_vid_raboty_category
+    - field.field.node.vid_raboty.field_vid_raboty_instruction
     - field.field.node.vid_raboty.field_summary
     - field.field.node.vid_raboty.field_tags
     - field.field.node.vid_raboty.layout_builder__layout
@@ -33,8 +33,8 @@ hidden:
   field_media_image: true
   field_number_of_servings: true
   field_preparation_time: true
-  field_recipe_category: true
-  field_recipe_instruction: true
+  field_vid_raboty_category: true
+  field_vid_raboty_instruction: true
   field_summary: true
   field_tags: true
   langcode: true

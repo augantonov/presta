@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_recipe_category
+    - field.storage.node.field_vid_raboty_category
     - node.type.vid_raboty
-    - taxonomy.vocabulary.recipe_category
-id: node.vid_raboty.field_recipe_category
-field_name: field_recipe_category
+    - taxonomy.vocabulary.vid_raboty_category
+id: node.vid_raboty.field_vid_raboty_category
+field_name: field_vid_raboty_category
 entity_type: node
 bundle: vid_raboty
 label: 'Vid_raboty category'
@@ -19,7 +19,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      recipe_category: recipe_category
+      vid_raboty_category: vid_raboty_category
     sort:
       field: name
       direction: asc

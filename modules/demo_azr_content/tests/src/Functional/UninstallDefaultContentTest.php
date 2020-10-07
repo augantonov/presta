@@ -29,7 +29,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
 
     // Test imported nodes on profile install.
     $node_storage = $this->container->get('entity_type.manager')->getStorage('node');
-    $this->assertRecipesImported($node_storage);
+    $this->assertVidy_rabotImported($node_storage);
 
     $count = $node_storage->getQuery()
       ->condition('type', 'article')
@@ -70,7 +70,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
 
     // Re-install and assert imported content.
     $module_installer->install(['demo_azr_content']);
-    $this->assertRecipesImported($node_storage);
+    $this->assertVidy_rabotImported($node_storage);
     $this->assertArticlesImported($node_storage);
     $this->assertImportedCustomBlock($block_storage);
   }
@@ -81,7 +81,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
    * @param \Drupal\Core\Entity\EntityStorageInterface $node_storage
    *   Node storage.
    */
-  protected function assertRecipesImported(EntityStorageInterface $node_storage) {
+  protected function assertVidy_rabotImported(EntityStorageInterface $node_storage) {
     $count = $node_storage->getQuery()
       ->condition('type', 'vid_raboty')
       ->count()
@@ -90,7 +90,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
     $nodes = $node_storage->loadByProperties(['title' => 'Gluten free pizza']);
     $this->assertCount(1, $nodes);
     $node = reset($nodes);
-    $this->assertStringContainsString('Mix some of the milk and water in a jug', $node->field_recipe_instruction->value);
+    $this->assertStringContainsString('Mix some of the milk and water in a jug', $node->field_vid_raboty_instruction->value);
   }
 
   /**

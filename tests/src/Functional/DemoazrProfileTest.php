@@ -161,11 +161,11 @@ class DemoAZRProfileTest extends BrowserTestBase {
     $nodes = $this->container->get('entity_type.manager')
       ->getStorage('node')
       ->loadByProperties(['title' => 'Deep mediterranean quiche']);
-    /* @var \Drupal\node\Entity\Node $recipe_node */
-    $recipe_node = reset($nodes);
+    /* @var \Drupal\node\Entity\Node $vid_raboty_node */
+    $vid_raboty_node = reset($nodes);
 
     // Check when editing a node, the warning is visible.
-    $this->drupalGet($recipe_node->toUrl('edit-form'));
+    $this->drupalGet($vid_raboty_node->toUrl('edit-form'));
     $web_assert->statusCodeEquals('200');
     $web_assert->pageTextContains('This site is intended for demonstration purposes.');
 
@@ -180,7 +180,7 @@ class DemoAZRProfileTest extends BrowserTestBase {
     $web_assert->pageTextContains('This site is intended for demonstration purposes.');
 
     // Check when viewing a node, the warning is not visible.
-    $this->drupalGet($recipe_node->toUrl());
+    $this->drupalGet($vid_raboty_node->toUrl());
     $web_assert->statusCodeEquals('200');
     $web_assert->pageTextNotContains('This site is intended for demonstration purposes.');
 

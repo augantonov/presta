@@ -146,7 +146,7 @@ class InstallHelper implements ContainerInjectionInterface {
     $this->getModulePath()
       ->importEditors()
       ->importContentFromFile('taxonomy_term', 'tags')
-      ->importContentFromFile('taxonomy_term', 'recipe_category')
+      ->importContentFromFile('taxonomy_term', 'vid_raboty_category')
       ->importContentFromFile('media', 'image')
       ->importContentFromFile('node', 'vid_raboty')
       ->importContentFromFile('node', 'article')
@@ -431,7 +431,7 @@ class InstallHelper implements ContainerInjectionInterface {
    * @return array
    *   Data structured as a vid_raboty node.
    */
-  protected function processRecipe(array $data, $langcode) {
+  protected function processVid_raboty(array $data, $langcode) {
     $values = [
       'type' => 'vid_raboty',
       // Title field.
@@ -459,13 +459,13 @@ class InstallHelper implements ContainerInjectionInterface {
     if (!empty($data['summary'])) {
       $values['field_summary'] = [['value' => $data['summary'], 'format' => 'basic_html']];
     }
-    // Set field_recipe_category if exists.
-    if (!empty($data['recipe_category'])) {
-      $values['field_recipe_category'] = [];
-      $tags = array_filter(explode(',', $data['recipe_category']));
+    // Set field_vid_raboty_category if exists.
+    if (!empty($data['vid_raboty_category'])) {
+      $values['field_vid_raboty_category'] = [];
+      $tags = array_filter(explode(',', $data['vid_raboty_category']));
       foreach ($tags as $tag_id) {
-        if ($tid = $this->getTermId('recipe_category', $tag_id)) {
-          $values['field_recipe_category'][] = ['target_id' => $tid];
+        if ($tid = $this->getTermId('vid_raboty_category', $tag_id)) {
+          $values['field_vid_raboty_category'][] = ['target_id' => $tid];
         }
       }
     }
@@ -493,12 +493,12 @@ class InstallHelper implements ContainerInjectionInterface {
         $values['field_ingredients'][] = ['value' => $ingredient];
       }
     }
-    // Set field_recipe_instruction field.
-    if (!empty($data['recipe_instruction'])) {
-      $recipe_instruction_path = $this->module_path . '/default_content/languages/' . $langcode . '/recipe_instructions/' . $data['recipe_instruction'];
-      $recipe_instructions = file_get_contents($recipe_instruction_path);
-      if ($recipe_instructions !== FALSE) {
-        $values['field_recipe_instruction'] = [['value' => $recipe_instructions, 'format' => 'basic_html']];
+    // Set field_vid_raboty_instruction field.
+    if (!empty($data['vid_raboty_instruction'])) {
+      $vid_raboty_instruction_path = $this->module_path . '/default_content/languages/' . $langcode . '/vid_raboty_instructions/' . $data['vid_raboty_instruction'];
+      $vid_raboty_instructions = file_get_contents($vid_raboty_instruction_path);
+      if ($vid_raboty_instructions !== FALSE) {
+        $values['field_vid_raboty_instruction'] = [['value' => $vid_raboty_instructions, 'format' => 'basic_html']];
       }
     }
     // Set field_tags if exists.
@@ -685,7 +685,7 @@ class InstallHelper implements ContainerInjectionInterface {
   protected function processContent($bundle_machine_name, array $content, $langcode) {
     switch ($bundle_machine_name) {
       case 'vid_raboty':
-        $structured_content = $this->processRecipe($content, $langcode);
+        $structured_content = $this->processVid_raboty($content, $langcode);
         break;
 
       case 'article':
@@ -712,7 +712,7 @@ class InstallHelper implements ContainerInjectionInterface {
         $structured_content = $this->processImage($content);
         break;
 
-      case 'recipe_category':
+      case 'vid_raboty_category':
       case 'tags':
         $structured_content = $this->processTerm($content, $bundle_machine_name);
         break;
