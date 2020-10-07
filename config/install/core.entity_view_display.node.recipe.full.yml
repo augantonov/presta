@@ -3,18 +3,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.recipe.field_cooking_time
-    - field.field.node.recipe.field_difficulty
-    - field.field.node.recipe.field_ingredients
-    - field.field.node.recipe.field_media_image
-    - field.field.node.recipe.field_number_of_servings
-    - field.field.node.recipe.field_preparation_time
-    - field.field.node.recipe.field_recipe_category
-    - field.field.node.recipe.field_recipe_instruction
-    - field.field.node.recipe.field_summary
-    - field.field.node.recipe.field_tags
-    - field.field.node.recipe.layout_builder__layout
-    - node.type.recipe
+    - field.field.node.vid_raboty.field_cooking_time
+    - field.field.node.vid_raboty.field_difficulty
+    - field.field.node.vid_raboty.field_ingredients
+    - field.field.node.vid_raboty.field_media_image
+    - field.field.node.vid_raboty.field_number_of_servings
+    - field.field.node.vid_raboty.field_preparation_time
+    - field.field.node.vid_raboty.field_vid_raboty_category
+    - field.field.node.vid_raboty.field_vid_raboty_instruction
+    - field.field.node.vid_raboty.field_summary
+    - field.field.node.vid_raboty.field_tags
+    - field.field.node.vid_raboty.layout_builder__layout
+    - node.type.vid_raboty
   module:
     - layout_builder
     - layout_discovery
@@ -38,7 +38,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:recipe:field_tags'
+              id: 'field_block:node:vid_raboty:field_tags'
               formatter:
                 label: inline
                 settings:
@@ -54,7 +54,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:recipe:field_recipe_category'
+              id: 'field_block:node:vid_raboty:field_vid_raboty_category'
               formatter:
                 label: inline
                 settings:
@@ -70,7 +70,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:recipe:field_summary'
+              id: 'field_block:node:vid_raboty:field_summary'
               formatter:
                 label: hidden
                 settings: {  }
@@ -88,7 +88,7 @@ third_party_settings:
             uuid: cc87463d-bb75-4eca-a2d0-42f0b643f8a7
             region: content
             configuration:
-              id: 'field_block:node:recipe:field_media_image'
+              id: 'field_block:node:vid_raboty:field_media_image'
               label: 'Media Image'
               provider: layout_builder
               label_display: '0'
@@ -110,7 +110,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:recipe:field_difficulty'
+              id: 'field_block:node:vid_raboty:field_difficulty'
               formatter:
                 label: inline
                 settings: {  }
@@ -125,7 +125,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:recipe:field_number_of_servings'
+              id: 'field_block:node:vid_raboty:field_number_of_servings'
               formatter:
                 label: inline
                 settings:
@@ -142,7 +142,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:recipe:field_cooking_time'
+              id: 'field_block:node:vid_raboty:field_cooking_time'
               formatter:
                 label: inline
                 settings:
@@ -159,7 +159,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:recipe:field_preparation_time'
+              id: 'field_block:node:vid_raboty:field_preparation_time'
               formatter:
                 label: inline
                 settings:
@@ -173,7 +173,7 @@ third_party_settings:
             uuid: 69d8bce1-28ae-4287-a05b-a2166679f867
             region: first
             configuration:
-              id: 'field_block:node:recipe:field_media_image'
+              id: 'field_block:node:vid_raboty:field_media_image'
               label: 'Media Image'
               provider: layout_builder
               label_display: '0'
@@ -202,7 +202,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:recipe:field_ingredients'
+              id: 'field_block:node:vid_raboty:field_ingredients'
               formatter:
                 label: above
                 settings:
@@ -218,7 +218,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:recipe:field_recipe_instruction'
+              id: 'field_block:node:vid_raboty:field_vid_raboty_instruction'
               formatter:
                 label: above
                 settings: {  }
@@ -239,15 +239,15 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:recipe:content_moderation_control'
+              id: 'extra_field_block:node:vid_raboty:content_moderation_control'
             additional: {  }
             weight: 0
         third_party_settings: {  }
     allow_custom: true
     enabled: true
-id: node.recipe.full
+id: node.vid_raboty.full
 targetEntityType: node
-bundle: recipe
+bundle: vid_raboty
 mode: full
 content:
   content_moderation_control:
@@ -297,7 +297,7 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_recipe_category:
+  field_vid_raboty_category:
     weight: 1
     label: inline
     settings:
@@ -305,7 +305,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_recipe_instruction:
+  field_vid_raboty_instruction:
     weight: 9
     label: above
     settings: {  }

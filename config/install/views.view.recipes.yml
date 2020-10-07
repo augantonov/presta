@@ -3,15 +3,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card
-    - node.type.recipe
+    - node.type.vid_raboty
     - system.menu.main
   module:
     - node
     - user
-id: recipes
-label: Recipes
+id: vid_rabotys
+label: Vid_rabotys
 module: views
-description: 'Recipes listing'
+description: 'Vid_rabotys listing'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -139,7 +139,7 @@ display:
           table: node_field_data
           field: type
           value:
-            recipe: recipe
+            vid_raboty: vid_raboty
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -217,7 +217,7 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: standard
-      title: Recipes
+      title: Vid_rabotys
       header: {  }
       footer: {  }
       empty: {  }
@@ -245,10 +245,10 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: recipes
+      path: vid_rabotys
       menu:
         type: normal
-        title: Recipes
+        title: Vid_rabotys
         description: ''
         expanded: false
         parent: ''

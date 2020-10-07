@@ -7,9 +7,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Recipe
-type: recipe
-description: 'Add a new recipe to the site.'
+name: Vid_raboty
+type: vid_raboty
+description: 'Add a new vid_raboty to the site.'
 help: ''
 new_revision: true
 preview_mode: 1

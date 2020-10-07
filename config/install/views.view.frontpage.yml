@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.card_common
     - core.entity_view_mode.node.rss
-    - node.type.recipe
+    - node.type.vid_raboty
   module:
     - node
     - user
@@ -133,7 +133,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            recipe: recipe
+            vid_raboty: vid_raboty
           group: 1
           exposed: false
           expose:
@@ -287,7 +287,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<p class="text-align-center">Explore recipes across every type of occasion, ingredient, and skill level.</p>'
+            value: '<p class="text-align-center">Explore vid_rabotys across every type of occasion, ingredient, and skill level.</p>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -366,7 +366,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<p class="text-align-center">Explore recipes across every type of occasion, ingredient, and skill level</p>'
+            value: '<p class="text-align-center">Explore vid_rabotys across every type of occasion, ingredient, and skill level</p>'
             format: full_html
           plugin_id: text
       rendering_language: '***LANGUAGE_language_interface***'

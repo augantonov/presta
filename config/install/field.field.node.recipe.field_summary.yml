@@ -3,15 +3,15 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_summary
-    - node.type.recipe
+    - node.type.vid_raboty
   module:
     - text
-id: node.recipe.field_summary
+id: node.vid_raboty.field_summary
 field_name: field_summary
 entity_type: node
-bundle: recipe
+bundle: vid_raboty
 label: Summary
-description: 'Provide a short overview of this recipe.'
+description: 'Provide a short overview of this vid_raboty.'
 required: true
 translatable: true
 default_value: {  }

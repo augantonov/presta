@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.recipe
-id: node.recipe.title
+    - node.type.vid_raboty
+id: node.vid_raboty.title
 field_name: title
 entity_type: node
-bundle: recipe
-label: 'Recipe Name'
+bundle: vid_raboty
+label: 'Vid_raboty Name'
 description: ''
 required: true
 translatable: true

@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_cooking_time
-    - node.type.recipe
-id: node.recipe.field_cooking_time
+    - node.type.vid_raboty
+id: node.vid_raboty.field_cooking_time
 field_name: field_cooking_time
 entity_type: node
-bundle: recipe
+bundle: vid_raboty
 label: 'Cooking time'
 description: ''
 required: false

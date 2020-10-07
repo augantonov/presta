@@ -5,7 +5,7 @@ dependencies:
     - core.entity_view_mode.node.card_common
     - core.entity_view_mode.node.card_common_alt
     - node.type.article
-    - node.type.recipe
+    - node.type.vid_raboty
   module:
     - node
     - user
@@ -172,7 +172,7 @@ display:
           operator: in
           value:
             article: article
-            recipe: recipe
+            vid_raboty: vid_raboty
           group: 1
           exposed: false
           expose:
@@ -330,7 +330,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            recipe: recipe
+            vid_raboty: vid_raboty
           group: 1
           exposed: false
           expose:

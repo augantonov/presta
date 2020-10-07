@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.recipe
+    - node.type.vid_raboty
   module:
     - content_translation
 third_party_settings:
   content_translation:
     enabled: true
-id: node.recipe
+id: node.vid_raboty
 target_entity_type_id: node
-target_bundle: recipe
+target_bundle: vid_raboty
 default_langcode: site_default
 language_alterable: true

@@ -3,24 +3,24 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card
-    - field.field.node.recipe.field_cooking_time
-    - field.field.node.recipe.field_difficulty
-    - field.field.node.recipe.field_ingredients
-    - field.field.node.recipe.field_media_image
-    - field.field.node.recipe.field_number_of_servings
-    - field.field.node.recipe.field_preparation_time
-    - field.field.node.recipe.field_recipe_category
-    - field.field.node.recipe.field_recipe_instruction
-    - field.field.node.recipe.field_summary
-    - field.field.node.recipe.field_tags
-    - field.field.node.recipe.layout_builder__layout
-    - node.type.recipe
+    - field.field.node.vid_raboty.field_cooking_time
+    - field.field.node.vid_raboty.field_difficulty
+    - field.field.node.vid_raboty.field_ingredients
+    - field.field.node.vid_raboty.field_media_image
+    - field.field.node.vid_raboty.field_number_of_servings
+    - field.field.node.vid_raboty.field_preparation_time
+    - field.field.node.vid_raboty.field_vid_raboty_category
+    - field.field.node.vid_raboty.field_vid_raboty_instruction
+    - field.field.node.vid_raboty.field_summary
+    - field.field.node.vid_raboty.field_tags
+    - field.field.node.vid_raboty.layout_builder__layout
+    - node.type.vid_raboty
   module:
     - options
     - user
-id: node.recipe.card
+id: node.vid_raboty.card
 targetEntityType: node
-bundle: recipe
+bundle: vid_raboty
 mode: card
 content:
   field_difficulty:
@@ -45,8 +45,8 @@ hidden:
   field_ingredients: true
   field_number_of_servings: true
   field_preparation_time: true
-  field_recipe_category: true
-  field_recipe_instruction: true
+  field_vid_raboty_category: true
+  field_vid_raboty_instruction: true
   field_summary: true
   field_tags: true
   langcode: true

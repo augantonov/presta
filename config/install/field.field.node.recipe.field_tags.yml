@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_tags
-    - node.type.recipe
+    - node.type.vid_raboty
     - taxonomy.vocabulary.tags
-id: node.recipe.field_tags
+id: node.vid_raboty.field_tags
 field_name: field_tags
 entity_type: node
-bundle: recipe
+bundle: vid_raboty
 label: Tags
 description: 'Enter a comma-separated list. For example: Vegetarian, Chocolate brownies, Appetizers'
 required: false

@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.layout_builder__layout
-    - node.type.recipe
+    - node.type.vid_raboty
   module:
     - layout_builder
-id: node.recipe.layout_builder__layout
+id: node.vid_raboty.layout_builder__layout
 field_name: layout_builder__layout
 entity_type: node
-bundle: recipe
+bundle: vid_raboty
 label: Layout
 description: ''
 required: false

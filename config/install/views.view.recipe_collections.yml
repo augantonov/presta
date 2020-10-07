@@ -6,8 +6,8 @@ dependencies:
   module:
     - taxonomy
     - user
-id: recipe_collections
-label: 'Recipe Collections'
+id: vid_raboty_collections
+label: 'Vid_raboty Collections'
 module: views
 description: ''
 tag: ''
@@ -181,7 +181,7 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: standard
-      title: 'Recipe collections'
+      title: 'Vid_raboty collections'
       header: {  }
       footer: {  }
       empty: {  }

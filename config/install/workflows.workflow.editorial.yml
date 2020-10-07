@@ -4,7 +4,7 @@ dependencies:
   config:
     - node.type.article
     - node.type.page
-    - node.type.recipe
+    - node.type.vid_raboty
   module:
     - content_moderation
 id: editorial
@@ -64,5 +64,5 @@ type_settings:
     node:
       - article
       - page
-      - recipe
+      - vid_raboty
   default_moderation_state: draft
