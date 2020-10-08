@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vidraboty_instruction
+    - node.type.vidraboty
+  module:
+    - text
+id: node.vidraboty.field_vidraboty_instruction
+field_name: field_vidraboty_instruction
+entity_type: node
+bundle: vidraboty
+label: 'Vidraboty instruction'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

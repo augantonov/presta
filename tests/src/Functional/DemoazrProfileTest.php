@@ -112,7 +112,7 @@ class DemoAZRProfileTest extends BrowserTestBase {
   public function testEditNodesByAdmin() {
     $permissions = [
       'administer nodes',
-      'edit any recipe content',
+      'edit any vidraboty content',
       'use editorial transition create_new_draft',
     ];
     $account = $this->drupalCreateUser($permissions);
@@ -127,7 +127,7 @@ class DemoAZRProfileTest extends BrowserTestBase {
     $this->drupalGet($node->toUrl('edit-form'));
     $webassert->statusCodeEquals('200');
     $this->submitForm([], "Save");
-    $webassert->pageTextContains('Recipe Deep mediterranean quiche has been updated.');
+    $webassert->pageTextContains('Vidraboty Deep mediterranean quiche has been updated.');
   }
 
   /**
@@ -150,8 +150,8 @@ class DemoAZRProfileTest extends BrowserTestBase {
       'access content overview',
       'access toolbar',
       'administer nodes',
-      'edit any recipe content',
-      'create recipe content',
+      'edit any vidraboty content',
+      'create vidraboty content',
       'use editorial transition create_new_draft',
     ];
     $account = $this->drupalCreateUser($permissions);
@@ -161,16 +161,16 @@ class DemoAZRProfileTest extends BrowserTestBase {
     $nodes = $this->container->get('entity_type.manager')
       ->getStorage('node')
       ->loadByProperties(['title' => 'Deep mediterranean quiche']);
-    /* @var \Drupal\node\Entity\Node $recipe_node */
-    $recipe_node = reset($nodes);
+    /* @var \Drupal\node\Entity\Node $vidraboty_node */
+    $vidraboty_node = reset($nodes);
 
     // Check when editing a node, the warning is visible.
-    $this->drupalGet($recipe_node->toUrl('edit-form'));
+    $this->drupalGet($vidraboty_node->toUrl('edit-form'));
     $web_assert->statusCodeEquals('200');
     $web_assert->pageTextContains('This site is intended for demonstration purposes.');
 
     // Check when adding a node, the warning is visible.
-    $this->drupalGet('node/add/recipe');
+    $this->drupalGet('node/add/vidraboty');
     $web_assert->statusCodeEquals('200');
     $web_assert->pageTextContains('This site is intended for demonstration purposes.');
 
@@ -180,7 +180,7 @@ class DemoAZRProfileTest extends BrowserTestBase {
     $web_assert->pageTextContains('This site is intended for demonstration purposes.');
 
     // Check when viewing a node, the warning is not visible.
-    $this->drupalGet($recipe_node->toUrl());
+    $this->drupalGet($vidraboty_node->toUrl());
     $web_assert->statusCodeEquals('200');
     $web_assert->pageTextNotContains('This site is intended for demonstration purposes.');
 

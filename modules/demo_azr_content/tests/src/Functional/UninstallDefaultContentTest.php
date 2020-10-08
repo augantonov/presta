@@ -29,7 +29,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
 
     // Test imported nodes on profile install.
     $node_storage = $this->container->get('entity_type.manager')->getStorage('node');
-    $this->assertRecipesImported($node_storage);
+    $this->assertVidyrabotImported($node_storage);
 
     $count = $node_storage->getQuery()
       ->condition('type', 'article')
@@ -63,34 +63,34 @@ class UninstallDefaultContentTest extends BrowserTestBase {
     $this->assertEquals(0, $count);
 
     $count = $node_storage->getQuery()
-      ->condition('type', 'recipe')
+      ->condition('type', 'vidraboty')
       ->count()
       ->execute();
     $this->assertEquals(0, $count);
 
     // Re-install and assert imported content.
     $module_installer->install(['demo_azr_content']);
-    $this->assertRecipesImported($node_storage);
+    $this->assertVidyrabotImported($node_storage);
     $this->assertArticlesImported($node_storage);
     $this->assertImportedCustomBlock($block_storage);
   }
 
   /**
-   * Assert recipes are imported.
+   * Assert vidyrabot are imported.
    *
    * @param \Drupal\Core\Entity\EntityStorageInterface $node_storage
    *   Node storage.
    */
-  protected function assertRecipesImported(EntityStorageInterface $node_storage) {
+  protected function assertVidyrabotImported(EntityStorageInterface $node_storage) {
     $count = $node_storage->getQuery()
-      ->condition('type', 'recipe')
+      ->condition('type', 'vidraboty')
       ->count()
       ->execute();
     $this->assertGreaterThan(0, $count);
     $nodes = $node_storage->loadByProperties(['title' => 'Gluten free pizza']);
     $this->assertCount(1, $nodes);
     $node = reset($nodes);
-    $this->assertStringContainsString('Mix some of the milk and water in a jug', $node->field_recipe_instruction->value);
+    $this->assertStringContainsString('Mix some of the milk and water in a jug', $node->field_vidraboty_instruction->value);
   }
 
   /**
@@ -157,24 +157,24 @@ class UninstallDefaultContentTest extends BrowserTestBase {
         'image_alt_text' => 'Mouth watering vegetarian pasta bake with rich tomato sauce and cheese toppings',
       ],
       [
-        'path' => '/recipes',
+        'path' => '/vidyrabot',
         'type' => 'banner_block',
         'uuid' => '4c7d58a3-a45d-412d-9068-259c57e40541',
         'unique_text' => 'These sumptuous brownies should be gooey on the inside and crisp on the outside. A perfect indulgence!',
-        'image_css_selector' => '#block-azr-banner-recipes img',
+        'image_css_selector' => '#block-azr-banner-vidyrabot img',
         'image_alt_text' => 'A stack of chocolate and pecan brownies, sprinkled with pecan crumbs and crushed walnut, fresh out of the oven',
       ],
       [
-        'path' => '/recipes',
+        'path' => '/vidyrabot',
         'type' => 'disclaimer_block',
         'uuid' => '9b4dcd67-99f3-48d0-93c9-2c46648b29de',
         'unique_text' => 'is a fictional magazine and publisher for illustrative purposes only',
       ],
       [
-        'path' => '/recipes',
+        'path' => '/vidyrabot',
         'type' => 'footer_promo_block',
         'uuid' => '924ab293-8f5f-45a1-9c7f-2423ae61a241',
-        'unique_text' => 'Magazine exclusive articles, recipes and plenty of reasons to get your copy today.',
+        'unique_text' => 'Magazine exclusive articles, vidyrabot and plenty of reasons to get your copy today.',
         'image_css_selector' => '#block-azr-footer-promo img',
         'image_alt_text' => '3 issue bundle of the AZR food magazine',
       ],

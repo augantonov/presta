@@ -17,7 +17,7 @@ class DefaultContentFilesAccessTest extends BrowserTestBase {
   protected $defaultTheme = 'stark';
 
   /**
-   * Tests that sample images, recipes and articles are not accessible.
+   * Tests that sample images, vidyrabot and articles are not accessible.
    */
   public function testAccessDeniedToFiles() {
     // The demo_azr profile should not be used because we want to ensure that
@@ -26,7 +26,7 @@ class DefaultContentFilesAccessTest extends BrowserTestBase {
 
     $files_to_test = [
       'images/heritage-carrots.jpg',
-      'languages/en/recipe_instructions/mediterranean-quiche-azr.html',
+      'languages/en/vidraboty_instructions/mediterranean-quiche-azr.html',
       'languages/en/article_body/lets-hear-it-for-carrots.html',
       'languages/en/node/article.csv',
     ];

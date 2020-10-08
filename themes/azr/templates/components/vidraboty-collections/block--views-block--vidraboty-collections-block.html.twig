@@ -1,0 +1,13 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for vidraboty collections block.
+ */
+#}
+{% block content %}
+  {{ attach_library('azr/vidraboty-collections') }}
+  <div class="container">
+    {{ parent() }}
+  </div>
+{% endblock %}

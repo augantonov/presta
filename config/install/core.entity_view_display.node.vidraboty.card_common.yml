@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_common
+    - field.field.node.vidraboty.field_cooking_time
+    - field.field.node.vidraboty.field_difficulty
+    - field.field.node.vidraboty.field_ingredients
+    - field.field.node.vidraboty.field_media_image
+    - field.field.node.vidraboty.field_number_of_servings
+    - field.field.node.vidraboty.field_preparation_time
+    - field.field.node.vidraboty.field_vidraboty_category
+    - field.field.node.vidraboty.field_vidraboty_instruction
+    - field.field.node.vidraboty.field_summary
+    - field.field.node.vidraboty.field_tags
+    - field.field.node.vidraboty.layout_builder__layout
+    - node.type.vidraboty
+  module:
+    - user
+id: node.vidraboty.card_common
+targetEntityType: node
+bundle: vidraboty
+mode: card_common
+content:
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: responsive_3x2
+      link: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_cooking_time: true
+  field_difficulty: true
+  field_ingredients: true
+  field_number_of_servings: true
+  field_preparation_time: true
+  field_vidraboty_category: true
+  field_vidraboty_instruction: true
+  field_summary: true
+  field_tags: true
+  langcode: true
+  layout_builder__layout: true
+  links: true

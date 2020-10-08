@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Vidraboty category'
+vid: vidraboty_category
+description: 'Use this taxonomy to group vidyrabot of the same type together.'
+weight: 0

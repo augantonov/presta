@@ -18,11 +18,11 @@ global:
       css/components/forms/content-moderation.css: {}
       css/components/content/node.css: {}
       css/components/content/full/node-full.css: {}
-      css/components/content-types/recipe/recipe.css: {}
+      css/components/content-types/vidraboty/vidraboty.css: {}
       css/components/fields/field.css: {}
       css/components/fields/ingredients.css: {}
       css/components/fields/label-items.css: {}
-      css/components/fields/recipe-instruction.css: {}
+      css/components/fields/vidraboty-instruction.css: {}
       css/components/fields/summary.css: {}
       css/components/forms/buttons.css: {}
       css/components/forms/container-inline.module.css: {}
@@ -67,10 +67,10 @@ quicklinks:
     theme:
       css/components/blocks/quicklinks/quicklinks.css: {}
 
-recipe-collections:
+vidraboty-collections:
   css:
     theme:
-      css/components/blocks/recipe-collections/recipe-collections.css: {}
+      css/components/blocks/vidraboty-collections/vidraboty-collections.css: {}
 
 two-columns:
   css:

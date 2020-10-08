@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ingredients
+    - node.type.vidraboty
+id: node.vidraboty.field_ingredients
+field_name: field_ingredients
+entity_type: node
+bundle: vidraboty
+label: Ingredients
+description: 'List the ingredients required for this vidraboty, one per item.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
