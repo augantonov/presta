@@ -43,7 +43,7 @@ tips:
     id: managing-content
     plugin: text
     label: Managing content
-    body: This example website provides a collection of articles and vidy_rabot that demonstrate how content can easily be managed in a flexible and structured way.
+    body: This example website provides a collection of articles and recipes that demonstrate how content can easily be managed in a flexible and structured way.
     weight: 5
     location: right
     attributes:
@@ -52,7 +52,7 @@ tips:
     id: azr-front-content
     plugin: text
     label: Configuring content display
-    body:  Display modes can be configured to provide different presentations of content. These promoted articles and vidy_rabot use the display modes feature to format the images with different ratios.
+    body:  Display modes can be configured to provide different presentations of content. These promoted articles and recipes use the display modes feature to format the images with different ratios.
     weight: 6
     location: left
     attributes:
@@ -61,7 +61,7 @@ tips:
     id: azr-views
     plugin: text
     label: Displaying content with Views
-    body: Drupal makes it simple to create lists of filtered content and control how the content is displayed using the Views feature. This latest vidy_rabot example uses a view to fetch the most recent four vidy_rabot, displays the view as a block that is positioned on the front page with the block system.
+    body: Drupal makes it simple to create lists of filtered content and control how the content is displayed using the Views feature. This latest recipes example uses a view to fetch the most recent four recipes, displays the view as a block that is positioned on the front page with the block system.
     weight: 7
     location: right
     attributes:
