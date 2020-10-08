@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\demo_azr\Functional;
+namespace Drupal\Tests\azrua\Functional;
 
 use Drupal\Core\Config\FileStorage;
 use Drupal\Core\Config\InstallStorage;
@@ -11,9 +11,9 @@ use Drupal\Core\Session\AccountInterface;
 use Drupal\Component\Render\FormattableMarkup;
 
 /**
- * Tests demo_azr profile.
+ * Tests azrua profile.
  *
- * @group demo_azr
+ * @group azrua
  */
 class DemoAZRProfileTest extends BrowserTestBase {
   use AssertConfigTrait;
@@ -30,10 +30,10 @@ class DemoAZRProfileTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected $profile = 'demo_azr';
+  protected $profile = 'azrua';
 
   /**
-   * Tests demo_azr profile warnings shown on Status Page.
+   * Tests azrua profile warnings shown on Status Page.
    */
   public function testWarningsOnStatusPage() {
     $account = $this->drupalCreateUser(['administer site configuration']);
@@ -52,10 +52,10 @@ class DemoAZRProfileTest extends BrowserTestBase {
     // the cache layer.
     $active_config_storage = $this->container->get('config.storage');
 
-    $default_config_storage = new FileStorage(drupal_get_path('profile', 'demo_azr') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY, InstallStorage::DEFAULT_COLLECTION);
+    $default_config_storage = new FileStorage(drupal_get_path('profile', 'azrua') . '/' . InstallStorage::CONFIG_INSTALL_DIRECTORY, InstallStorage::DEFAULT_COLLECTION);
     $this->assertDefaultConfig($default_config_storage, $active_config_storage);
 
-    $default_config_storage = new FileStorage(drupal_get_path('profile', 'demo_azr') . '/' . InstallStorage::CONFIG_OPTIONAL_DIRECTORY, InstallStorage::DEFAULT_COLLECTION);
+    $default_config_storage = new FileStorage(drupal_get_path('profile', 'azrua') . '/' . InstallStorage::CONFIG_OPTIONAL_DIRECTORY, InstallStorage::DEFAULT_COLLECTION);
     $this->assertDefaultConfig($default_config_storage, $active_config_storage);
   }
 

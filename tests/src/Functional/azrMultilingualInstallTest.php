@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\demo_azr\Functional;
+namespace Drupal\Tests\azrua\Functional;
 
 use Drupal\FunctionalTests\Installer\InstallerTestBase;
 
@@ -14,7 +14,7 @@ class AZRMultilingualInstallTest extends InstallerTestBase {
   /**
    * {@inheritdoc}
    */
-  protected $profile = 'demo_azr';
+  protected $profile = 'azrua';
 
   /**
    * {@inheritdoc}

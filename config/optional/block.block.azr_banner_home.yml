@@ -5,7 +5,7 @@ dependencies:
     - 'block_content:banner_block:9aadf4a1-ded6-4017-a10d-a5e043396edf'
   enforced:
     module:
-      - demo_azr_content
+      - azrua_content
   module:
     - block_content
     - system

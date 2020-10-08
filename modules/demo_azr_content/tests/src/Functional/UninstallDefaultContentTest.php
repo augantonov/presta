@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\demo_azr_content\Functional;
+namespace Drupal\Tests\azrua_content\Functional;
 
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Tests\BrowserTestBase;
@@ -8,14 +8,14 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Tests that uninstalling default content removes created content.
  *
- * @group demo_azr_content
+ * @group azrua_content
  */
 class UninstallDefaultContentTest extends BrowserTestBase {
 
   /**
    * {@inheritdoc}
    */
-  protected $profile = 'demo_azr';
+  protected $profile = 'azrua';
 
   /**
    * Tests uninstalling content removes created entities.
@@ -38,7 +38,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
     $this->assertGreaterThan(0, $count);
 
     // Uninstall the module.
-    $module_installer->uninstall(['demo_azr_content']);
+    $module_installer->uninstall(['azrua_content']);
 
     // Reset storage cache.
     $block_storage->resetCache();
@@ -69,7 +69,7 @@ class UninstallDefaultContentTest extends BrowserTestBase {
     $this->assertEquals(0, $count);
 
     // Re-install and assert imported content.
-    $module_installer->install(['demo_azr_content']);
+    $module_installer->install(['azrua_content']);
     $this->assertVidyrabotImported($node_storage);
     $this->assertArticlesImported($node_storage);
     $this->assertImportedCustomBlock($block_storage);

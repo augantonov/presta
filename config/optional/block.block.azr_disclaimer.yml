@@ -5,7 +5,7 @@ dependencies:
     - 'block_content:disclaimer_block:9b4dcd67-99f3-48d0-93c9-2c46648b29de'
   enforced:
     module:
-      - demo_azr_content
+      - azrua_content
   module:
     - block_content
   theme:

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\demo_azr_content;
+namespace Drupal\azrua_content;
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
@@ -162,7 +162,7 @@ class InstallHelper implements ContainerInjectionInterface {
    * @return $this
    */
   protected function getModulePath() {
-    $this->module_path = $this->moduleHandler->getModule('demo_azr_content')->getPath();
+    $this->module_path = $this->moduleHandler->getModule('azrua_content')->getPath();
     return $this;
   }
 
@@ -794,7 +794,7 @@ class InstallHelper implements ContainerInjectionInterface {
    * @return $this
    */
   public function deleteImportedContent() {
-    $uuids = $this->state->get('demo_azr_content_uuids', []);
+    $uuids = $this->state->get('azrua_content_uuids', []);
     $by_entity_type = array_reduce(array_keys($uuids), function ($carry, $uuid) use ($uuids) {
       $entity_type_id = $uuids[$uuid];
       $carry[$entity_type_id][] = $uuid;
@@ -871,8 +871,8 @@ class InstallHelper implements ContainerInjectionInterface {
    *   type.
    */
   protected function storeCreatedContentUuids(array $uuids) {
-    $uuids = $this->state->get('demo_azr_content_uuids', []) + $uuids;
-    $this->state->set('demo_azr_content_uuids', $uuids);
+    $uuids = $this->state->get('azrua_content_uuids', []) + $uuids;
+    $this->state->set('azrua_content_uuids', $uuids);
   }
 
 }

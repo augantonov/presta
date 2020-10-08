@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the demo_azr installation profile.
+ * Install, update and uninstall functions for the azrua installation profile.
  */
 
 use Drupal\user\Entity\User;
@@ -11,7 +11,7 @@ use Drupal\shortcut\Entity\Shortcut;
 /**
  * Implements hook_requirements().
  */
-function demo_azr_requirements($phase) {
+function azrua_requirements($phase) {
   $requirements = [];
   if ($phase == 'runtime') {
     $profile = \Drupal::installProfile();
@@ -33,7 +33,7 @@ function demo_azr_requirements($phase) {
  *
  * @see system_install()
  */
-function demo_azr_install() {
+function azrua_install() {
   // Assign user 1 the "administrator" role.
   $user = User::load(1);
   $user->roles[] = 'administrator';
@@ -61,7 +61,7 @@ function demo_azr_install() {
   $shortcut->save();
 
   // Enable the demo content module. This can't be specified as a dependency
-  // in the demo_azr.info.yml file, as it requires configuration provided by
+  // in the azrua.info.yml file, as it requires configuration provided by
   // the profile (fields etc.).
-  \Drupal::service('module_installer')->install(['demo_azr_content'], TRUE);
+  \Drupal::service('module_installer')->install(['azrua_content'], TRUE);
 }

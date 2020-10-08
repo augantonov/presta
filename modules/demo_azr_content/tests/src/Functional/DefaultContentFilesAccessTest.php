@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\Tests\demo_azr_content\Functional;
+namespace Drupal\Tests\azrua_content\Functional;
 
 use Drupal\Tests\BrowserTestBase;
 
 /**
- * Tests that files provided by demo_azr_content are not accessible.
+ * Tests that files provided by azrua_content are not accessible.
  *
- * @group demo_azr_content
+ * @group azrua_content
  */
 class DefaultContentFilesAccessTest extends BrowserTestBase {
 
@@ -20,9 +20,9 @@ class DefaultContentFilesAccessTest extends BrowserTestBase {
    * Tests that sample images, vidyrabot and articles are not accessible.
    */
   public function testAccessDeniedToFiles() {
-    // The demo_azr profile should not be used because we want to ensure that
+    // The azrua profile should not be used because we want to ensure that
     // if you install another profile these files are not available.
-    $this->assertNotSame('demo_azr', \Drupal::installProfile());
+    $this->assertNotSame('azrua', \Drupal::installProfile());
 
     $files_to_test = [
       'images/heritage-carrots.jpg',
@@ -31,8 +31,8 @@ class DefaultContentFilesAccessTest extends BrowserTestBase {
       'languages/en/node/article.csv',
     ];
     foreach ($files_to_test as $file) {
-      // Hard code the path since the demo_azr profile is not installed.
-      $content_path = "core/profiles/demo_azr/modules/demo_azr_content/default_content/$file";
+      // Hard code the path since the azrua profile is not installed.
+      $content_path = "profiles/azrua/modules/azrua_content/default_content/$file";
       $this->assertFileExists($this->root . '/' . $content_path);
       $this->drupalGet($content_path);
       $this->assertSession()->statusCodeEquals(403);
