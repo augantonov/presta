@@ -489,8 +489,8 @@ class InstallHelper implements ContainerInjectionInterface {
     if (!empty($data['reglament'])) {
       $reglament = explode(',', $data['reglament']);
       $values['field_reglament'] = [];
-      foreach ($reglament as $reglament) {
-        $values['field_reglament'][] = ['value' => $reglament];
+      foreach ($reglament as $reglamenty) {
+        $values['field_reglament'][] = ['value' => $reglamenty];
       }
     }
     // Set field_vidraboty_instruction field.

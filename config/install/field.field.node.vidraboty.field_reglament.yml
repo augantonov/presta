@@ -8,7 +8,7 @@ id: node.vidraboty.field_reglament
 field_name: field_reglament
 entity_type: node
 bundle: vidraboty
-label: Ingredients
+label: Регламент
 description: 'List the reglament required for this vidraboty, one per item.'
 required: false
 translatable: true
