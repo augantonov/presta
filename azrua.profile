@@ -45,35 +45,3 @@ function azrua_set_users_passwords($admin_password) {
     $user->save();
   }
 }
-
-/**
- * Implements hook_toolbar().
- */
-function azrua_toolbar() {
-  // Add a warning about using an experimental profile.
-  // @todo This can be removed once a generic warning for experimental profiles
-  //   has been introduced. https://www.drupal.org/project/drupal/issues/2934374
-  $items['experimental-profile-warning'] = [
-    '#weight' => 999,
-    '#cache' => [
-      'contexts' => ['route'],
-    ],
-  ];
-
-  // Show warning only on administration pages.
-  $admin_context = \Drupal::service('router.admin_context');
-  if ($admin_context->isAdminRoute()) {
-    $items['experimental-profile-warning']['#type'] = 'toolbar_item';
-    $items['experimental-profile-warning']['tab'] = [
-      '#type' => 'inline_template',
-      '#template' => '<a class="toolbar-warning" href="{{ more_info_link }}">This site is intended for demonstration purposes.</a>',
-      '#context' => [
-        'more_info_link' => 'https://www.drupal.org/node/2941833',
-      ],
-      '#attached' => [
-        'library' => ['azrua/toolbar-warning'],
-      ],
-    ];
-  }
-  return $items;
-}
