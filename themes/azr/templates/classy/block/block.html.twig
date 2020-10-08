@@ -28,7 +28,7 @@
 {%
   set classes = [
     'block',
-    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ configuration.provider,
     'block-' ~ plugin_id,
   ]|clean_class_array
 %}
