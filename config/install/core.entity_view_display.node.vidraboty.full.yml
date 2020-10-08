@@ -5,7 +5,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.vidraboty.field_cooking_time
     - field.field.node.vidraboty.field_difficulty
-    - field.field.node.vidraboty.field_ingredients
+    - field.field.node.vidraboty.field_reglament
     - field.field.node.vidraboty.field_media_image
     - field.field.node.vidraboty.field_number_of_servings
     - field.field.node.vidraboty.field_preparation_time
@@ -202,7 +202,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:vidraboty:field_ingredients'
+              id: 'field_block:node:vidraboty:field_reglament'
               formatter:
                 label: above
                 settings:
@@ -271,7 +271,7 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
-  field_ingredients:
+  field_reglament:
     weight: 8
     label: above
     settings:

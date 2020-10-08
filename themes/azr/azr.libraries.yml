@@ -20,7 +20,7 @@ global:
       css/components/content/full/node-full.css: {}
       css/components/content-types/vidraboty/vidraboty.css: {}
       css/components/fields/field.css: {}
-      css/components/fields/ingredients.css: {}
+      css/components/fields/reglament.css: {}
       css/components/fields/label-items.css: {}
       css/components/fields/vidraboty-instruction.css: {}
       css/components/fields/summary.css: {}

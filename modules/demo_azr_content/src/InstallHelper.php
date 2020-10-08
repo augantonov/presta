@@ -485,12 +485,12 @@ class InstallHelper implements ContainerInjectionInterface {
     if (!empty($data['number_of_servings'])) {
       $values['field_number_of_servings'] = [['value' => $data['number_of_servings']]];
     }
-    // Set field_ingredients field.
-    if (!empty($data['ingredients'])) {
-      $ingredients = explode(',', $data['ingredients']);
-      $values['field_ingredients'] = [];
-      foreach ($ingredients as $ingredient) {
-        $values['field_ingredients'][] = ['value' => $ingredient];
+    // Set field_reglament field.
+    if (!empty($data['reglament'])) {
+      $reglament = explode(',', $data['reglament']);
+      $values['field_reglament'] = [];
+      foreach ($reglament as $reglament) {
+        $values['field_reglament'][] = ['value' => $reglament];
       }
     }
     // Set field_vidraboty_instruction field.

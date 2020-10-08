@@ -3,8 +3,8 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_ingredients
-field_name: field_ingredients
+id: node.field_reglament
+field_name: field_reglament
 entity_type: node
 type: string
 settings:

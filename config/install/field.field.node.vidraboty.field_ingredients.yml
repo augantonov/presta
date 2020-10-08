@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ingredients
+    - field.storage.node.field_reglament
     - node.type.vidraboty
-id: node.vidraboty.field_ingredients
-field_name: field_ingredients
+id: node.vidraboty.field_reglament
+field_name: field_reglament
 entity_type: node
 bundle: vidraboty
 label: Ingredients
-description: 'List the ingredients required for this vidraboty, one per item.'
+description: 'List the reglament required for this vidraboty, one per item.'
 required: false
 translatable: true
 default_value: {  }
