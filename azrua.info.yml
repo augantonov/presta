@@ -49,11 +49,6 @@ install:
   - config_translation
   - content_translation
   - token
-  - metatag
-  - metatag_views
-  - admin_toolbar
-  - pwa
-  - pwa_extras
 themes:
   - seven
   - azr
