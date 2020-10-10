@@ -53,6 +53,7 @@ install:
   - metatag_views
   - admin_toolbar
   - pwa
+  - pwa_extras
 themes:
   - seven
   - azr

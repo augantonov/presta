@@ -8,8 +8,6 @@ libraries:
   - core/normalize
   - azr/global
   - azr/messages
-  - azr/webfonts-open-sans
-  - azr/webfonts-scope-one
 
 libraries-override:
   layout_builder/twocol_section:
