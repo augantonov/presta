@@ -48,6 +48,11 @@ install:
   - locale
   - config_translation
   - content_translation
+  - token
+  - metatag
+  - metatag_views
+  - admin_toolbar
+  - pwa
 themes:
   - seven
   - azr
