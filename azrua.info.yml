@@ -49,6 +49,7 @@ install:
   - config_translation
   - content_translation
   - token
+  - webp
   - metatag
   - metatag_views
   - admin_toolbar
