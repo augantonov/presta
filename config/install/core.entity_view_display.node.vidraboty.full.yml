@@ -239,7 +239,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:vidraboty:content_moderation_control'
+              id: 'field_block:node:vidraboty:content_moderation_control'
             additional: {  }
             weight: 0
         third_party_settings: {  }
