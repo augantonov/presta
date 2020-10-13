@@ -45,11 +45,9 @@
     {{ title_suffix }}
     {% block content %}
       {{ content.field_media_image }}
-{# note: disabled use this
       <div class="summary">
         {{ content|without('field_media_image') }}
       </div>
-#}
     {% endblock %}
   </div>
 </div>

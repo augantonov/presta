@@ -77,10 +77,10 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-{{ attach_library('umami/classy.node') }}
-{{ attach_library('umami/view-mode-card') }}
+{{ attach_library('azr/classy.node') }}
+{{ attach_library('azr/view-mode-card') }}
 {% block libraries %}
-{{ attach_library('umami/view-mode-card-common') }}
+{{ attach_library('azr/view-mode-card-common') }}
 {% endblock %}
 
 <article{{ attributes.addClass(classes) }}>
