@@ -1,30 +1,21 @@
 id,title,image,alt,author
-1,Замена ремня ГРМ,zamena-remnya-grm.jpg,Замена ремня ГРМ является обязательным пунктом соответствующего технического обслуживания автомобиля,Umami
-2,Замена цепи ГРМ,zamena-zepi-grm.jpg,"Замена цепи ГРМ, в отличие от ремня ГРМ редко регламентируется производителем по пробегу",Umami
-3,Ремонт ходовой,remont-hodovoi-avtomobilya.jpg,"Ходовая часть автомобиля постоянно испытывает весьма значительные нагрузки , именно поэтому она наиболее подвержена износу",Umami
-4,Ремонт двигателя,remont-dvigatelya-avtomobilya.jpg,Ремонт бензиновых и дизельных двигателей автомобилей с частичной или полной разборкой,Umami
-5,Ремонт системы кондиционирования,remont-oblujivanie-sistemy-kondicionirovaniya-vozduha-avtomobily.jpg,"Услуги по заправке, техническому обслуживанию, диагностике и ремонту систем кондиционирования автомобилей в Харькове",Umami
-6,Отопитель Webasto,otopitel-webasto-eberspaecher-v-harkove.jpg,"Продажа, установка и ремонт автономных отопителей (предпусковых подогревателей) Webasto(Вебасто) и Eberspaecher (Эбершпехер)",Umami
-7,Ремонт электрики,remont-elektriki-avtomobilya.jpg,"Предоставляем все виды услуг по техническому обслуживанию, диагностике и ремонту электрооборудования автомобилей в Харькове",Umami
-8,Ремонт тормозной системы,remont-tormoznoi-sistemi-avtomobilya.jpg,Диагностика и ремонт тормозной системы необходимы при обнаружении любых неисправностей в работе,Umami
-9,Ремонт топливных систем,remont-toplivnyh-sistem-avtomobilya.jpg,"Услуги по техническому обслуживанию, диагностике и ремонту топливных систем",Umami
-10,Ремонт МКПП,remont-mkpp-avtomobilya.jpg,"Услуги по техническому обслуживанию, диагностике и ремонту механических коробок передач",Holly Foat
-11,Ремонт рулевого управления,remont-rulevogo-upravleniya-avtomobilem.jpg,"Техническое обслуживание, диагностики и ремонт рулевого управления",Umami
-12,Ремонт инжектора,remont-injektora.jpg,"Техническое обслуживание, диагностики и ремонт инжектора",Megan Collins Quinlan
-13,Ремонт АБС,remont-abs.jpg,"Техническое обслуживание, диагностики и ремонт ABS (АБС)",Umami
-14,Замена жидкостей,zamena-ekspluatacionnyh-jidkostei-avtomobilya.jpg,"Замена моторного и трансмиссионного масел, тормозной, жидкости ГУР и остальных эксплуатационных жидкостей",Umami
-15,Промывка сажевого фильтра,promyvka-sajevogo-filtra.jpg,Промывка сажевого фильтра,Umami
-16,Удаление сажевого фильтра,udalenie-sazhevogo-filytra.jpg,Удаление сажевого фильтра,Megan Collins Quinlan
-17,"Замена ремня ГРМ FORD ECOBOOST, DURATORQ",zamena-remnya-grm-ford-ecoboost-duratorq.jpg,"Замена ремня ГРМ FORD ECOBOOST, DURATORQ",Umami
-18,Замена амортизаторов,zamena-amortizatorov.jpg,Необходимое оборудование и высококвалифицированный персонал для замены амортизаторов,Umami
-19,Замена сцепления Power Shift DP6,zamena-sceplenija-Power-Shift-DP6.jpg,Выполняем замену комплекта сцепления Power Shift DP6,Umami
-20,Автосервис,avtoservis-harkov.jpg,Автосервис,Umami
-21,Техобслуживание,tehobslujivanie-avtomobilya.jpg,Техобслуживание,Umami
-22,Капитальный ремонт,kapitalynyi-remont-avtomobilya.jpg,Капитальный ремонт,Umami
-23,Вакансии,vakansii.jpg,Вакансии,Umami
-24,Диагностика двигателя,diagnostika-dvigatelya-avtomobilya.jpg,Диагностика двигателя,Umami
-25,Диагностика подвески,diagnostika-podveski-avtomobilya.jpg,Диагностика подвески,Umami
-26,Диагностика перед покупкой,diagnostika-pered-pokupkoi-avtomobilya.jpg,Диагностика перед покупкой,Umami
-27,Компьютерная диагностика,kompyuternaya-diagnostika-avtomobilya.jpg,Компьютерная диагностика,Umami
-28,СТО «АЗР» - ремонт легковых и комерческих автомобилей в Харькове,sto-azr.jpg,СТО «АЗР» - ремонт легковых и комерческих автомобилей в Харькове,Umami
-29,Виды работ,vidi-rabot.jpg,Виды работ,Umami
+1,Deep mediterranean quiche,mediterranean-quiche-azr.jpg,A delicious deep layered Mediterranean quiche with basil garnish,AZR
+2,Vegan chocolate and nut brownies,vegan-chocolate-nut-brownies.jpg,"A stack of chocolate and pecan brownies, sprinkled with pecan crumbs and crushed walnut, fresh out of the oven",AZR
+3,Super easy vegetarian pasta bake,veggie-pasta-bake-azr.jpg,Cheesy pasta dish with vegetarian sausages and topped with mozzarella cheese and basil,AZR
+4,Watercress soup,watercress-soup-azr.jpg,Watercress soup with a sprig of coriander as garnish in a white bowl with green trim,AZR
+5,Victoria sponge cake,victoria-sponge-azr.jpg,"A classic, uncut Victoria sponge with a deep filling of butter cream and jam",AZR
+6,Gluten free pizza,pizza-azr.jpg,"Olives, basil, and mozzarella top a gluten free pizza crust with marinara sauce",AZR
+7,Thai green curry,thai-green-curry-azr.jpg,"A traditional bowl of creamy, aromatic Thai green curry with chunks of chicken in a small bowl with jasmine rice",AZR
+8,Crema catalana,crema-catalana-azr.jpg,"Typical Catalan dessert made from cream and egg yolks, covered with a traditional layer of caramelized sugar to provide a crispy contrast",AZR
+9,Fiery chili sauce,chili-sauce-azr.jpg,"An iridescent array of chilies, onions, and garlic, slowly sweating over a low heat",AZR
+10,Home Grown Herbs,home-grown-herbs.jpg,"Fresh cut herbs including mint, parsley, thyme and dill",Holly Foat
+11,Vegan Chocolate,vegan-chocolate.jpg,"A delicious bar of dairy-free milk chocolate, broken into pieces",AZR
+12,Supermarket Savvy AZR,supermarket-savvy-azr.jpg,Leafy greens presented on supermarket produce shelving,Megan Collins Quinlan
+13,Mushrooms AZR,mushrooms-azr.jpg,A delightful selection of mushroom varieties laid out on a simple wooden plate,AZR
+14,Heritage Carrots,heritage-carrots.jpg,"Purple, orange, yellow and white heritage carrots",AZR
+15,Chocolate Brownie AZR,chocolate-brownie-azr.jpg,A delicious chocolate brownie,AZR
+16,Mojito Mocktail,mojito-mocktail.jpg,"Fresh mojito mocktail with garnish of mint leaves, ice, and sliced lime",Megan Collins Quinlan
+17,Oatmeal Fruit Syrop Topping,oatmeal-fruit-syrup-topping.jpg,"Oatmeal topped with a vibrant mix of berries, nuts, and seeds",AZR
+18,Mouth watering vegetarian pasta bake with rich tomato sauce and cheese toppings,veggie-pasta-bake-hero-azr.jpg,Mouth watering vegetarian pasta bake with rich tomato sauce and cheese toppings,AZR
+19,3 issue bundle of the AZR food magazine,azr-bundle.png,3 issue bundle of the AZR food magazine,AZR
+20,(Hero) Vegan chocolate and nut brownies,vegan-brownies-hero-azr.jpg,"A stack of chocolate and pecan brownies, sprinkled with pecan crumbs and crushed walnut, fresh out of the oven",AZR
