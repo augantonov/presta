@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: medium_3_2_600x400
-label: 'Medium 3:2 (600x400)'
+label: 'Medium 3:2 (552x248)'
 effects:
   75efca62-f371-41b7-8c6e-5ce6103e0fe4:
     uuid: 75efca62-f371-41b7-8c6e-5ce6103e0fe4
@@ -10,5 +10,5 @@ effects:
     weight: 1
     data:
       anchor: center-center
-      width: 600
-      height: 400
+      width: 552
+      height: 248
