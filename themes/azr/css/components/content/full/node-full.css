@@ -5,9 +5,9 @@
 .node--view-mode-full {
   margin: 0 auto 2.37rem;
   padding: 1.266rem;
-  border-top: 1px solid #fcece7;
+  border-top: 1px solid #e6eee0;
   border-right: none;
-  border-bottom: 1px solid #fcece7;
+  border-bottom: 1px solid #e6eee0;
   border-left: none;
   background-color: #fff;
 }
@@ -16,8 +16,8 @@
   /* 960px */
   .node--view-mode-full {
     padding: 2.37rem;
-    border-right: 1px solid #fcece7;
-    border-left: 1px solid #fcece7;
+    border-right: 1px solid #e6eee0;
+    border-left: 1px solid #e6eee0;
   }
 }
 

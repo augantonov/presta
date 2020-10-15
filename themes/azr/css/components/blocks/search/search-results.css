@@ -13,7 +13,7 @@
 .search-form > .form-wrapper {
   margin-bottom: 1.28rem;
   padding: 0.889rem;
-  border: 1px solid #fcece7;
+  border: 1px solid #e6eee0;
   background: #fff;
 }
 
@@ -123,7 +123,7 @@
 .search-results li {
   margin: 0 0 1rem 0; /* LTR */
   padding: 1.28rem;
-  border: 1px solid #fcece7;
+  border: 1px solid #e6eee0;
   background: #fff;
 }
 /* Without this rule, another RTL rule from item-list.css will break the design */
