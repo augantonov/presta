@@ -11,7 +11,7 @@
   list-style-type: none;
   transition: max-height 0.5s ease-in;
   color: #000;
-  font-family: "Scope One", Georgia, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.266rem;
   font-weight: 400;
   line-height: 1.2;
@@ -62,14 +62,14 @@
 .menu-main__link.is-active:hover,
 .menu-main__link:focus {
   text-decoration: none;
-  color: #da3c13;
-  border-bottom-color: #da3c13;
+  color: #0062c0;
+  border-bottom-color: #0062c0;
   background-color: inherit;
 }
 .menu-main__link:active,
 .menu-main__link.is-active {
   text-decoration: none;
-  border-bottom-color: #da3c13;
+  border-bottom-color: #0062c0;
 }
 
 @media screen and (min-width: 48em) {
@@ -98,6 +98,15 @@
 
 @media screen and (min-width: 48em) {
   .menu-main-togglewrap {
+    display: none;
+  }
+  .menu-main-timewrap {
+    display: none;
+  }
+  .menu-main-serveswrap {
+    display: none;
+  }
+  .menu-main-phonewrap {
     display: none;
   }
 }
