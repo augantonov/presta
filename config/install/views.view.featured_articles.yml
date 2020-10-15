@@ -1,3 +1,4 @@
+uuid: 35c2a559-e751-44dc-b3fc-dd494b656192
 langcode: en
 status: true
 dependencies:
@@ -8,8 +9,10 @@ dependencies:
   module:
     - node
     - user
+_core:
+  default_config_hash: MgG2iDzx15ZtrWE0aEbpd3OFM0g7thubX3-YWuNDwWo
 id: featured_articles
-label: 'Featured Articles'
+label: 'СТО «АЗР»'
 module: views
 description: 'A view to create a list of featured articles from the AZR website.'
 tag: ''
@@ -217,7 +220,7 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: standard
-      title: Articles
+      title: 'СТО «АЗР»'
       header: {  }
       footer: {  }
       empty: {  }
@@ -244,8 +247,9 @@ display:
     display_title: Page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: articles
+      display_extenders:
+        metatag_display_extender: {  }
+      path: avtoservis_harkov
       menu:
         type: normal
         title: Articles

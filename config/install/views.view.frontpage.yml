@@ -1,3 +1,4 @@
+uuid: 26b955c4-e21c-441e-ba0a-3d400e99f23d
 langcode: en
 status: true
 dependencies:
@@ -8,8 +9,10 @@ dependencies:
   module:
     - node
     - user
+_core:
+  default_config_hash: GDEf5XGdEUjkV-2haI5Fn4_AYVH6IYDE0wCfy4clJBs
 id: frontpage
-label: Frontpage
+label: Главная
 module: node
 description: 'All content promoted to the front page.'
 tag: default
@@ -275,7 +278,7 @@ display:
           row_class: ''
           default_row_class: true
           uses_fields: false
-      title: Home
+      title: Главная
       header:
         area:
           id: area
@@ -350,7 +353,13 @@ display:
   page_1:
     display_options:
       path: node
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags:
+            title: 'СТО «АЗР Южный» - ремонт легковых и комерческих автомобилей в Харькове'
+            description: 'СТО «АЗР Южный» - ремонт легковых и комерческих автомобилей в Харькове'
+            abstract: 'СТО «АЗР Южный» - ремонт легковых и комерческих автомобилей в Харькове'
+            keywords: 'СТО, ремонт автомобилей, комерческих автомобилей, Харьков'
       css_class: grid--2
       defaults:
         css_class: false
