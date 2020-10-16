@@ -1,2 +1,39 @@
 id,title,body,author,slug
-1,СТО «АЗР»,"<p>СТО &laquo;АЗР&raquo; один из немногих специализированных автосервисов в Харькове, располагающих полным набором инструментов и оборудования, необходимых для всех видов диагностики, технического обслуживания и ремонта самых современных моделей Mercedes(Мерседес), Volkswagen (Фольксваген), Audi (Ауди), Skoda (Шкода), Seat (Сеат), Porsche (Порш) не старше 2005 года выпуска.</p><p>На СТО &laquo;АЗР&raquo; работает команда высококвалифицированных специалистов с большим опытом. Мы используем запчасти, комплектующие, расходные материалы и эксплуатационные жидкости, которые рекомендованы заводом изготовителем.</p><p>СТО &laquo;АЗР&raquo; имеет свой склад оригинальных фирменных запчастей и запчастей от лучших немецких фирм производителей.&nbsp;</p>",Samuel Adamson,avtoservis_harkov
+1,Автозапчасти,"<div class=""column-content""><p>Автозапчасти «АЗР» — интернет магазин в Харькове, специализирующийся на продаже автозапчастей, более чем 1000 производителей для автомобилей производства стран Европы, США, Японии. У нас Вы можете купить автозапчасти с доставкой по Харькову и территории Украины.</p></div>
+<script type=""text/javascript"">
+	function CheckKey(e) {
+		if (e.keyCode == 13)
+		{
+			RedirectToComercialOffer();
+		}
+	}
+	
+	function FilterSubmitAction(event) {
+		var ev = (window.event) ? window.event : event;
+		var keyCode = ev.keyCode;
+		if (13 == keyCode) {
+			var btn = document.getElementById(""searchButton"");
+			btn.focus();
+			btn.click();
+			ev.cancel = true;
+			return false;
+		}
+		return true;
+	}
+
+	
+	function RedirectToComercialOffer() {
+		var code = document.getElementById('ctl00_ctl00_ctl00_cphMain_cph_articleSearchByCodeView_textBoxArticleCode').value;
+		window.location = 'http://azr.com.ua/Offer.aspx?code=' + code;
+	}
+</script>
+<div class=""column-content"">
+  <div class=""search"" onkeypress=""FilterSubmitAction(event)"">
+<div class=""widget gsc-heading  align-left style-4 text-dark ""><h4 class=""title""><span>Поиск по коду запчасти: *</span></h4></div>
+    <div class=""column-content"" id=""ctl00_ctl00_ctl00_cphMain_cph_articleSearchByCodeView_panelSearchByCode"">
+      <input name=""ctl00$ctl00$ctl00$cphMain$cph$articleSearchByCodeView$textBoxArticleCode"" type=""text"" maxlength=""50"" id=""ctl00_ctl00_ctl00_cphMain_cph_articleSearchByCodeView_textBoxArticleCode"" class=""inputStandart"" />&nbsp;
+      <input target=""_blank"" type=""button"" id=""searchButton"" value=""Найти запчасть"" class=""btnStandart"" onclick=""RedirectToComercialOffer()"" />
+    </div>
+  </div>
+</div>
+<div class=""column-content""><p><i>* Вы будете автоматически перемещены на сайт <a href=""http://azr.com.ua/"">интернет-магазина автозапачастей «АЗР»</a></i></p></div>",Вячеслав Ивченко,avtozapchasti_kharkov
