@@ -1,4 +1,4 @@
-uuid: 35c2a559-e751-44dc-b3fc-dd494b656192
+uuid: 41c202e5-7fab-4074-8b07-85cd29bdeb34
 langcode: en
 status: true
 dependencies:
@@ -11,8 +11,8 @@ dependencies:
     - user
 _core:
   default_config_hash: OozGfwFo2ZDFmk6-qDItvkxD5kMDg2H0cvISFmukL7M
-id: featured_articles
-label: Диагностика
+id: sto_azr_
+label: 'СТО «АЗР»'
 module: views
 description: 'A view to create a list of featured articles from the AZR website.'
 tag: ''
@@ -220,7 +220,7 @@ display:
           entity_type: node
           entity_field: nid
           plugin_id: standard
-      title: Диагностика
+      title: 'СТО «АЗР»'
       header: {  }
       footer: {  }
       empty: {  }
@@ -244,19 +244,19 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Диагностика
+    display_title: 'СТО «АЗР»'
     position: 1
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: avtoservis_harkov/diagnostika_avtomobilya
+      path: avtoservis_harkov
       menu:
         type: normal
-        title: Диагностика
+        title: 'СТО «АЗР»'
         description: ''
         expanded: false
         parent: ''
-        weight: 30
+        weight: 10
         context: '0'
         menu_name: main
       rendering_language: '***LANGUAGE_language_interface***'

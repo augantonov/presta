@@ -1,4 +1,4 @@
-uuid: 26b955c4-e21c-441e-ba0a-3d400e99f23d
+uuid: 80490f92-7254-4fb8-a676-578d579796d9
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: GDEf5XGdEUjkV-2haI5Fn4_AYVH6IYDE0wCfy4clJBs
+  default_config_hash: X116egUlinWrX43bVQ16c3PwlrYa5URPCYWiHKuHWjs
 id: frontpage
 label: Главная
 module: node
@@ -375,7 +375,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<p class="text-align-center">Explore vidyrabot across every type of occasion, reglamenty, and skill level</p>'
+            value: '<p class="text-align-center">Виды работ</p>'
             format: full_html
           plugin_id: text
       rendering_language: '***LANGUAGE_language_interface***'

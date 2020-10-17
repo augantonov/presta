@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: hwWMANWUo2FbH-ZWdJ4XjFd0BjbfwvrUQpNCfDazqhw
+  default_config_hash: v7BrFZegKn3zV39_oKQHo8PcJpV2jGqQRi7KYh0_WAE
 id: vidyrabot
 label: 'Виды работ'
 module: views
@@ -229,7 +229,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
+    display_title: 'Виды работ'
     position: 1
     display_options:
       display_extenders:
@@ -237,14 +237,15 @@ display:
       path: avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya
       menu:
         type: normal
-        title: Vidyrabot
+        title: 'Виды работ'
         description: ''
         expanded: false
         parent: ''
-        weight: 30
+        weight: 20
         context: '0'
         menu_name: main
       rendering_language: '***LANGUAGE_language_interface***'
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
