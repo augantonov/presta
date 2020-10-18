@@ -241,7 +241,7 @@ display:
         description: ''
         expanded: false
         parent: ''
-        weight: 20
+        weight: 30
         context: '0'
         menu_name: main
       rendering_language: '***LANGUAGE_language_interface***'
