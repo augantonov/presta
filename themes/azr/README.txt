@@ -1,4 +1,4 @@
-ABOUT UMAMI
+ABOUT AZR
 -----------
 
 AZR is the theme used for the "AZR food magazine" demonstration site.

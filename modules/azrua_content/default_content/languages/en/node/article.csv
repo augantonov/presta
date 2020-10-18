@@ -1,9 +1,9 @@
 id,title,body,author,slug,image_reference,tags
-1,Автосервис,avtoservis_harkov.html,Holly Foat,avtoservis_harkov,20,3
-2,Техобслуживание,tehobslujivanie-avtomobilya.html,AZR,avtoservis_harkov/tehobslujivanie_avtomobilya,21,3
-3,Капитальный ремонт,kapitalynyi-remont-avtomobilya.html,Megan Collins Quinlan,avtoservis_harkov/kapitalynyi_remont_avtomobilya,22,3
-4,Вакансии,vakansii.html,AZR,vakansii,23,3
-5,Диагностика двигателя,diagnostika-dvigatelya-avtomobilya.html,AZR,avtoservis_harkov/diagnostika_avtomobilya/diagnostika_dvigatelya_avtomobilya,24,1
-6,Диагностика подвески,diagnostika-podveski-avtomobilya.html,AZR,avtoservis_harkov/diagnostika_avtomobilya/diagnostika_podveski_avtomobilya,25,1
-7,Диагностика перед покупкой,diagnostika-pered-pokupkoi-avtomobilya.html,Megan Collins Quinlan,avtoservis_harkov/diagnostika_avtomobilya/diagnostika_pered_pokupkoi_avtomobilya,26,1
-8,Компьютерная диагностика,kompyuternaya-diagnostika-avtomobilya.html,Megan Collins Quinlan,avtoservis_harkov/diagnostika_avtomobilya/kompyuternaya_diagnostika_avtomobilya,27,1
+1,Автосервис,avtoservis_harkov.html,Готтлиб Даймлер,avtoservis_harkov,20,3
+2,Техобслуживание,tehobslujivanie-avtomobilya.html,Рудольф Дизель,avtoservis_harkov/tehobslujivanie_avtomobilya,21,3
+3,Капитальный ремонт,kapitalynyi-remont-avtomobilya.html,Карл Бенц,avtoservis_harkov/kapitalynyi_remont_avtomobilya,22,3
+4,Вакансии,vakansii.html,Рудольф Дизель,vakansii,23,3
+5,Диагностика двигателя,diagnostika-dvigatelya-avtomobilya.html,Рудольф Дизель,avtoservis_harkov/diagnostika_avtomobilya/diagnostika_dvigatelya_avtomobilya,24,1
+6,Диагностика подвески,diagnostika-podveski-avtomobilya.html,Рудольф Дизель,avtoservis_harkov/diagnostika_avtomobilya/diagnostika_podveski_avtomobilya,25,1
+7,Диагностика перед покупкой,diagnostika-pered-pokupkoi-avtomobilya.html,Карл Бенц,avtoservis_harkov/diagnostika_avtomobilya/diagnostika_pered_pokupkoi_avtomobilya,26,1
+8,Компьютерная диагностика,kompyuternaya-diagnostika-avtomobilya.html,Карл Бенц,avtoservis_harkov/diagnostika_avtomobilya/kompyuternaya_diagnostika_avtomobilya,27,1

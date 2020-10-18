@@ -1,4 +1,4 @@
-uuid: 80490f92-7254-4fb8-a676-578d579796d9
+uuid: d906c15b-ab89-4f61-b9af-b6f5c06645e2
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: X116egUlinWrX43bVQ16c3PwlrYa5URPCYWiHKuHWjs
+  default_config_hash: JXvyYH3R-QqKCinHs3HPxxv3Nm3hl0XhYqvlAPOPHWI
 id: frontpage
 label: Главная
 module: node
@@ -379,8 +379,9 @@ display:
             format: full_html
           plugin_id: text
       rendering_language: '***LANGUAGE_language_interface***'
+      display_description: ''
     display_plugin: page
-    display_title: Page
+    display_title: Главная
     id: page_1
     position: 1
     cache_metadata:

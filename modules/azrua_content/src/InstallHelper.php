@@ -314,8 +314,8 @@ class InstallHelper implements ContainerInjectionInterface {
   protected function importEditors() {
     $user_storage = $this->entityTypeManager->getStorage('user');
     $editors = [
-      'Margaret Hopper',
-      'Grace Hamilton',
+      'Карл Бенц',
+      'Готтлиб Даймлер',
     ];
     foreach ($editors as $name) {
       $user = $user_storage->create([
@@ -406,7 +406,7 @@ class InstallHelper implements ContainerInjectionInterface {
     // Fields mapping starts.
     // Set body field.
     if (!empty($data['body'])) {
-      $values['body'] = [['value' => $data['body'], 'format' => 'basic_html']];
+      $values['body'] = [['value' => $data['body'], 'format' => 'full_html']];
     }
     // Set node alias if exists.
     if (!empty($data['slug'])) {
