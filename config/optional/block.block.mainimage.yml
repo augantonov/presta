@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:4605a04d-ce12-4fef-8d3c-fb69e0d73bc9'
+    - 'block_content:basic:4c7d58a3-a45d-412d-9068-259c57e40541'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: azr
 region: banner_top
 weight: 0
 provider: null
-plugin: 'block_content:4605a04d-ce12-4fef-8d3c-fb69e0d73bc9'
+plugin: 'block_content:4c7d58a3-a45d-412d-9068-259c57e40541'
 settings:
-  id: 'block_content:4605a04d-ce12-4fef-8d3c-fb69e0d73bc9'
+  id: 'block_content:4c7d58a3-a45d-412d-9068-259c57e40541'
   label: mainimage
   provider: block_content
   label_display: '0'
