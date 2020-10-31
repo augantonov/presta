@@ -31,7 +31,22 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: ''
-        components: {  }
+        components:
+          44801518-fe93-421a-bdcb-550493c7925d:
+            uuid: 44801518-fe93-421a-bdcb-550493c7925d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:vidraboty:field_summary'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 4
         third_party_settings: {  }
       -
         layout_id: layout_oneplusfourgrid_section
@@ -57,6 +72,72 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 4
+          df8bfafc-210c-4d86-9745-e47081ab0fd4:
+            uuid: df8bfafc-210c-4d86-9745-e47081ab0fd4
+            region: fifth
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:vidraboty:field_difficulty'
+              formatter:
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 0
+          a2d450d0-08ce-4123-bca0-411bfa1da132:
+            uuid: a2d450d0-08ce-4123-bca0-411bfa1da132
+            region: fourth
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:vidraboty:field_number_of_servings'
+              formatter:
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: false
+                third_party_settings: {  }
+                type: number_integer
+            additional: {  }
+            weight: 0
+          f91febc6-d924-47a2-8ffd-b71d3b2597c7:
+            uuid: f91febc6-d924-47a2-8ffd-b71d3b2597c7
+            region: third
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:vidraboty:field_cooking_time'
+              formatter:
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_integer
+            additional: {  }
+            weight: 0
+          00488840-db50-4afe-9c30-a123e6707fa9:
+            uuid: 00488840-db50-4afe-9c30-a123e6707fa9
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:vidraboty:field_preparation_time'
+              formatter:
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_integer
+            additional: {  }
+            weight: 0
           69d8bce1-28ae-4287-a05b-a2166679f867:
             uuid: 69d8bce1-28ae-4287-a05b-a2166679f867
             region: first
@@ -74,6 +155,44 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 33-67
+        components:
+          6924bf2e-8baa-4081-803a-7a2d3b7d8e14:
+            uuid: 6924bf2e-8baa-4081-803a-7a2d3b7d8e14
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:vidraboty:field_reglament'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          f61cae40-5865-4c4c-98fa-14b8234e7b98:
+            uuid: f61cae40-5865-4c4c-98fa-14b8234e7b98
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:vidraboty:field_vidraboty_instruction'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
             additional: {  }
             weight: 0
         third_party_settings: {  }
@@ -96,7 +215,7 @@ third_party_settings:
     allow_custom: true
     enabled: true
 _core:
-  default_config_hash: n7nIwXqM_CaqPtXSFxkZAmBR8KPMjAiqJzLFc1tnBz0
+  default_config_hash: OFCKfMXNL3NiDHYZ4H3gppraGkpgc0sqIJ7GdxOirWw
 id: node.vidraboty.full
 targetEntityType: node
 bundle: vidraboty
