@@ -23,7 +23,7 @@
    * It my not be much larger than the content because that would break the animation.
    * See: https://css-tricks.com/using-css-transitions-auto-dimensions/
    */
-  max-height: 18.75rem;
+  max-height: 20.95rem;
 }
 .menu-main-toggle {
   width: 41px;
