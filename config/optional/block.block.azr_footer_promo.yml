@@ -1,5 +1,5 @@
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:footer_promo_block:924ab293-8f5f-45a1-9c7f-2423ae61a241'
