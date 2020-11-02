@@ -39,7 +39,15 @@
     'menu-' ~ derivative_plugin_id|clean_class ~ '__wrapper',
   ]
 %}
-
+<div class="address-togglewrap">
+  <button type="button" name="address_toggle" class="address-toggle" data-drupal-selector="address-toggle" aria-label="Toggle the address">{% include active_theme_path() ~ '/images/svg/address.svg' %}</button>
+</div>
+<div class="phones-togglewrap">
+  <button type="button" name="phones_toggle" class="phones-toggle" data-drupal-selector="phones-toggle" aria-label="Toggle the phones">{% include active_theme_path() ~ '/images/svg/phones.svg' %}</button>
+</div>
+<div class="schedule-togglewrap">
+  <button type="button" name="schedule_toggle" class="schedule-toggle" data-drupal-selector="schedule-toggle" aria-label="Toggle the schedule">{% include active_theme_path() ~ '/images/svg/schedule.svg' %}</button>
+</div>
 <div class="menu-main-togglewrap">
   <button type="button" name="menu_toggle" class="menu-main-toggle" data-drupal-selector="menu-main-toggle" aria-label="Toggle the menu">{% include active_theme_path() ~ '/images/svg/menu-icon.svg' %}</button>
 </div>
