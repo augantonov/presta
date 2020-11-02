@@ -3,7 +3,7 @@
  * This file is used to style the main menu.
  */
 
-.menu-main .address .phones .schedule {
+.menu-main {
   overflow: hidden;
   max-height: 0;
   margin: 0;
@@ -25,7 +25,7 @@
    */
   max-height: 20.95rem;
 }
-.menu-main-toggle .address-toggle .phones-toggle .schedule-toggle {
+.menu-main-toggle {
   width: 41px;
   height: 41px;
   margin-right: -9px;
@@ -37,10 +37,10 @@
   background-color: transparent;
   line-height: 1;
 }
-.menu-main-toggle:hover .address-toggle:hover .phones-toggle:hover .schedule-toggle:hover {
+.menu-main-toggle:hover {
   background-color: transparent;
 }
-.menu-main-toggle svg .address-toggle svg .phones-toggle svg .schedule-toggle svg {
+.menu-main-toggle svg {
   display: block;
 }
 .menu-main__item {
@@ -81,13 +81,7 @@
     justify-content: flex-end;
     max-height: none;
   }
-  .address-toggle {
-    display: none;
-  }
-  .phones-toggle {
-    display: none;
-  }
-  .schedule-toggle {
+  .menu-main-toggle {
     display: none;
   }
   .menu-main__item {
@@ -104,18 +98,10 @@
 }
 
 @media screen and (min-width: 348em) {
-  .address-togglewrap {
-    display: none;
-  }
-  .phones-togglewrap {
-    display: none;
-  }
-  .schedule-togglewrap {
-    display: none;
-  }
   .menu-main-togglewrap {
     display: none;
-  }  .menu-main-timewrap {
+  }
+  .menu-main-timewrap {
     display: none;
   }
   .menu-main-serveswrap {
