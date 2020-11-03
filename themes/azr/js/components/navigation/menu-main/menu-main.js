@@ -17,3 +17,36 @@
 
   toggler.addEventListener('click', toggleMenu);
 })();
+(function () {
+  var toggler = document.querySelector('[data-drupal-selector="address-toggle"]');
+  var address = document.querySelector('[data-drupal-selector="address"]');
+
+  function toggleAddress() {
+    toggler.classList.toggle('address-toggle--active');
+    address.classList.toggle('address--active');
+  }
+
+  toggler.addEventListener('click', toggleAddress);
+})();
+(function () {
+  var toggler = document.querySelector('[data-drupal-selector="phones-toggle"]');
+  var phones = document.querySelector('[data-drupal-selector="phones"]');
+
+  function togglePhones() {
+    toggler.classList.toggle('phones-toggle--active');
+    phones.classList.toggle('phones--active');
+  }
+
+  toggler.addEventListener('click', togglePhones);
+})();
+(function () {
+  var toggler = document.querySelector('[data-drupal-selector="schedule-toggle"]');
+  var schedule = document.querySelector('[data-drupal-selector="schedule"]');
+
+  function toggleSchedule() {
+    toggler.classList.toggle('schedule-toggle--active');
+    schedule.classList.toggle('schedule--active');
+  }
+
+  toggler.addEventListener('click', toggleSchedule);
+})();

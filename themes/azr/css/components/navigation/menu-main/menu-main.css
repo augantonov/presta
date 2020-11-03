@@ -26,8 +26,8 @@
   max-height: 20.95rem;
 }
 .menu-main-toggle {
-  width: 41px;
-  height: 41px;
+  width: 61px;
+  height: 61px;
   margin-right: -9px;
   /* the padding, margin & transparent border means the hamburger doesn't move on focus/hover */
   padding: 0 6px;
