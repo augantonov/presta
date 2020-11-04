@@ -7,9 +7,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Vidraboty
+name: Виды работ
 type: vidraboty
-description: 'Add a new vidraboty to the site.'
+description: 'Добавить новые виды работ на сайт.'
 help: ''
 new_revision: true
 preview_mode: 1
