@@ -58,4 +58,4 @@ install:
 themes:
   - seven
   - azr
-keep_english: true
+keep_english: false
