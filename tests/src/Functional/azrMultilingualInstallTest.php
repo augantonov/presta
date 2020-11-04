@@ -19,7 +19,7 @@ class AZRMultilingualInstallTest extends InstallerTestBase {
   /**
    * {@inheritdoc}
    */
-  protected $langcode = 'ua';
+  protected $langcode = 'uk';
 
   /**
    * Ensures that AZR can be installed with Spanish as the default language.
@@ -37,7 +37,7 @@ class AZRMultilingualInstallTest extends InstallerTestBase {
     // Place custom local translations in the translations directory to avoid
     // getting translations from localize.drupal.org.
     mkdir(DRUPAL_ROOT . '/' . $this->siteDirectory . '/files/translations', 0777, TRUE);
-    file_put_contents(DRUPAL_ROOT . '/' . $this->siteDirectory . '/files/translations/drupal-9.0.0.ua.po', $this->getPo('ua'));
+    file_put_contents(DRUPAL_ROOT . '/' . $this->siteDirectory . '/files/translations/drupal-9.0.0.uk.po', $this->getPo('uk'));
 
     parent::setUpLanguage();
   }
