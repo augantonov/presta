@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-id: es
-label: Spanish
+id: uk
+label: Ukrainian
 direction: ltr
 weight: 1
 locked: false
