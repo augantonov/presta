@@ -13,7 +13,7 @@
       var currentLogo = headerInner.querySelector('.site-branding__logo');
 
       if (isChecked) {
-        var logoHTML = "\n        <a href=\"/\" rel=\"home\" class=\"site-branding__logo\">\n          <img src=\"/themes/contrib/olivero/logo.svg\" alt=\"Home\">\n        </a>";
+        var logoHTML = "\n        <a href=\"/\" rel=\"home\" class=\"site-branding__logo\">\n          <img src=\"/logo.svg\" alt=\"Главная\">\n        </a>";
 
         if (currentLogo) {
           headerInner.removeChild(currentLogo);
