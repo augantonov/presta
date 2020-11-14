@@ -14,7 +14,7 @@ class DefaultContentFilesAccessTest extends BrowserTestBase {
   /**
    * {@inheritdoc}
    */
-  protected $defaultTheme = 'stark';
+  protected $defaultTheme = 'olivero';
 
   /**
    * Tests that sample images, vidyrabot and articles are not accessible.
