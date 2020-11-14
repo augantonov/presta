@@ -109,10 +109,10 @@
     debugElement.innerHTML = `
       <button class="olivero-debug__close">Close</button>
       <h2 class="visually-hidden">Theme debug options</h2>
-      <div class="olivero-debug__row"><input id="logo-toggle" type="checkbox"><label for="logo-toggle">Logo</label></div>
+      <div class="olivero-debug__row"><input id="logo-toggle" type="checkbox" checked><label for="logo-toggle">Logo</label></div>
       <div class="olivero-debug__row"><input id="edit-name-toggle" type="checkbox"><label for="edit-name-toggle">Editable Site Name</label></div>
       <div class="olivero-debug__row"><input id="rtl-toggle" type="checkbox"><label for="rtl-toggle">RTL</label></div>
-      <div class="olivero-debug__row"><input id="nav-toggle" type="checkbox"><label for="nav-toggle">Always on mobile nav</label></div>
+      <div class="olivero-debug__row"><input id="nav-toggle" type="checkbox" checked><label for="nav-toggle">Always on mobile nav</label></div>
       <div class="olivero-debug__row"><input id="required-toggle" type="checkbox"><label for="required-toggle">Clear required attribute on form elements</label></div>
       <div class="description">Disable debug in <a href="${window.drupalSettings.path.baseUrl}admin/appearance/settings/olivero">Theme Settings</a>.</div>
     `;
