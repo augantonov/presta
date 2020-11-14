@@ -15,6 +15,11 @@
     return window.getComputedStyle(navButtons).getPropertyValue('display') === 'none';
   }
 
+  function isDesktopNav() {
+    var navButtons = document.querySelector('.phone-buttons');
+    return window.getComputedStyle(navButtons).getPropertyValue('display') === 'none';
+  }
+
   drupalSettings.olivero.isDesktopNav = isDesktopNav;
   var wideNavButton = document.querySelector('.nav-primary__button');
   var siteHeaderFixable = document.querySelector('.site-header__fixable');
