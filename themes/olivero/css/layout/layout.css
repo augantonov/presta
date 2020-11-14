@@ -106,6 +106,7 @@
 
 .page-wrapper {
   max-width: 1570px;
+  margin: 0 auto;
 }
 
 [dir] .page-wrapper {

@@ -7,7 +7,7 @@
       if (isChecked) {
         const logoHTML = `
         <a href="/" rel="home" class="site-branding__logo">
-          <img src="/logo.svg" alt="Главная">
+          <img src="/profiles/azrua/themes/olivero/logo.svg" alt="Главная">
         </a>`;
 
         if (currentLogo) {

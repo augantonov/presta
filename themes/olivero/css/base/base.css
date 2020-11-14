@@ -98,8 +98,7 @@ body {
 
 [dir] body {
   margin: 0;
-  background-color: #f7f9fa;
-  background-image: url("../../images/background.svg");
+  background-color: #fff;
 }
 
 [dir=ltr] body {
