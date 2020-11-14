@@ -25,7 +25,7 @@ class DefaultContentFilesAccessTest extends BrowserTestBase {
     $this->assertNotSame('azrua', \Drupal::installProfile());
 
     $files_to_test = [
-      'images/heritage-carrots.jpg',
+      'images/avtoservis-harkov.jpg',
       'languages/en/vidraboty_instructions/mediterranean-quiche-azr.html',
       'languages/en/article_body/lets-hear-it-for-carrots.html',
       'languages/en/node/article.csv',
