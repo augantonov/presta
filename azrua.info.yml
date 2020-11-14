@@ -58,4 +58,5 @@ install:
 themes:
   - seven
   - azr
+  - olivero
 keep_english: false
