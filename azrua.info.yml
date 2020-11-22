@@ -57,4 +57,5 @@ install:
   - pwa_extras
 themes:
   - azr
+  - seven
 keep_english: false
