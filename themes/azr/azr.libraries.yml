@@ -42,20 +42,6 @@ global:
       css/components/regions/pre-header/pre-header.css: {}
       css/components/toolbar/toolbar.css: {}
       css/components/layout_builder/layout-builder.css: {}
-      css/components/navigation/olivero/nav-button-mobile.css: {}
-      css/components/navigation/olivero/nav-button-mobile.pcss.css: {}
-      css/components/navigation/olivero/nav-button-wide.css: {}
-      css/components/navigation/olivero/nav-button-wide.pcss.css: {}
-      css/components/navigation/olivero/nav-primary.css: {}
-      css/components/navigation/olivero/nav-primary.pcss.css: {}
-      css/components/navigation/olivero/nav-primary-button.css: {}
-      css/components/navigation/olivero/nav-primary-button.pcss.css: {}
-      css/components/navigation/olivero/nav-primary-no-js.css: {}
-      css/components/navigation/olivero/nav-primary-no-js.pcss.css: {}
-      css/components/navigation/olivero/nav-primary-wide.css: {}
-      css/components/navigation/olivero/nav-primary-wide.pcss.css: {}
-      css/components/navigation/olivero/nav-secondary.css: {}
-      css/components/navigation/olivero/nav-secondary.pcss.css: {}
     layout:
       css/layout/grid-2.css: {}
       css/layout/grid-3.css: {}

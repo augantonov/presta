@@ -56,7 +56,5 @@ install:
   - pwa
   - pwa_extras
 themes:
-  - seven
   - azr
-  - olivero
 keep_english: false
