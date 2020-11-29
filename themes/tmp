@@ -1,0 +1,12 @@
+<section id="slider">
+<input id="s1" name="slider" type="radio" />
+<input id="s2" name="slider" type="radio" />
+<input checked="checked" id="s3" name="slider" type="radio" />
+<input id="s4" name="slider" type="radio" />
+<input id="s5" name="slider" type="radio" />
+<label for="s1" id="slide1"><a href="https://www.az.kh.ua/ru/avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm"><img alt="lorem" height="350" src="https://www.az.kh.ua/sites/default/files/styles/medium_3_2_2x/public/zamena-remnya-grm.webp?itok=rJJi4KPs" width="780" /></a></label>
+<label for="s2" id="slide2"><a href="https://www.az.kh.ua/ru/avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_zepi_grm"><img alt="lorem" height="350" src="https://www.az.kh.ua/sites/default/files/styles/medium_3_2_2x/public/zamena-zepi-grm.webp?itok=j9MqEfsB" width="780" /></a></label>
+<label for="s3" id="slide3"><a href="https://www.az.kh.ua/ru/avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_hodovoi_avtomobilya"><img alt="lorem" height="350" src="https://www.az.kh.ua/sites/default/files/styles/medium_3_2_2x/public/remont-hodovoi-avtomobilya.webp?itok=fR4Jwj3E" width="780" /></a></label>
+<label for="s4" id="slide4"><a href="https://www.az.kh.ua/ru/avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_dvigatelya_avtomobilya"><img alt="lorem" height="350" src="https://www.az.kh.ua/sites/default/files/styles/medium_3_2_2x/public/remont-dvigatelya-avtomobilya.webp?itok=8nU6YBoY" width="780" /></a></label>
+<label for="s5" id="slide5"><a href="https://www.az.kh.ua/ru/avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm"><img alt="lorem" height="350" src="https://www.az.kh.ua/sites/default/files/styles/medium_3_2_2x/public/zamena-remnya-grm.webp?itok=rJJi4KPs" width="780" /></a></label>
+</section>
