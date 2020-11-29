@@ -30,14 +30,13 @@
   set classes = [
     'block',
     'block-search',
-    'container-inline',
   ]
 %}
 
 <div class="search-iconwrap">
-  <a class="search-link" title="{{ 'Go to the search page'|t }}" href="{{ path('search.view') }}">
-    <span class="search-icon" aria-hidden="true">{% include active_theme_path() ~ '/images/svg/search.svg' %}</span>
-    <span class="visually-hidden">{{ 'Search'|t }}</span>
+  <a class="search-link" title="СТО АЗР Южный на Google maps" href="https://www.google.com/maps/place/%D0%A1%D0%A2%D0%9E+%D0%90%D0%97%D0%A0+%D0%AE%D0%B6%D0%BD%D1%8B%D0%B9/@49.9853654,36.2037938,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a123783a6f4b:0xac80806aed8fe16a!8m2!3d49.9853654!4d36.2059825">
+    <span class="search-icon" aria-hidden="true">{% include active_theme_path() ~ '/images/svg/maps.svg' %}</span>
+    <span class="visually-hidden">СТО АЗР Южный на Google maps</span>
   </a>
 </div>
 
@@ -48,6 +47,46 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    {{ content }}
+  <div class="centered-container ">
+    <div class="review-source-icon"><span class="search-icon" aria-hidden="true">{% include active_theme_path() ~ '/images/svg/maps.svg' %}</span></div>
+  <div class="reviewer-info">
+    <div class="title"><b>СТО «АЗР Южный»</b></div>
+    <div class="title">Украина, г. Харьков</div>
+    <div class="title">ул. Гвардейцев-Железнодорожников 15</div>
+  </div>
+  </div>
   {% endblock %}
+</div>
+
+<div class="search-iconwrap">
+  <a class="search-link" title="Позвонить" href="tel:+380661151120">
+    <span class="search-icon" aria-hidden="true">{% include active_theme_path() ~ '/images/svg/voice.svg' %}</span>
+    <span class="visually-hidden">Позвонить</span>
+  </a>
+</div>
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes.addClass('visually-hidden') }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  <div class="centered-container ">
+    <div class="review-source-icon"><span class="search-icon" aria-hidden="true">{% include active_theme_path() ~ '/images/svg/voice.svg' %}</span></div>
+  <div class="reviewer-info">
+    <div class="title"><b>Телефоны:</b></div>
+    <div class="title">+380 (50) 040-44-09</div>
+    <div class="title">+380 (67) 657-08-08</div>
+  </div>
+  </div>
+</div>
+
+<div class="search-block-form-ipad block block-search" data-drupal-selector="search-block-form" id="block-azr-search" role="search">
+  <div class="centered-container ">
+    <div class="review-source-icon"><span class="search-icon" aria-hidden="true">{% include active_theme_path() ~ '/images/svg/calendar.svg' %}</span></div>
+  <div class="reviewer-info">
+  <div class="title"><b>Работаем:</b></div>
+  <div class="title">Пн–пт: с 09:00 до 18:00</div>
+  <div class="title">Сб: с 09:00 до 15:00</div>
+  </div>
+  </div>
 </div>

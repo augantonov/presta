@@ -4,7 +4,6 @@
  */
 
 .menu-main {
-  overflow: hidden;
   max-height: 0;
   margin: 0;
   padding: 0;
@@ -45,7 +44,13 @@
 }
 .menu-main__item {
   margin-top: 0.8em;
-  text-align: center;
+  margin-left: 20%;
+  text-align: left;
+  letter-spacing: -1px;
+  color: #0d1214;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 36px;
 }
 .menu-main__link {
   display: inline-block;
@@ -129,405 +134,249 @@
   }
 }
 
-/**
- * @file
- * This file is used to style the main menu.
- */
+.centered-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+.reviewer-info{
+  margin:8px;
+  text-align:left;
+}
+.reviewer-name{
+  margin:8px 8px 4px;
+}
+.review-source{
+  margin:4px 8px 8px;
+}
+.review-source-icon{
+  margin:8px;
+}
 
-.address {
-  overflow: hidden;
-  max-height: 0;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  transition: max-height 0.5s ease-in;
-  color: #000;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.266rem;
-  font-weight: 400;
-  line-height: 1.2;
+input {
+  display: none;
 }
-.address--active {
-  overflow-y: auto;
-  /**
-   * An exact max-height value must be set to make possible to animate the menu display.
-   * It my not be much larger than the content because that would break the animation.
-   * See: https://css-tricks.com/using-css-transitions-auto-dimensions/
-   */
-  max-height: 20.95rem;
-}
-.address-toggle {
-  width: 61px;
-  height: 61px;
-  margin-right: -1px;
-  /* the padding, margin & transparent border means the hamburger doesn't move on focus/hover */
-  padding: 0 6px;
-  text-align: left;
-  border: 3px solid transparent;
-  border-radius: 0;
-  background-color: transparent;
-  line-height: 1;
-}
-.address-toggle:hover {
-  background-color: transparent;
-}
-.address-toggle svg {
+
+.open {
+  background-color: #4285f4;
+  width: 50px;
+  height: 4px;
   display: block;
-}
-.address__item {
-  margin-top: 0.8em;
-  text-align: center;
-}
-.address__link {
-  display: inline-block;
-  /* Margin required for focus outlines. */
-  margin: 5px 3px;
-  padding-bottom: 0.15em;
-  transition: all 0.2s;
-  text-decoration: none;
-  color: inherit;
-  border-bottom: solid 0.15em transparent;
-  background-color: inherit;
-  text-transform: uppercase;
-}
-.address__link:hover,
-.address__link.is-active:hover,
-.address__link:focus {
-  text-decoration: none;
-  color: #0062c0;
-  border-bottom-color: #0062c0;
-  background-color: inherit;
-}
-.address__link:active,
-.address__link.is-active {
-  text-decoration: none;
-  border-bottom-color: #0062c0;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  top: 8px;
 }
 
-@media screen and (min-width: 348em) {
-  .address {
-    display: flex;
-    overflow: auto;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    max-height: none;
-  }
-  .address-toggle {
-    display: none;
-  }
-  .address__item {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .address__item + .address__item {
-    margin-left: 2.5em; /* LTR */
-  }
-  [dir="rtl"] .address__item + .address__item {
-    margin-right: 2.5em;
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 348em) {
-  .address-togglewrap {
-    display: none;
-  }
-  .address-timewrap {
-    display: none;
-  }
-  .address-serveswrap {
-    display: none;
-  }
-  .address-phonewrap {
-    display: none;
-  }
-}
-
-.address__wrapper {
-  flex: 0 1 100%;
-  text-align: center;
-}
-
-@media screen and (min-width: 348em) {
-  .address__wrapper {
-    flex-basis: calc(100% - 220px);
-    flex-grow: 0;
-    flex-shrink: 1;
-    text-align: right;
-  }
-}
-
-@media screen and (min-width: 348em) {
-  .address {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-/**
- * @file
- * This file is used to style the main menu.
- */
-
-.phones {
-  overflow: hidden;
-  max-height: 0;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  transition: max-height 0.5s ease-in;
-  color: #000;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.266rem;
-  font-weight: 400;
-  line-height: 1.2;
-}
-.phones--active {
-  overflow-y: auto;
-  /**
-   * An exact max-height value must be set to make possible to animate the menu display.
-   * It my not be much larger than the content because that would break the animation.
-   * See: https://css-tricks.com/using-css-transitions-auto-dimensions/
-   */
-  max-height: 20.95rem;
-}
-.phones-toggle {
-  width: 61px;
-  height: 61px;
-  margin-right: -1px;
-  /* the padding, margin & transparent border means the hamburger doesn't move on focus/hover */
-  padding: 0 6px;
-  text-align: left;
-  border: 3px solid transparent;
-  border-radius: 0;
-  background-color: transparent;
-  line-height: 1;
-}
-.phones-toggle:hover {
-  background-color: transparent;
-}
-.phones-toggle svg {
+.open:before {
+  content: "";
+  background-color: #4285f4;
+  width: 50px;
+  height: 4px;
   display: block;
-}
-.phones__item {
-  margin-top: 0.8em;
-  text-align: center;
-}
-.phones__link {
-  display: inline-block;
-  /* Margin required for focus outlines. */
-  margin: 5px 3px;
-  padding-bottom: 0.15em;
-  transition: all 0.2s;
-  text-decoration: none;
-  color: inherit;
-  border-bottom: solid 0.15em transparent;
-  background-color: inherit;
-  text-transform: uppercase;
-}
-.phones__link:hover,
-.phones__link.is-active:hover,
-.phones__link:focus {
-  text-decoration: none;
-  color: #0062c0;
-  border-bottom-color: #0062c0;
-  background-color: inherit;
-}
-.phones__link:active,
-.phones__link.is-active {
-  text-decoration: none;
-  border-bottom-color: #0062c0;
+  border-radius: 2px;
+  position: relative;
+  top: -8px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
 }
 
-@media screen and (min-width: 348em) {
-  .phones {
-    display: flex;
-    overflow: auto;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    max-height: none;
-  }
-  .phones-toggle {
-    display: none;
-  }
-  .phones__item {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .phones__item + .phones__item {
-    margin-left: 2.5em; /* LTR */
-  }
-  [dir="rtl"] .phones__item + .phones__item {
-    margin-right: 2.5em;
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 348em) {
-  .phones-togglewrap {
-    display: none;
-  }
-  .phones-timewrap {
-    display: none;
-  }
-  .phones-serveswrap {
-    display: none;
-  }
-  .phones-phonewrap {
-    display: none;
-  }
-}
-
-.phones__wrapper {
-  flex: 0 1 100%;
-  text-align: center;
-}
-
-@media screen and (min-width: 348em) {
-  .phones__wrapper {
-    flex-basis: calc(100% - 220px);
-    flex-grow: 0;
-    flex-shrink: 1;
-    text-align: right;
-  }
-}
-
-@media screen and (min-width: 348em) {
-  .phones {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-/**
- * @file
- * This file is used to style the main menu.
- */
-
-.schedule {
-  overflow: hidden;
-  max-height: 0;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  transition: max-height 0.5s ease-in;
-  color: #000;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.266rem;
-  font-weight: 400;
-  line-height: 1.2;
-}
-.schedule--active {
-  overflow-y: auto;
-  /**
-   * An exact max-height value must be set to make possible to animate the menu display.
-   * It my not be much larger than the content because that would break the animation.
-   * See: https://css-tricks.com/using-css-transitions-auto-dimensions/
-   */
-  max-height: 20.95rem;
-}
-.schedule-toggle {
-  width: 61px;
-  height: 61px;
-  margin-right: -1px;
-  /* the padding, margin & transparent border means the hamburger doesn't move on focus/hover */
-  padding: 0 6px;
-  text-align: left;
-  border: 3px solid transparent;
-  border-radius: 0;
-  background-color: transparent;
-  line-height: 1;
-}
-.schedule-toggle:hover {
-  background-color: transparent;
-}
-.schedule-toggle svg {
+.open:after {
+  content: "";
+  background-color: #4285f4;
+  width: 50px;
+  height: 4px;
   display: block;
-}
-.schedule__item {
-  margin-top: 0.8em;
-  text-align: center;
-}
-.schedule__link {
-  display: inline-block;
-  /* Margin required for focus outlines. */
-  margin: 5px 3px;
-  padding-bottom: 0.15em;
-  transition: all 0.2s;
-  text-decoration: none;
-  color: inherit;
-  border-bottom: solid 0.15em transparent;
-  background-color: inherit;
-  text-transform: uppercase;
-}
-.schedule__link:hover,
-.schedule__link.is-active:hover,
-.schedule__link:focus {
-  text-decoration: none;
-  color: #0062c0;
-  border-bottom-color: #0062c0;
-  background-color: inherit;
-}
-.schedule__link:active,
-.schedule__link.is-active {
-  text-decoration: none;
-  border-bottom-color: #0062c0;
+  border-radius: 2px;
+  position: relative;
+  top: 4px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
 }
 
-@media screen and (min-width: 348em) {
-  .schedule {
-    display: flex;
-    overflow: auto;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    max-height: none;
-  }
-  .schedule-toggle {
-    display: none;
-  }
-  .schedule__item {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .schedule__item + .schedule__item {
-    margin-left: 2.5em; /* LTR */
-  }
-  [dir="rtl"] .schedule__item + .schedule__item {
-    margin-right: 2.5em;
-    margin-left: 0;
-  }
+.menuOpen {
+  width: 50px;
+  height: 20px;
+  display: block;
+  cursor: pointer;
+  float: right;
 }
 
-@media screen and (min-width: 348em) {
-  .schedule-togglewrap {
-    display: none;
-  }
-  .schedule-timewrap {
-    display: none;
-  }
-  .schedule-serveswrap {
-    display: none;
-  }
-  .schedule-phonewrap {
-    display: none;
-  }
+.menuOpen:hover .open:before {
+  top: -9px;
 }
 
-.schedule__wrapper {
-  flex: 0 1 100%;
-  text-align: center;
+.menuOpen:hover .open:after {
+  top: 5px;
 }
 
-@media screen and (min-width: 348em) {
-  .schedule__wrapper {
-    flex-basis: calc(100% - 220px);
-    flex-grow: 0;
-    flex-shrink: 1;
-    text-align: right;
-  }
+.menu-vw {
+  position: fixed;
+      width: 80%;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      background: #ffffff;
+      background-color: #fff;
+      box-shadow: 0 0 372px rgba(0,0,0,0.5);
 }
 
-@media screen and (min-width: 348em) {
-  .schedule {
-    display: flex;
-    justify-content: flex-end;
-  }
+.menu-vw label {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-size: 100%;
+  cursor: pointer;
 }
+
+.menu-vw .menuContent {
+  position: relative;
+  top: 50%;
+  font-size: 54px;
+  text-align: left;
+  padding-bottom: 20px;
+  margin-top: -170px;
+}
+
+.menu-vw ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.menu-vw ul li a {
+  flex-grow: 1;
+      text-decoration: none;
+      letter-spacing: -1px;
+      color: #0d1214;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 36px;
+}
+
+.menu-vw ul li a:hover {
+  color: #ff8702;
+}
+
+.menu-vw ul li:hover {
+  background: white;
+}
+
+.menuEffects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+  transform: translateY(0%);
+  transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects ul {
+  opacity: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open {
+  background-color: transparent;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+  content: "";
+  background-color: #4285f4;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+  content: "";
+  background-color: #4285f4;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects ul {
+  transform: translateY(-30%);
+}
+
+.title  {
+  color: #4285f4;
+}
+
+[type=radio] {
+  display: none;
+}
+
+#slider {
+  height: 350px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+#slider label {
+  margin: auto;
+  width: 60%;
+  height: 80%;
+  border-radius: 4px;
+  position: absolute;
+  left: 0; right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%,0,-200px);
+}
+
+#slide1 { background: #00BCD4 }
+#slide2 { background: #4CAF50 }
+#slide3 { background: #CDDC39 }
+#slide4 { background: #FFC107 }
+#slide5 { background: #FF5722 }
