@@ -107,7 +107,7 @@ function addToggler(name) {
     return false;
   }
 
-  toggler.addEventListener('click', toggleItem);
+
 };
 
 (function() {
