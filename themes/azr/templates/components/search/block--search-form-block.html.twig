@@ -80,7 +80,18 @@
   </div>
 </div>
 
-<div class="search-block-form-ipad block block-search" data-drupal-selector="search-block-form" id="block-azr-search" role="search">
+<div class="search-iconwrap">
+  <a class="search-link" title="Работаем" href="tel:+380661151120">
+    <span class="search-icon" aria-hidden="true">{% include active_theme_path() ~ '/images/svg/calendar.svg' %}</span>
+    <span class="visually-hidden">Работаем</span>
+  </a>
+</div>
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes.addClass('visually-hidden') }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
   <div class="centered-container ">
     <div class="review-source-icon"><span class="search-icon" aria-hidden="true">{% include active_theme_path() ~ '/images/svg/calendar.svg' %}</span></div>
   <div class="reviewer-info">
@@ -89,4 +100,3 @@
   <div class="title">Сб: с 09:00 до 15:00</div>
   </div>
   </div>
-</div>
