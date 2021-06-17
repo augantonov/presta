@@ -49,10 +49,12 @@ install:
   - config_translation
   - content_translation
   - token
+  - metatag
+  - metatag_views
   - admin_toolbar
   - pwa
   - pwa_extras
 themes:
   - azr
   - seven
-keep_english: false
+keep_english: true
