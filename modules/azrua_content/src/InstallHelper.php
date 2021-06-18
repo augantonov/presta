@@ -350,7 +350,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'name' => $term_name,
       'vid' => $vocabulary,
       'path' => ['alias' => '/' . Html::getClass($vocabulary) . '/' . Html::getClass($term_name)],
-      'langcode' => 'en',
+      'langcode' => 'ru',
     ];
     return $values;
   }
@@ -375,7 +375,7 @@ class InstallHelper implements ContainerInjectionInterface {
     $values = [
       'name' => $data['title'],
       'bundle' => 'image',
-      'langcode' => 'en',
+      'langcode' => 'ru',
       'field_media_image' => [
         'target_id' => $this->createFileEntity($image_path),
         'alt' => $data['alt'],
@@ -401,7 +401,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'type' => 'page',
       'title' => $data['title'],
       'moderation_state' => 'published',
-      'langcode' => 'en',
+      'langcode' => 'ru',
     ];
     // Fields mapping starts.
     // Set body field.
@@ -437,7 +437,7 @@ class InstallHelper implements ContainerInjectionInterface {
       // Title field.
       'title' => $data['title'],
       'moderation_state' => 'published',
-      'langcode' => 'en',
+      'langcode' => 'ru',
     ];
     // Set article author.
     if (!empty($data['author'])) {
@@ -531,7 +531,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'type' => 'article',
       'title' => $data['title'],
       'moderation_state' => 'published',
-      'langcode' => 'en',
+      'langcode' => 'ru',
     ];
     // Fields mapping starts.
     // Set body field.
@@ -589,7 +589,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'uuid' => $data['uuid'],
       'info' => $data['info'],
       'type' => $data['type'],
-      'langcode' => 'en',
+      'langcode' => 'ru',
       'field_title' => [
         'value' => $data['field_title'],
       ],
@@ -621,7 +621,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'uuid' => $data['uuid'],
       'info' => $data['info'],
       'type' => $data['type'],
-      'langcode' => 'en',
+      'langcode' => 'ru',
       'field_disclaimer' => [
         'value' => $data['field_disclaimer'],
         'format' => 'basic_html',
@@ -651,7 +651,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'uuid' => $data['uuid'],
       'info' => $data['info'],
       'type' => $data['type'],
-      'langcode' => 'en',
+      'langcode' => 'ru',
       'field_title' => [
         'value' => $data['field_title'],
       ],
@@ -740,13 +740,13 @@ class InstallHelper implements ContainerInjectionInterface {
     list($all_content, $translated_languages) = $this->readMultilingualContent($filename);
 
     // English is no longer needed in the list of languages to translate.
-    $key = array_search('en', $translated_languages);
+    $key = array_search('ru', $translated_languages);
     unset($translated_languages[$key]);
 
     // Start the loop with English (default) vidyrabot.
-    foreach ($all_content['en'] as $current_content) {
+    foreach ($all_content['ru'] as $current_content) {
       // Process data into its relevant structure.
-      $structured_content = $this->processContent($bundle_machine_name, $current_content, 'en');
+      $structured_content = $this->processContent($bundle_machine_name, $current_content, 'ru');
 
       // Save Entity.
       $entity = $this->entityTypeManager->getStorage($entity_type)->create($structured_content);
