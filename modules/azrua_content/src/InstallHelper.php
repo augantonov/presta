@@ -740,7 +740,7 @@ class InstallHelper implements ContainerInjectionInterface {
     list($all_content, $translated_languages) = $this->readMultilingualContent($filename);
 
     // English is no longer needed in the list of languages to translate.
-    $key = array_search('ru', $translated_languages);
+    $key = array_search('en', $translated_languages);
     unset($translated_languages[$key]);
 
     // Start the loop with English (default) vidyrabot.
