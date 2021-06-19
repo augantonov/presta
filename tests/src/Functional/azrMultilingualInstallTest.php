@@ -36,8 +36,8 @@ class AZRMultilingualInstallTest extends InstallerTestBase {
   protected function setUpLanguage() {
     // Place custom local translations in the translations directory to avoid
     // getting translations from localize.drupal.org.
-    mkdir(DRUPAL_ROOT . '/' . $this->siteDirectory . '/files/translations', 0777, TRUE);
-    file_put_contents(DRUPAL_ROOT . '/' . $this->siteDirectory . '/files/translations/drupal-9.0.0.uk.po', $this->getPo('uk'));
+    mkdir(DRUPAL_ROOT . '/' . $this->siteDirectory . '/profiles/presta-master/translations', 0777, TRUE);
+    file_put_contents(DRUPAL_ROOT . '/' . $this->siteDirectory . '/profiles/presta-master/translations/drupal-9.2.0.uk.po', $this->getPo('uk'));
 
     parent::setUpLanguage();
   }
