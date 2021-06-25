@@ -1,0 +1,8 @@
+entity_type_groups:
+  node:
+    article:
+      basic: basic
+    page:
+      basic: basic
+    vidraboty:
+      basic: basic
