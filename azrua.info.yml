@@ -54,6 +54,10 @@ install:
   - admin_toolbar
   - pwa
   - pwa_extras
+  - webp
+  - slick
+  - slick_views
+  - blazy
 themes:
   - azr
   - seven
