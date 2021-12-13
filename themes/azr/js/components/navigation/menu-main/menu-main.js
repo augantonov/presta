@@ -95,7 +95,7 @@
       }
     }
   };
-})(Drupal);
+});
 
 function addToggler(name) {
   var toggler = document.querySelector('[data-drupal-selector="'+name+'-toggle"]');
