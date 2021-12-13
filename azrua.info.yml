@@ -52,8 +52,6 @@ install:
   - metatag
   - metatag_views
   - admin_toolbar
-  - pwa
-  - pwa_extras
   - webp
   - slick
   - slick_views
