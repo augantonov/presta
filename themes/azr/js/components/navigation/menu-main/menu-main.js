@@ -5,7 +5,7 @@
 * @preserve
 **/
 
-(function (Drupal, once, tabbable) {
+(function (Drupal) {
   function isNavOpen(navWrapper) {
     return navWrapper.classList.contains('is-active');
   }
@@ -15,12 +15,12 @@
     props.navButton.setAttribute('aria-expanded', value);
 
     if (value) {
-      props.body.classList.add('is-overlay-active');
-      props.body.classList.add('is-fixed');
+      props.body.classList.add('js-overlay-active');
+      props.body.classList.add('js-fixed');
       props.navWrapper.classList.add('is-active');
     } else {
-      props.body.classList.remove('is-overlay-active');
-      props.body.classList.remove('is-fixed');
+      props.body.classList.remove('js-overlay-active');
+      props.body.classList.remove('js-fixed');
       props.navWrapper.classList.remove('is-active');
     }
   }
@@ -32,7 +32,7 @@
       toggleNav(props, !isNavOpen(props.navWrapper));
     });
     document.addEventListener('keyup', function (e) {
-      if (e.key === 'Escape' || e.key === 'Esc') {
+      if (e.key === 'Escape') {
         if (props.olivero.areAnySubNavsOpen()) {
           props.olivero.closeAllSubNav();
         } else {
@@ -46,20 +46,15 @@
     props.overlay.addEventListener('touchstart', function () {
       toggleNav(props, false);
     });
-    props.header.addEventListener('keydown', function (e) {
-      if (e.key === 'Tab' && isNavOpen(props.navWrapper)) {
-        var tabbableNavElements = tabbable.tabbable(props.navWrapper);
-        tabbableNavElements.unshift(props.navButton);
-        var firstTabbableEl = tabbableNavElements[0];
-        var lastTabbableEl = tabbableNavElements[tabbableNavElements.length - 1];
-
+    props.navWrapper.addEventListener('keydown', function (e) {
+      if (e.key === 'Tab') {
         if (e.shiftKey) {
-          if (document.activeElement === firstTabbableEl && !props.olivero.isDesktopNav()) {
-            lastTabbableEl.focus();
+          if (document.activeElement === props.firstFocusableEl && !props.olivero.isDesktopNav()) {
+            props.navButton.focus();
             e.preventDefault();
           }
-        } else if (document.activeElement === lastTabbableEl && !props.olivero.isDesktopNav()) {
-          firstTabbableEl.focus();
+        } else if (document.activeElement === props.lastFocusableEl && !props.olivero.isDesktopNav()) {
+          props.navButton.focus();
           e.preventDefault();
         }
       }
@@ -67,41 +62,57 @@
     window.addEventListener('resize', function () {
       if (props.olivero.isDesktopNav()) {
         toggleNav(props, false);
-        props.body.classList.remove('is-overlay-active');
-        props.body.classList.remove('is-fixed');
-      }
-
-      Drupal.olivero.closeAllSubNav();
-    });
-    props.navWrapper.addEventListener('click', function (e) {
-      if (e.target.matches("[href*=\"".concat(window.location.pathname, "#\"], [href*=\"").concat(window.location.pathname, "#\"] *, [href^=\"#\"], [href^=\"#\"] *"))) {
-        toggleNav(props, false);
+        props.body.classList.remove('js-overlay-active', 'js-fixed');
       }
     });
   }
 
   Drupal.behaviors.oliveroNavigation = {
-    attach: function attach(context) {
-      var headerId = 'header';
-      var header = once('navigation', "#".concat(headerId), context).shift();
+    attach: function attach(context, settings) {
       var navWrapperId = 'header-nav';
+      var navWrapper = context.querySelector("#".concat(navWrapperId, ":not(.").concat(navWrapperId, "-processed)"));
 
-      if (header) {
-        var navWrapper = header.querySelector("#".concat(navWrapperId));
+      if (navWrapper) {
+        navWrapper.classList.add("".concat(navWrapperId, "-processed"));
         var olivero = Drupal.olivero;
-        var navButton = context.querySelector('[data-drupal-selector="mobile-nav-button"]');
+        var navButton = context.querySelector('.mobile-nav-button');
         var body = context.querySelector('body');
-        var overlay = context.querySelector('[data-drupal-selector="overlay"]');
+        var overlay = context.querySelector('.overlay');
+        var focusableNavElements = navWrapper.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        var firstFocusableEl = focusableNavElements[0];
+        var lastFocusableEl = focusableNavElements[focusableNavElements.length - 1];
         init({
+          settings: settings,
           olivero: olivero,
-          header: header,
           navWrapperId: navWrapperId,
           navWrapper: navWrapper,
           navButton: navButton,
           body: body,
-          overlay: overlay
+          overlay: overlay,
+          firstFocusableEl: firstFocusableEl,
+          lastFocusableEl: lastFocusableEl
         });
       }
     }
   };
-})(Drupal, once, tabbable);
+});
+
+function addToggler(name) {
+  var toggler = document.querySelector('[data-drupal-selector="'+name+'-toggle"]');
+  var item = document.querySelector('[data-drupal-selector="'+name+'"]');
+
+  function toggleItem() {
+    toggler.classList.toggle(name+'-toggle--active');
+    item.classList.toggle(name+'--active');
+    return false;
+  }
+
+
+};
+
+(function() {
+  addToggler("menu-main");
+  addToggler("address");
+  addToggler("phones");
+  addToggler("schedule");
+})();
