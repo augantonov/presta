@@ -160,7 +160,7 @@ input {
 
 .open {
   z-index: 501;
-  background-color: #4285f4;
+  background-color: #0195d3;
   width: 50px;
   height: 4px;
   display: block;
@@ -172,7 +172,7 @@ input {
 
 .open:before {
   content: "";
-  background-color: #4285f4;
+  background-color: #0195d3;
   width: 50px;
   height: 4px;
   display: block;
@@ -185,7 +185,7 @@ input {
 
 .open:after {
   content: "";
-  background-color: #4285f4;
+  background-color: #0195d3;
   width: 50px;
   height: 4px;
   display: block;
@@ -294,7 +294,7 @@ input {
 
 #menuToggle:checked ~ .menuOpen .open:before {
   content: "";
-  background-color: #4285f4;
+  background-color: #0195d3;
   transform: rotate(45deg);
   position: absolute;
   top: 0;
@@ -304,7 +304,7 @@ input {
 
 #menuToggle:checked ~ .menuOpen .open:after {
   content: "";
-  background-color: #4285f4;
+  background-color: #0195d3;
   transform: rotate(-45deg);
   position: relative;
   top: 0;
