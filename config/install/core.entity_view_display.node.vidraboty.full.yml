@@ -15,195 +15,50 @@ dependencies:
     - field.field.node.vidraboty.field_tags
     - field.field.node.vidraboty.field_vidraboty_category
     - field.field.node.vidraboty.field_vidraboty_instruction
-    - field.field.node.vidraboty.layout_builder__layout
     - node.type.vidraboty
   module:
     - layout_builder
-    - layout_discovery
-    - options
+    - media
     - text
     - user
-  theme:
-    - azr
 third_party_settings:
   layout_builder:
-    enabled: true
-    allow_custom: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          44801518-fe93-421a-bdcb-550493c7925d:
-            uuid: 44801518-fe93-421a-bdcb-550493c7925d
-            region: content
-            configuration:
-              id: 'field_block:node:vidraboty:field_summary'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 4
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_oneplusfourgrid_section
-        layout_settings:
-          label: ''
-        components:
-          cc87463d-bb75-4eca-a2d0-42f0b643f8a7:
-            uuid: cc87463d-bb75-4eca-a2d0-42f0b643f8a7
-            region: content
-            configuration:
-              id: 'field_block:node:vidraboty:field_media_image'
-              label: 'Media Image'
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: responsive_3x2
-                third_party_settings: {  }
-            weight: 4
-            additional: {  }
-          69d8bce1-28ae-4287-a05b-a2166679f867:
-            uuid: 69d8bce1-28ae-4287-a05b-a2166679f867
-            region: first
-            configuration:
-              id: 'field_block:node:vidraboty:field_media_image'
-              label: 'Media Image'
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: responsive_3x2
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          label: ''
-          column_widths: 33-67
-        components:
-          f61cae40-5865-4c4c-98fa-14b8234e7b98:
-            uuid: f61cae40-5865-4c4c-98fa-14b8234e7b98
-            region: second
-            configuration:
-              id: 'field_block:node:vidraboty:field_vidraboty_instruction'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
+    enabled: false
+    allow_custom: false
 _core:
-  default_config_hash: agLnQ1cuJZ-wO_GuOqFzhCeQq2uYj5p_n1LL573TvR4
+  default_config_hash: e_c-2RcK1_QoVpkz9kRiuZbWSH_QA8SqcfEm1eXbFdk
 id: node.vidraboty.full
 targetEntityType: node
 bundle: vidraboty
 mode: full
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 10
-    region: content
-  field_cooking_time:
-    type: number_integer
-    label: inline
+  field_media_image:
+    type: media_thumbnail
+    label: hidden
     settings:
-      thousand_separator: ''
-      prefix_suffix: true
+      image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    weight: 5
+    weight: 0
     region: content
-  field_difficulty:
-    type: list_default
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    weight: 7
-    region: content
-  field_number_of_servings:
-    type: number_integer
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: false
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  field_preparation_time:
-    type: number_integer
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_reglament:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 8
-    region: content
-  field_summary:
+  field_vidraboty_instruction:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
-    region: content
-  field_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_vidraboty_category:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
     weight: 1
     region: content
-  field_vidraboty_instruction:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 9
-    region: content
 hidden:
-  field_media_image: true
+  content_moderation_control: true
+  field_cooking_time: true
+  field_difficulty: true
   field_meta_tegi: true
+  field_number_of_servings: true
+  field_preparation_time: true
+  field_reglament: true
+  field_summary: true
+  field_tags: true
+  field_vidraboty_category: true
   langcode: true
   layout_builder__layout: true
   links: true

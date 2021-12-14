@@ -1,14 +1,18 @@
+uuid: 292f7ed1-8f9a-4297-8d8a-64bbfd0d6396
 langcode: ru
 status: true
 dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_media_image
+    - field.field.node.article.field_meta_tegi
     - field.field.node.article.field_tags
     - node.type.article
   module:
     - text
     - user
+_core:
+  default_config_hash: 2p5XPI4mwA1W50uihfE7fxy4IWGBUgtpNcNs8ANn1Jo
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -16,33 +20,27 @@ mode: default
 content:
   body:
     type: text_default
-    weight: 3
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    label: hidden
+    weight: 1
+    region: content
   field_media_image:
-    weight: 2
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: responsive_3x2
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: content
-  field_tags:
-    type: entity_reference_label
     weight: 0
     region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
   links:
-    weight: 4
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   content_moderation_control: true
+  field_meta_tegi: true
+  field_tags: true
   langcode: true
