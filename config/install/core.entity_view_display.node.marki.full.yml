@@ -13,8 +13,8 @@ dependencies:
     - field.field.node.marki.field_reglament
     - field.field.node.marki.field_summary
     - field.field.node.marki.field_tags
-    - field.field.node.marki.field_marki_category
-    - field.field.node.marki.field_marki_instruction
+    - field.field.node.marki.field_vidraboty_category
+    - field.field.node.marki.field_vidraboty_instruction
     - node.type.marki
   module:
     - layout_builder
