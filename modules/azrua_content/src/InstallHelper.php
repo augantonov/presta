@@ -147,8 +147,10 @@ class InstallHelper implements ContainerInjectionInterface {
       ->importEditors()
       ->importContentFromFile('taxonomy_term', 'tags')
       ->importContentFromFile('taxonomy_term', 'vidraboty_category')
+      ->importContentFromFile('taxonomy_term', 'marki_category')
       ->importContentFromFile('media', 'image')
       ->importContentFromFile('node', 'vidraboty')
+      ->importContentFromFile('node', 'marki')
       ->importContentFromFile('node', 'article')
       ->importContentFromFile('node', 'page')
       ->importContentFromFile('block_content', 'disclaimer_block')
@@ -515,6 +517,98 @@ class InstallHelper implements ContainerInjectionInterface {
   }
 
   /**
+   * Process marki data into marki node structure.
+   *
+   * @param array $data
+   *   Data of line that was read from the file.
+   *
+   * @return array
+   *   Data structured as a marki node.
+   */
+  protected function processmarki(array $data, $langcode) {
+    $values = [
+      'type' => 'marki',
+      // Title field.
+      'title' => $data['title'],
+      'moderation_state' => 'published',
+      'langcode' => 'en',
+    ];
+    // Set article author.
+    if (!empty($data['author'])) {
+      $values['uid'] = $this->getUser($data['author']);
+    }
+    // Set node alias if exists.
+    if (!empty($data['slug'])) {
+      $values['path'] = [['alias' => '/' . $data['slug']]];
+    }
+    // Save node alias
+    $this->saveNodePath($langcode, 'marki', $data['id'], $data['slug']);
+    // Set field_media_image field.
+    if (!empty($data['image_reference'])) {
+      $values['field_media_image'] = [
+        'target_id' => $this->getMediaImageId($data['image_reference']),
+      ];
+    }
+    // Set field_summary field.
+    if (!empty($data['summary'])) {
+      $values['field_summary'] = [['value' => $data['summary'], 'format' => 'basic_html']];
+    }
+    // Set field_marki_category if exists.
+    if (!empty($data['marki_category'])) {
+      $values['field_marki_category'] = [];
+      $tags = array_filter(explode(',', $data['marki_category']));
+      foreach ($tags as $tag_id) {
+        if ($tid = $this->getTermId('marki_category', $tag_id)) {
+          $values['field_marki_category'][] = ['target_id' => $tid];
+        }
+      }
+    }
+    // Set field_preparation_time field.
+    if (!empty($data['preparation_time'])) {
+      $values['field_preparation_time'] = [['value' => $data['preparation_time']]];
+    }
+    // Set field_cooking_time field.
+    if (!empty($data['cooking_time'])) {
+      $values['field_cooking_time'] = [['value' => $data['cooking_time']]];
+    }
+    // Set field_difficulty field.
+    if (!empty($data['difficulty'])) {
+      $values['field_difficulty'] = $data['difficulty'];
+    }
+    // Set field_number_of_servings field.
+    if (!empty($data['number_of_servings'])) {
+      $values['field_number_of_servings'] = [['value' => $data['number_of_servings']]];
+    }
+    // Set field_reglament field.
+    if (!empty($data['reglament'])) {
+      $reglament = explode(',', $data['reglament']);
+      $values['field_reglament'] = [];
+      foreach ($reglament as $reglamenty) {
+        $values['field_reglament'][] = ['value' => $reglamenty];
+      }
+    }
+    // Set field_marki_instruction field.
+    if (!empty($data['marki_instruction'])) {
+      $marki_instruction_path = $this->module_path . '/default_content/languages/' . $langcode . '/marki_instructions/' . $data['marki_instruction'];
+      $marki_instructions = file_get_contents($marki_instruction_path);
+      if ($marki_instructions !== FALSE) {
+        $values['field_marki_instruction'] = [['value' => $marki_instructions, 'format' => 'basic_html']];
+      }
+    }
+    // Set field_tags if exists.
+    if (!empty($data['tags'])) {
+      $values['field_tags'] = [];
+      $tags = array_filter(explode(',', $data['tags']));
+      foreach ($tags as $tag_id) {
+        if ($tid = $this->getTermId('tags', $tag_id)) {
+          $values['field_tags'][] = ['target_id' => $tid];
+        }
+      }
+    }
+    return $values;
+  }
+
+  /**
    * Process article data into article node structure.
    *
    * @param array $data
@@ -688,6 +782,10 @@ class InstallHelper implements ContainerInjectionInterface {
         $structured_content = $this->processVidraboty($content, $langcode);
         break;
 
+      case 'marki':
+          $structured_content = $this->processVidraboty($content, $langcode);
+          break;
+
       case 'article':
         $structured_content = $this->processArticle($content, $langcode);
         break;
@@ -716,6 +814,11 @@ class InstallHelper implements ContainerInjectionInterface {
       case 'tags':
         $structured_content = $this->processTerm($content, $bundle_machine_name);
         break;
+
+      case 'vidraboty_category':
+      case 'tags':
+          $structured_content = $this->processTerm($content, $bundle_machine_name);
+          break;
 
       default:
         break;
