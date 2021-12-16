@@ -525,7 +525,7 @@ class InstallHelper implements ContainerInjectionInterface {
    * @return array
    *   Data structured as a marki node.
    */
-  protected function processmarki(array $data, $langcode) {
+  protected function processMarki(array $data, $langcode) {
     $values = [
       'type' => 'marki',
       // Title field.
@@ -783,7 +783,7 @@ class InstallHelper implements ContainerInjectionInterface {
         break;
 
       case 'marki':
-          $structured_content = $this->processVidraboty($content, $langcode);
+          $structured_content = $this->processMarki($content, $langcode);
           break;
 
       case 'article':
