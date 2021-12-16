@@ -1,0 +1,64 @@
+uuid: b7b07e23-5173-4b68-a04d-3c8878c81b6d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.marki.field_cooking_time
+    - field.field.node.marki.field_difficulty
+    - field.field.node.marki.field_media_image
+    - field.field.node.marki.field_meta_tegi
+    - field.field.node.marki.field_number_of_servings
+    - field.field.node.marki.field_preparation_time
+    - field.field.node.marki.field_reglament
+    - field.field.node.marki.field_summary
+    - field.field.node.marki.field_tags
+    - field.field.node.marki.field_marki_category
+    - field.field.node.marki.field_marki_instruction
+    - node.type.marki
+  module:
+    - layout_builder
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: e_c-2RcK1_QoVpkz9kRiuZbWSH_QA8SqcfEm1eXbFdk
+id: node.marki.full
+targetEntityType: node
+bundle: marki
+mode: full
+content:
+  field_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_marki_instruction:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  content_moderation_control: true
+  field_cooking_time: true
+  field_difficulty: true
+  field_meta_tegi: true
+  field_number_of_servings: true
+  field_preparation_time: true
+  field_reglament: true
+  field_summary: true
+  field_tags: true
+  field_marki_category: true
+  langcode: true
+  layout_builder__layout: true
+  links: true

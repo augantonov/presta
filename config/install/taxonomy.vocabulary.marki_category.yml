@@ -1,0 +1,7 @@
+langcode: ru
+status: true
+dependencies: {  }
+name: 'Marki category'
+vid: marki_category
+description: 'Use this taxonomy to group vidyrabot of the same type together.'
+weight: 0

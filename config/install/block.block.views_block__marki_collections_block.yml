@@ -1,0 +1,23 @@
+langcode: ru
+status: false
+dependencies:
+  config:
+    - views.view.marki_collections
+  module:
+    - views
+  theme:
+    - azr
+id: views_block__marki_collections_block
+theme: azr
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'views_block:marki_collections-block'
+settings:
+  id: 'views_block:marki_collections-block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
