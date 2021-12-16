@@ -5,6 +5,7 @@ dependencies:
     - node.type.article
     - node.type.page
     - node.type.vidraboty
+    - node.type.marki
   module:
     - content_moderation
 id: editorial
@@ -65,4 +66,5 @@ type_settings:
       - article
       - page
       - vidraboty
+      - marki
   default_moderation_state: draft
