@@ -7,7 +7,7 @@ id: node.marki.title
 field_name: title
 entity_type: node
 bundle: marki
-label: 'marki Name'
+label: 'Marki Name'
 description: ''
 required: true
 translatable: true
