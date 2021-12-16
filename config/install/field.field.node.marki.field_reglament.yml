@@ -1,0 +1,18 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reglament
+    - node.type.marki
+id: node.marki.field_reglament
+field_name: field_reglament
+entity_type: node
+bundle: marki
+label: Регламент
+description: 'List the reglament required for this marki, one per item.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

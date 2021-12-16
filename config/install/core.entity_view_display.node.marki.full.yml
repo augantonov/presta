@@ -4,6 +4,17 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.marki.field_cooking_time
+    - field.field.node.marki.field_difficulty
+    - field.field.node.marki.field_media_image
+    - field.field.node.marki.field_meta_tegi
+    - field.field.node.marki.field_number_of_servings
+    - field.field.node.marki.field_preparation_time
+    - field.field.node.marki.field_reglament
+    - field.field.node.marki.field_summary
+    - field.field.node.marki.field_tags
+    - field.field.node.marki.field_marki_category
+    - field.field.node.marki.field_marki_instruction
     - node.type.marki
   module:
     - layout_builder
