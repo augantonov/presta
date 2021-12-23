@@ -56,6 +56,8 @@ install:
   - slick
   - slick_views
   - blazy
+  - pwa
+  - pwa_extras
 themes:
   - azr
   - seven
