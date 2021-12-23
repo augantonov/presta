@@ -52,7 +52,6 @@ install:
   - metatag
   - metatag_views
   - admin_toolbar
-  - webp
   - slick
   - slick_views
   - blazy
