@@ -15,10 +15,12 @@ dependencies:
     - field.field.node.vidraboty.field_tags
     - field.field.node.vidraboty.field_vidraboty_category
     - field.field.node.vidraboty.field_vidraboty_instruction
+    - field.field.node.vidraboty.layout_builder__layout
     - node.type.vidraboty
   module:
     - layout_builder
     - media
+    - metatag
     - text
     - user
 third_party_settings:
@@ -26,7 +28,7 @@ third_party_settings:
     enabled: false
     allow_custom: false
 _core:
-  default_config_hash: e_c-2RcK1_QoVpkz9kRiuZbWSH_QA8SqcfEm1eXbFdk
+  default_config_hash: ThKw9EVzRgUiVguRK4rM9N-_JpvLgR91zlIZ3ZEvrh4
 id: node.vidraboty.full
 targetEntityType: node
 bundle: vidraboty
@@ -41,6 +43,13 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_meta_tegi:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_vidraboty_instruction:
     type: text_default
     label: hidden
@@ -52,7 +61,6 @@ hidden:
   content_moderation_control: true
   field_cooking_time: true
   field_difficulty: true
-  field_meta_tegi: true
   field_number_of_servings: true
   field_preparation_time: true
   field_reglament: true

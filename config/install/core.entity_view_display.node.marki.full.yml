@@ -21,13 +21,14 @@ dependencies:
     - advanced_text_formatter
     - layout_builder
     - media
+    - metatag
     - user
 third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
 _core:
-  default_config_hash: 5j8nFzLFpFRpAkHes6CcvybhO69JxMxNbFTA_Z1wEbs
+  default_config_hash: tT2JyebHsvLpSwV_nhcfuu44FbAJMdCvIqljNcaXTus
 id: node.marki.full
 targetEntityType: node
 bundle: marki
@@ -72,12 +73,18 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_meta_tegi:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   content_moderation_control: true
   field_cooking_time: true
   field_difficulty: true
   field_marki_category: true
-  field_meta_tegi: true
   field_number_of_servings: true
   field_preparation_time: true
   field_reglament: true

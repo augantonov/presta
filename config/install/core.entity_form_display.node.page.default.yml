@@ -1,14 +1,19 @@
+uuid: 47c1d49a-f318-479a-b4e1-9d2de063e7dc
 langcode: ru
 status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_meta_tegi
     - node.type.page
     - workflows.workflow.editorial
   module:
     - content_moderation
+    - metatag
     - path
     - text
+_core:
+  default_config_hash: bZcm9CpZ5TcNZhl0fhMfhk-3qwwLA7rEQsWphvNBLFM
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -16,7 +21,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 7
     region: content
     settings:
       rows: 9
@@ -26,9 +31,17 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_meta_tegi:
+    type: metatag_firehose
+    weight: 11
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -39,36 +52,36 @@ content:
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
+    weight: 4
+    region: content
     settings:
       display_label: true
-    weight: 3
-    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
+    weight: 8
+    region: content
     settings:
       display_label: true
-    weight: 7
-    region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
+    weight: 5
+    region: content
     settings:
       display_label: true
-    weight: 4
-    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -80,9 +93,9 @@ content:
     third_party_settings: {  }
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 1

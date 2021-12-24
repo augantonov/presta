@@ -10,10 +10,11 @@ dependencies:
     - field.field.node.article.field_tags
     - node.type.article
   module:
+    - metatag
     - text
     - user
 _core:
-  default_config_hash: MTUCx1Ptf89A7HiBHdl0P8UFYs_eG0UIXGm-S6rTjds
+  default_config_hash: Zk5Iywm9vF2HCpWhW6tOP4nj0tlCer1gmHBvUOV8JaA
 id: node.article.full
 targetEntityType: node
 bundle: article
@@ -40,12 +41,18 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_meta_tegi:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
 hidden:
-  field_meta_tegi: true
   field_tags: true
   langcode: true
