@@ -58,6 +58,7 @@ install:
   - blazy
   - pwa
   - pwa_extras
+  - advanced_text_formatter
 themes:
   - azr
   - seven
