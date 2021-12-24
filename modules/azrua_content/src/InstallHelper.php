@@ -815,7 +815,7 @@ class InstallHelper implements ContainerInjectionInterface {
         $structured_content = $this->processTerm($content, $bundle_machine_name);
         break;
 
-      case 'vidraboty_category':
+      case 'marki_category':
       case 'tags':
           $structured_content = $this->processTerm($content, $bundle_machine_name);
           break;
