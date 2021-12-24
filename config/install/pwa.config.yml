@@ -1,5 +1,8 @@
-site_name: 'СТО «АЗР»'
-short_name: 'СТО «АЗР»'
+_core:
+  default_config_hash: YaBWTH87Rl9BaaPIgau5HbLNt1ZVCOWUDprPzKUXNao
+langcode: ru
+site_name: 'СТО «АЗР Южный»'
+short_name: 'СТО «АЗР Южный»'
 description: ''
 start_url: /
 lang: ru
@@ -13,8 +16,6 @@ offline_page: /offline
 cache_version: '1'
 cross_origin: false
 skip_waiting: false
-_core:
-  default_config_hash: cP1TZQyv1WdET3iepl2QoyOPK7VeO0xHm0lU_FU1Wmc
-image: /sites/default/files/pwa/azr-logo-512_0.png
-image_small: /sites/default/files/pwa/azr-logo-512_0.pngcopy.png
-image_very_small: /sites/default/files/pwa/azr-logo-512_0.pngcopy2.png
+image: /sites/default/files/pwa/logo-new-512p.png
+image_small: /sites/default/files/pwa/logo-new-512p.pngcopy.png
+image_very_small: /sites/default/files/pwa/logo-new-512p.pngcopy2.png

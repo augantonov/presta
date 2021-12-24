@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: D4eDssBCAsaDEqJWjg27JgeMeZJgnU2I6m02Z_knWeQ
+langcode: ru
 touch_icons:
   touch-icon-default: touch-icon-default
 meta_tags:

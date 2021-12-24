@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: UvVH3SyaduNVBSNF2B81qcpqO72Ytp2xDEc_0IiHzkY
 apple:
   touch_icons:
     touch-icon-default: 0
@@ -20,5 +22,4 @@ dependencies:
   enforced:
     module:
       - pwa_extras
-_core:
-  default_config_hash: ZOxQ7Bd2UTQlkvRxx2vdJAQ_qDXWetYOj4uwpNyizoE
+langcode: ru
