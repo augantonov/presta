@@ -1,0 +1,20 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_marki_instruction
+    - node.type.marki
+  module:
+    - text
+id: node.marki.field_marki_instruction
+field_name: field_marki_instruction
+entity_type: node
+bundle: marki
+label: 'marki instruction'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
