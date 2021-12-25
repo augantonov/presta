@@ -22,7 +22,7 @@
 }
 
 /* Large */
-@media screen and (min-width: 77rem) { /* 1200px + 2rem */
+@media screen and (min-width: 1100px) { /* 1200px + 2rem */
   .layout-builder-form,
   .layout-builder-discard-changes,
   .layout-builder-revert-overrides {

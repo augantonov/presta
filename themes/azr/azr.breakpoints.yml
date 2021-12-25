@@ -6,14 +6,16 @@ azr.mobile:
     - 1x
     - 2x
 azr.narrow:
-  label: Small
-  mediaQuery: 'all and (min-width: 500px)'
-  weight: 0
-  multipliers:
-    - 1x
-azr.wide:
-  label: Medium
-  mediaQuery: 'all and (min-width: 700px)'
+  label: narrow
+  mediaQuery: 'all and (min-width: 1100px)'
   weight: 1
   multipliers:
     - 1x
+    - 2x
+azr.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 1100px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
