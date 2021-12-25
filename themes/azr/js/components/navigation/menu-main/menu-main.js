@@ -104,4 +104,4 @@
       }
     }
   };
-});
+})(Drupal, once, tabbable);
