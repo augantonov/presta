@@ -137,7 +137,7 @@ h1 {
   line-height: 1.2;
 }
 /* Large */
-@media screen and (min-width: 60rem) { /* 960px */
+@media screen and (min-width: 70rem) { /* 960px */
   h1 {
     font-size: 2.369rem;
   }
@@ -150,7 +150,7 @@ h2 {
   line-height: 1.2;
 }
 /* Large */
-@media screen and (min-width: 60rem) { /* 960px */
+@media screen and (min-width: 70rem) { /* 960px */
   h2 {
     font-size: 1.77rem;
   }
@@ -163,7 +163,7 @@ h3 {
   line-height: 1.2;/* +1 based on 1.125 modular scale (major second) */
 }
 /* Large */
-@media screen and (min-width: 60rem) { /* 960px */
+@media screen and (min-width: 70rem) { /* 960px */
   h3 {
     font-size: 1.5rem;
   }
@@ -176,7 +176,7 @@ h4 {
   line-height: 1.2;
 }
 /* Large */
-@media screen and (min-width: 60rem) { /* 960px */
+@media screen and (min-width: 70rem) { /* 960px */
   h4 {
     font-size: 1.33rem;
   }
@@ -189,7 +189,7 @@ h5 {
   line-height: 1.2;
 }
 /* Large */
-@media screen and (min-width: 60rem) { /* 960px */
+@media screen and (min-width: 70rem) { /* 960px */
   h5 {
     font-size: 1.25rem;
   }
@@ -202,7 +202,7 @@ h6 {
   line-height: 1.2;
 }
 /* Large */
-@media screen and (min-width: 60rem) { /* 960px */
+@media screen and (min-width: 70rem) { /* 960px */
   h6 {
     font-size: 1rem;
   }
