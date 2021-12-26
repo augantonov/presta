@@ -3,14 +3,14 @@ status: true
 dependencies:
   config:
     - block_content.type.frontcar_block
-    - field.storage.block_content.field_disclaimer
+    - field.storage.block_content.field_frontcar
   module:
     - text
-id: block_content.frontcar_block.field_disclaimer
-field_name: field_disclaimer
+id: block_content.frontcar_block.field_frontcar
+field_name: field_frontcar
 entity_type: block_content
 bundle: frontcar_block
-label: Disclaimer
+label: Frontcar
 description: ''
 required: false
 translatable: true
