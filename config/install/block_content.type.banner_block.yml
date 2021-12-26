@@ -1,5 +1,5 @@
 langcode: ru
-status: false
+status: true
 dependencies: {  }
 id: banner_block
 label: 'Banner block'

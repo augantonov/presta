@@ -1,5 +1,5 @@
 langcode: ru
-status: true
+status: false
 dependencies: {  }
 id: frontcar_block
 label: 'Авто морды на главной'
