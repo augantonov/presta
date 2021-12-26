@@ -1,0 +1,30 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.frontcar_block
+    - field.field.block_content.frontcar_block.field_copyright
+    - field.field.block_content.frontcar_block.field_disclaimer
+  module:
+    - text
+id: block_content.frontcar_block.default
+targetEntityType: block_content
+bundle: frontcar_block
+mode: default
+content:
+  field_copyright:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_disclaimer:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true
