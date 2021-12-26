@@ -41,7 +41,7 @@
 %}
 
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<div class="search-iconwrap"><nav role="navigation" aria-labelledby="block-azr-main-menu-menu" id="block-azr-main-menu" class="block block-menu navigation">
+<nav role="navigation" aria-labelledby="block-azr-main-menu-menu" id="block-azr-main-menu" class="block block-menu navigation">
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
     {% set title_attributes = title_attributes.addClass('visually-hidden') %}
@@ -70,4 +70,4 @@
   </div>
   </div>
 
-</nav></div>
+</nav>
