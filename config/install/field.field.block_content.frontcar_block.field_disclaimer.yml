@@ -1,0 +1,20 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - block_content.type.frontcar_block
+    - field.storage.block_content.field_frontcar
+  module:
+    - text
+id: block_content.frontcar_block.field_frontcar
+field_name: field_frontcar
+entity_type: block_content
+bundle: frontcar_block
+label: Frontcar
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
