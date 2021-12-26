@@ -1,0 +1,7 @@
+langcode: ru
+status: true
+dependencies: {  }
+id: car_block
+label: 'Морды на главной'
+revision: 0
+description: 'Авто морды на главной странице'
