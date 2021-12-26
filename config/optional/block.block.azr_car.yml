@@ -1,0 +1,27 @@
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:disclaimer_block:b344443c-5c07-4724-83f6-e766a9fc479e'
+  enforced:
+    module:
+      - azrua_content
+  module:
+    - block_content
+  theme:
+    - azr
+id: azr_car
+theme: azr
+region: banner_top
+weight: 10
+provider: null
+plugin: 'block_content:b344443c-5c07-4724-83f6-e766a9fc479e'
+settings:
+  id: 'block_content:b344443c-5c07-4724-83f6-e766a9fc479e'
+  label: 'AZR disclaimer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
