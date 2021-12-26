@@ -154,6 +154,7 @@ class InstallHelper implements ContainerInjectionInterface {
       ->importContentFromFile('node', 'article')
       ->importContentFromFile('node', 'page')
       ->importContentFromFile('block_content', 'disclaimer_block')
+      ->importContentFromFile('block_content', 'frontcar_block')
       ->importContentFromFile('block_content', 'footer_promo_block')
       ->importContentFromFile('block_content', 'banner_block');
   }
