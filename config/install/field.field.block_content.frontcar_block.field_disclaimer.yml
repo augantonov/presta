@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - block_content.type.frontcar_block
-    - field.storage.block_content.field_frontcar
+    - field.storage.block_content.field_disclaimer
   module:
     - text
-id: block_content.frontcar_block.field_frontcar
-field_name: field_frontcar
+id: block_content.frontcar_block.field_disclaimer
+field_name: field_disclaimer
 entity_type: block_content
 bundle: frontcar_block
 label: Frontcar
