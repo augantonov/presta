@@ -745,7 +745,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'type' => $data['type'],
       'langcode' => 'en',
       'field_frontcar' => [
-        'value' => $data['field_frontcar'],
+        'value' => $data['field_disclaimer'],
         'format' => 'basic_html',
       ],
       'field_copyright' => [
