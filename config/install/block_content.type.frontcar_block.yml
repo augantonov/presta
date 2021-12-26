@@ -2,6 +2,6 @@ langcode: ru
 status: true
 dependencies: {  }
 id: frontcar_block
-label: 'Морды на главной'
+label: 'Авто морды на главной'
 revision: 0
 description: 'Авто морды на главной странице'
