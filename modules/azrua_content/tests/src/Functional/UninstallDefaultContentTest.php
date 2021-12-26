@@ -172,6 +172,12 @@ class UninstallDefaultContentTest extends BrowserTestBase {
       ],
       [
         'path' => '/vidyrabot',
+        'type' => 'frontcar_block',
+        'uuid' => 'b344443c-5c07-4724-83f6-e766a9fc479e',
+        'unique_text' => 'avto na mordy',
+      ],
+      [
+        'path' => '/vidyrabot',
         'type' => 'footer_promo_block',
         'uuid' => '924ab293-8f5f-45a1-9c7f-2423ae61a241',
         'unique_text' => 'Magazine exclusive articles, vidyrabot and plenty of reasons to get your copy today.',
