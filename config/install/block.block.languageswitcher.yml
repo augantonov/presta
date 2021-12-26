@@ -1,5 +1,5 @@
 langcode: ru
-status: false
+status: true
 dependencies:
   module:
     - language
@@ -7,7 +7,7 @@ dependencies:
     - azr
 id: languageswitcher
 theme: azr
-region: pre_header
+region: bottom
 weight: 0
 provider: null
 plugin: 'language_block:language_interface'
