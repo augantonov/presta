@@ -729,6 +729,33 @@ class InstallHelper implements ContainerInjectionInterface {
   }
 
   /**
+   * Process frontcar_block data into frontcar_block block structure.
+   *
+   * @param array $data
+   *   Data of line that was read from the file.
+   *
+   * @return array
+   *   Data structured as a block.
+   */
+  protected function processFrontcarBlock(array $data) {
+    $values = [
+      'uuid' => $data['uuid'],
+      'info' => $data['info'],
+      'type' => $data['type'],
+      'langcode' => 'en',
+      'field_frontcar' => [
+        'value' => $data['field_frontcar'],
+        'format' => 'basic_html',
+      ],
+      'field_copyright' => [
+        'value' => '&copy; ' . date("Y") . ' ' . $data['field_copyright'],
+        'format' => 'basic_html',
+      ],
+    ];
+    return $values;
+  }
+
+  /**
    * Process footer_block data into footer_block block structure.
    *
    * @param array $data
@@ -801,6 +828,10 @@ class InstallHelper implements ContainerInjectionInterface {
       case 'disclaimer_block':
         $structured_content = $this->processDisclaimerBlock($content);
         break;
+
+        case 'frontcar_block':
+          $structured_content = $this->processFrontcarBlock($content);
+          break;
 
       case 'footer_promo_block':
         $structured_content = $this->processFooterPromoBlock($content, $langcode);
