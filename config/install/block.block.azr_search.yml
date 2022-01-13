@@ -7,7 +7,7 @@ dependencies:
     - azr
 id: azr_search
 theme: azr
-region: header
+region: pre_header
 weight: -5
 provider: null
 plugin: search_form_block
