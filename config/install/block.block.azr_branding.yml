@@ -7,7 +7,7 @@ dependencies:
     - azr
 id: azr_branding
 theme: azr
-region: header
+region: pre_header
 weight: -7
 provider: null
 plugin: system_branding_block
