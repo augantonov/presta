@@ -13,7 +13,7 @@ bundle: frontcar_block
 mode: default
 content:
   field_copyright:
-    weight: 2
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
