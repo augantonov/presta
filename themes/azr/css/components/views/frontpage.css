@@ -20,3 +20,15 @@
     font-size: 1.77rem;
   }
 }
+
+.tdr-front {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 1.266rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  line-height: 0.5;
+  text-transform: uppercase;
+  color: #507d8e;
+}
