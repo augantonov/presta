@@ -1,24 +1,21 @@
+uuid: 4b3ad94d-7582-4cfb-b7f1-ad5592a9952a
 langcode: ru
 status: true
 dependencies:
   config:
-    - image.style.large_21_9
-    - image.style.large_21_9_2x
-    - image.style.medium_21_9
-    - image.style.small_21_9
+    - image.style.wide
+_core:
+  default_config_hash: N-0iLRDUIx8p7f3zNgj-AcEO_Ktg-DFaEV_xrEDQjEs
 id: hero_or_banner
 label: 'Hero or Banner'
 image_style_mappings:
   -
-    breakpoint_id: responsive_image.viewport_sizing
-    multiplier: 1x
     image_mapping_type: sizes
     image_mapping:
       sizes: 100vw
       sizes_image_styles:
-        - large_21_9
-        - large_21_9_2x
-        - medium_21_9
-        - small_21_9
+        - wide
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
 breakpoint_group: responsive_image
-fallback_image_style: small_21_9
+fallback_image_style: '_original image_'
