@@ -30,9 +30,6 @@
   set classes = [
     'block',
     'block-search',
-    'block-menu',
-    'navigation',
-    'menu-' ~ derivative_plugin_id|clean_class ~ '__wrapper',
   ]
 %}
 
@@ -103,33 +100,3 @@
   <div class="title">Сб: с 09:00 до 15:00</div>
   </div>
   </div>
-  <div class="search-iconwrap"><nav role="navigation" aria-labelledby="block-azr-main-menu-menu" id="block-azr-main-menu" class="block block-menu navigation">
-    {# Label. If not displayed, we still provide it for screen readers. #}
-    {% if not configuration.label_display %}
-      {% set title_attributes = title_attributes.addClass('visually-hidden') %}
-    {% endif %}
-    {{ title_prefix }}
-    <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
-    {{ title_suffix }}
-
-    <div id="menuArea">
-      <input type="checkbox" id="menuToggle"></input>
-
-    <label for="menuToggle" class="menuOpen">
-      <div class="open"></div>
-    </label>
-
-    <div class="menu-vw menuEffects">
-      <label for="menuToggle"></label>
-      <div class="menuContent">
-
-      {# Menu. #}
-      {% block content %}
-        {{ content }}
-      {% endblock %}
-
-      </div>
-    </div>
-    </div>
-
-  </nav></div>
