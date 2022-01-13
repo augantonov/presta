@@ -26,5 +26,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
+    format: full_html
 hidden:
   langcode: true

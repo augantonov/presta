@@ -1,26 +1,29 @@
+uuid: 0cf598d9-7aa0-4e36-8c45-c17f4b443f3b
 langcode: ru
 status: true
 dependencies:
   content:
     - 'block_content:frontcar_block:b344443c-5c07-4724-83f6-e766a9fc479e'
-  enforced:
-    module:
-      - azrua_content
   module:
     - block_content
   theme:
     - azr
+  enforced:
+    module:
+      - azrua_content
+_core:
+  default_config_hash: IL0ARbQK1z80-rAgISKAh_6EEJOfUzK4mqO5dJoT4us
 id: azr_frontcar
 theme: azr
 region: banner_top
-weight: 10
+weight: -10
 provider: null
 plugin: 'block_content:b344443c-5c07-4724-83f6-e766a9fc479e'
 settings:
   id: 'block_content:b344443c-5c07-4724-83f6-e766a9fc479e'
   label: 'Авто на главной'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
