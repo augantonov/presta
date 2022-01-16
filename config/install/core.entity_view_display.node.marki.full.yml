@@ -18,7 +18,6 @@ dependencies:
     - field.field.node.marki.layout_builder__layout
     - node.type.marki
   module:
-    - advanced_text_formatter
     - layout_builder
     - media
     - metatag
