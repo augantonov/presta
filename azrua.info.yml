@@ -53,9 +53,10 @@ install:
   - metatag_views
   - admin_toolbar
   - webp
+  - owlcarousel
   - pwa
   - pwa_extras
-  - owlcarousel
+  - advanced_text_formatter
 themes:
   - azr
   - seven
