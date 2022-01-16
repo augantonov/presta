@@ -75,7 +75,7 @@
 .menu-main__link:active,
 .menu-main__link.is-active {
   text-decoration: none;
-  border-bottom-color: #0062c0;
+  border-bottom-color: #0195d3;
 }
 
 @media screen and (min-width: 348em) {
