@@ -68,8 +68,8 @@
 .menu-main__link.is-active:hover,
 .menu-main__link:focus {
   text-decoration: none;
-  color: #0062c0;
-  border-bottom-color: #0062c0;
+  color: #4b96d4;
+  border-bottom-color: #4b96d4;
   background-color: inherit;
 }
 .menu-main__link:active,
@@ -162,7 +162,7 @@ input {
   z-index: 501;
   background-color: #0195d3;
   width: 50px;
-  height: 3px;
+  height: 4px;
   display: block;
   border-radius: 2px;
   cursor: pointer;
@@ -174,7 +174,7 @@ input {
   content: "";
   background-color: #0195d3;
   width: 50px;
-  height: 3px;
+  height: 4px;
   display: block;
   border-radius: 2px;
   position: relative;
@@ -187,7 +187,7 @@ input {
   content: "";
   background-color: #0195d3;
   width: 50px;
-  height: 3px;
+  height: 4px;
   display: block;
   border-radius: 2px;
   position: relative;
