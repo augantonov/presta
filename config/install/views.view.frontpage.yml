@@ -273,42 +273,6 @@ display:
         operator: AND
         groups:
           1: AND
-      style:
-        type: slick
-        options:
-          optionset: default
-          class: ''
-          id: ''
-          image: ''
-          link: ''
-          overlay: ''
-          title: ''
-          vanilla: true
-          layout: center
-          cache: 0
-          current_view_mode: page_1
-          skin: grid
-          style: flex
-          grid: '3'
-          grid_medium: ''
-          grid_small: ''
-          overridables:
-            arrows: '0'
-            autoplay: '0'
-            dots: '0'
-            draggable: '0'
-            infinite: '0'
-            mouseWheel: '0'
-            randomize: '0'
-            variableWidth: '0'
-          thumbnail: ''
-          optionset_thumbnail: ''
-          skin_thumbnail: asnavfor
-          thumbnail_effect: ''
-          thumbnail_position: ''
-          override: false
-          preserve_keys: false
-          visible_items: 3
       row:
         type: 'entity:node'
         options:
