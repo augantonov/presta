@@ -8,7 +8,7 @@ dependencies:
     - node.type.vidraboty
   module:
     - node
-    - slick_views
+    - owlcarousel
     - user
 _core:
   default_config_hash: oHcZ6PuqLoxCwoS2DVnyUuLeMwudXSFDS9TL94C41AM
