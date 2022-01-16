@@ -1,4 +1,4 @@
-uuid: 0167c11d-3921-4dd8-94cf-969025a0664f
+uuid: 80f04672-7f04-4286-9d96-a5ad5e3494ef
 langcode: ru
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - owlcarousel
     - user
 _core:
-  default_config_hash: oHcZ6PuqLoxCwoS2DVnyUuLeMwudXSFDS9TL94C41AM
+  default_config_hash: h1GJGdO2BcMsWvSBDITXgHKDSs33BB4sxoVeEGQXp10
 id: frontpage
 label: Главная
 module: node
@@ -273,6 +273,36 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: owlcarousel
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          items: '3'
+          itemsDesktop: '[1199,4]'
+          itemsDesktopSmall: '[979,3]'
+          itemsTablet: '[768,2]'
+          itemsMobile: '[479,1]'
+          singleItem: 0
+          itemsScaleUp: 0
+          slideSpeed: '200'
+          paginationSpeed: '800'
+          rewindSpeed: '1000'
+          autoPlay: 0
+          stopOnHover: 0
+          navigation: 1
+          prevText: назад
+          nextText: вперёд
+          rewindNav: 1
+          scrollPerPage: 1
+          pagination: 1
+          paginationNumbers: 0
+          responsive: 1
+          responsiveRefreshRate: '200'
+          mouseDrag: 1
+          touchDrag: 1
+          transitionStyle: fade
       row:
         type: 'entity:node'
         options:
@@ -359,7 +389,7 @@ display:
       defaults:
         css_class: false
         header: false
-      css_class: grid--2
+      css_class: ''
       display_description: ''
       header:
         area:
