@@ -62,7 +62,7 @@
     align-items: center;
     max-width: 1200px;
     height: 0; /* Required for flexbox vertical centering in IE11. Min-height will take precedence. */
-    min-height: 37vw;
+    min-height: 25vw;
     margin: 0 auto;
     padding: 0 1em;
   }
