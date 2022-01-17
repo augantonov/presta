@@ -55,18 +55,18 @@
 * This file is used to style the 'OWL Card' view mode.
 */
 
-owl-wrapper-outer > .view-mode-card {
+.owl-wrapper-outer > .view-mode-card {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 1rem;
 }
 
-owl-wrapper-outer > .view-mode-card .node__title {
+.owl-wrapper-outer > .view-mode-card .node__title {
   flex-grow: 1;
 }
 
-owl-wrapper-outer > .view-mode-card .field--name-title {
+.owl-wrapper-outer > .view-mode-card .field--name-title {
   text-transform: uppercase;
   text-align: center;
   color: white;
@@ -78,30 +78,30 @@ owl-wrapper-outer > .view-mode-card .field--name-title {
   font-weight: 700;
 }
 
-owl-wrapper-outer > .view-mode-card .node__link {
+.owl-wrapper-outer > .view-mode-card .node__link {
   text-decoration: none;
   color: #000;
   background-color: inherit;
 }
 
-owl-wrapper-outer > .view-mode-card .node__link:focus,
-owl-wrapper-outer > .view-mode-card .node__link:hover {
+.owl-wrapper-outer > .view-mode-card .node__link:focus,
+.owl-wrapper-outer > .view-mode-card .node__link:hover {
   text-decoration: underline;
   color: #000;
 }
 
 /* Need to fix IE11 cards height issue */
-owl-wrapper-outer > .view-mode-card .node__content {
+.owl-wrapper-outer > .view-mode-card .node__content {
   flex-shrink: 0;
 }
 
-owl-wrapper-outer > .view-mode-card .field--name-field-media-image img {
+.owl-wrapper-outer > .view-mode-card .field--name-field-media-image img {
   display: block;
   width: 100%;
   margin-bottom: 1.2em;
 }
 
-owl-wrapper-outer > .view-mode-card .label-items {
+.owl-wrapper-outer > .view-mode-card .label-items {
   color: #5f635d;
   font-size: 0.889rem;
 }
