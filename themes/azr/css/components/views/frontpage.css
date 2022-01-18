@@ -14,7 +14,7 @@
 /* Large */
 @media screen and (min-width: 60em) { /* 960px */
   .view-frontpage .view-header {
-    margin-bottom: 3rem;
+    margin-bottom: 0.1rem;
     padding-right: 2.37rem;
     padding-left: 2.37rem;
     font-size: 1.77rem;
