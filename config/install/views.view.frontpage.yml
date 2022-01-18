@@ -1,4 +1,4 @@
-uuid: 80f04672-7f04-4286-9d96-a5ad5e3494ef
+uuid: 9a7dea5e-7a3f-4a2d-afd1-83624399c537
 langcode: ru
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - owlcarousel
     - user
 _core:
-  default_config_hash: h1GJGdO2BcMsWvSBDITXgHKDSs33BB4sxoVeEGQXp10
+  default_config_hash: VyhPiNR0tMJhSUFZiBaac23iywgOjYoxdbvelYtYJFQ
 id: frontpage
 label: Главная
 module: node
@@ -29,10 +29,9 @@ display:
       title: Главная
       fields: {  }
       pager:
-        type: some
+        type: none
         options:
           offset: 0
-          items_per_page: 8
       exposed_form:
         type: basic
         options:
@@ -402,7 +401,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p class="text-align-center">Виды работ</p>'
+            value: '<p class="text-align-center"><a href="/ru/avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya" class="menu-main__link is-active" data-drupal-link-system-path="avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya">ВИДЫ РАБОТ</a></p>'
             format: full_html
           tokenize: false
       rendering_language: '***LANGUAGE_language_interface***'
