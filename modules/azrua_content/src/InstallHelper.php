@@ -722,7 +722,7 @@ class InstallHelper implements ContainerInjectionInterface {
         'format' => 'full_html',
       ],
       'field_copyright' => [
-        'value' => ' . $data['field_copyright' '&copy; ' . date("Y") . '],
+        'value' =>  $data['field_copyright'] . ' ' . '&copy; ' . date("Y"),
         'format' => 'full_html',
       ],
     ];
