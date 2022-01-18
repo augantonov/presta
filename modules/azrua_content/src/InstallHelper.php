@@ -719,11 +719,11 @@ class InstallHelper implements ContainerInjectionInterface {
       'langcode' => 'en',
       'field_disclaimer' => [
         'value' => $data['field_disclaimer'],
-        'format' => 'basic_html',
+        'format' => 'full_html',
       ],
       'field_copyright' => [
-        'value' => '&copy; ' . date("Y") . ' ' . $data['field_copyright'],
-        'format' => 'basic_html',
+        'value' => ' . $data['field_copyright' '&copy; ' . date("Y") . '],
+        'format' => 'full_html',
       ],
     ];
     return $values;
