@@ -74,8 +74,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  z-index: 1;
 }
 
 #owl-wrapper-outer .view-mode-card .node__link {
@@ -99,9 +100,17 @@
   display: block;
   width: 100%;
   margin-bottom: 1.2em;
+  filter: brightness(.5);
 }
 
 #owl-wrapper-outer .view-mode-card .label-items {
   color: #5f635d;
   font-size: 0.889rem;
+}
+
+#owl-wrapper-outer .view-mode-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
 }
