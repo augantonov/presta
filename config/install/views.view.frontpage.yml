@@ -1,4 +1,4 @@
-uuid: 9a7dea5e-7a3f-4a2d-afd1-83624399c537
+uuid: 5f0903b4-a2bb-4416-b2e0-88a2d1a1669c
 langcode: ru
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - owlcarousel
     - user
 _core:
-  default_config_hash: VyhPiNR0tMJhSUFZiBaac23iywgOjYoxdbvelYtYJFQ
+  default_config_hash: bfrV0CIrBMLU-kOpBczcJX1xn-VmTR8IinAvEjRbd_w
 id: frontpage
 label: Главная
 module: node
@@ -401,7 +401,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p class="text-align-center"><a href="/ru/avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya" class="menu-main__link is-active" data-drupal-link-system-path="avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya">ВИДЫ РАБОТ</a></p>'
+            value: '<p class="text-align-center"><a href="/ru/avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya" class="vr_link" data-drupal-link-system-path="avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya">ВИДЫ РАБОТ</a></p>'
             format: full_html
           tokenize: false
       rendering_language: '***LANGUAGE_language_interface***'
