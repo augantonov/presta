@@ -19,7 +19,7 @@
   .block-type-disclaimer-block .field--name-field-disclaimer,
   .block-type-disclaimer-block .field--name-field-copyright {
     margin-bottom: 0;
-    text-align: start;
+    text-align: end;
   }
 
   .block-type-disclaimer-block .field--name-field-disclaimer {
