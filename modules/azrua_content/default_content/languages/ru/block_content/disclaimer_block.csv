@@ -1,3 +1,2 @@
 id,uuid,info,type,field_disclaimer,field_copyright
-azr_disclaimer,9b4dcd67-99f3-48d0-93c9-2c46648b29de,AZR Disclaimer,disclaimer_block,"<p><a class=""language-link is-active"" href=""/ru"" hreflang=""ru"">На русском</a> │ <a class=""language-link"" href=""/uk"" hreflang=""uk"">Українською</a> — СТО «АЗР» © 2022</p>
-",СТО «АЗР»
+azr_disclaimer,9b4dcd67-99f3-48d0-93c9-2c46648b29de,AZR Disclaimer,disclaimer_block,"<p><a class=""language-link is-active"" href=""/ru"" hreflang=""ru"">На русском</a> │ <a class=""language-link"" href=""/uk"" hreflang=""uk"">Українською</a></p>",СТО «АЗР»
