@@ -114,3 +114,12 @@
     width: 100%;
     padding: 1rem;
 }
+
+.vr_link {
+font-family: Helvetica,Arial,sans-serif;
+font-size: 20px !important;
+font-weight: 600 !important;
+line-height: 0.5;
+text-transform: uppercase;
+color: #0195d3;
+}
