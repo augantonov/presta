@@ -1,4 +1,4 @@
-/* 
+/*
  * 	Core Owl Carousel CSS File
  *	v1.3.3
  */
@@ -36,7 +36,7 @@
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-	
+
 .owl-carousel .owl-item{
 	float: left;
 }
@@ -44,17 +44,33 @@
 .owl-controls .owl-buttons div{
 	cursor: pointer;
 }
-.owl-controls {
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+.owl-controls{
+    position: absolute;
+    width: 107% !important; /* adjust if necessary */
+    top: 40% !important; /* adjust if necessary */
+    margin: 0 -3.5% !important; /* adjust if necessary */
+}
+.owl-buttons div{ /* left arrow */
+    width: 55px; /* width background image */
+    height: 0 !important;
+    padding-top: 33px !important; /* height background image */
+    overflow: hidden !important;
+    background: transparent url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E") 0 0 no-repeat !important;
+		margin: 0em 3em !important;
+    float: left;
+}
+.owl-buttons .owl-next{ /* right arrow */
+    float: right;
+    background: transparent url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E") 0 0 no-repeat !important;
+}
+
+.owl-pagination {
+  	margin-top: 8em;
+		position: absolute;
 }
 
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(grabbing.png) 8 8, move;
 }
 
@@ -68,4 +84,3 @@
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
 }
-
