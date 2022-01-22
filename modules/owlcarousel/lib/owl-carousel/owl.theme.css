@@ -17,7 +17,7 @@
 	*display: inline;/*IE7 life-saver */
 	margin: 5px;
 	padding: 0.5em 1em;
-	font-size: 12px;
+	font-size: 1px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 0px;

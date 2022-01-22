@@ -46,9 +46,9 @@
 }
 .owl-controls{
     position: absolute;
-    width: 105% !important; /* adjust if necessary */
-    top: 40% !important; /* adjust if necessary */
-    margin: 0 -2% !important; /* adjust if necessary */
+    width: 98% !important; /* adjust if necessary */
+    top: 45% !important; /* adjust if necessary */
+    margin: 0 1.5% !important; /* adjust if necessary */
 }
 .owl-buttons div{ /* left arrow */
     width: 55px; /* width background image */
