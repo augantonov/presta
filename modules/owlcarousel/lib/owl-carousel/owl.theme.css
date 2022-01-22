@@ -20,7 +20,7 @@
 	font-size: 12px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
-	border-radius: 30px;
+	border-radius: 0px;
 	background: #869791;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;

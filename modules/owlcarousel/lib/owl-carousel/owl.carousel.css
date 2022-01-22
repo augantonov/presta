@@ -46,9 +46,9 @@
 }
 .owl-controls{
     position: absolute;
-    width: 107% !important; /* adjust if necessary */
+    width: 105% !important; /* adjust if necessary */
     top: 40% !important; /* adjust if necessary */
-    margin: 0 -3.5% !important; /* adjust if necessary */
+    margin: 0 -2% !important; /* adjust if necessary */
 }
 .owl-buttons div{ /* left arrow */
     width: 55px; /* width background image */
@@ -69,7 +69,20 @@
 }
 
 .owl-buttons {
+	margin-top: -12em;
+}
+
+/* Small */
+@media screen and (min-width: 30rem) { /* 480px */
+  .owl-buttons {
 	margin-top: -10em;
+}
+}
+/* Medium */
+@media screen and (min-width: 40rem) { /* 640px */
+    .owl-buttons {
+	margin-top: -10em;
+}
 }
 
 /* mouse grab icon */
