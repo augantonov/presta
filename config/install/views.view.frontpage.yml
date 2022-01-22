@@ -1,4 +1,4 @@
-uuid: 5f0903b4-a2bb-4416-b2e0-88a2d1a1669c
+uuid: 84239138-e851-48ac-8689-73a3b55be59e
 langcode: ru
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - owlcarousel
     - user
 _core:
-  default_config_hash: bfrV0CIrBMLU-kOpBczcJX1xn-VmTR8IinAvEjRbd_w
+  default_config_hash: yOnas3OTxdc9gDCBooHQHvdvD2lbJSExS60YMqsHXe0
 id: frontpage
 label: Главная
 module: node
@@ -291,8 +291,8 @@ display:
           autoPlay: 0
           stopOnHover: 0
           navigation: 1
-          prevText: назад
-          nextText: вперёд
+          prevText: '<'
+          nextText: '>'
           rewindNav: 1
           scrollPerPage: 1
           pagination: 1
