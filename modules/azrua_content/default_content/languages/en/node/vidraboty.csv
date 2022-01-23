@@ -1,29 +1,29 @@
 id,title,image_reference,summary,author,vidraboty_category,preparation_time,cooking_time,total_time,difficulty,reglament,vidraboty_instruction,number_of_servings,tags,slug,promote
-1,Диагностика двигателя,1,,Рудольф Дизель,,,,,,,ug-diagnostika-dvigatelya.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_dvigatelya/,TRUE
-2,Диагностика перед покупкой,2,,Рудольф Дизель,,,,,,,ug-diagnostika-pered-pokupkoj.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_pered_pokupkoj/,TRUE
-3,Диагностика подвески,3,,Рудольф Дизель,,,,,,,ug-diagnostika-podveski.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_podveski/,TRUE
-4,Замена амортизаторов,4,,Рудольф Дизель,,,,,,,ug-zamena-amortizatorov.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_amortizatorov/,TRUE
-5,Замена масла,5,,Рудольф Дизель,,,,,,,ug-zamena-masla.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_masla/,TRUE
-6,Замена ремня ГРМ,6,,Рудольф Дизель,,,,,,,ug-zamena-remnya-grm.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm/,TRUE
-7,"Замена ремня ГРМ FORD ECOBOOST, DURATORQ",7,,Рудольф Дизель,,,,,,,ug-zamena-remnya-grm-ford-ecoboost-duratorq.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm_ford_ecoboost_duratorq/,TRUE
-8,Замена сцепления DSG,8,,Рудольф Дизель,,,,,,,ug-zamena-scepleniya-dsg.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_scepleniya_dsg/,TRUE
-9,Замена сцепления Power Shift DP6,9,,Рудольф Дизель,,,,,,,ug-zamena-scepleniya-power-shift-dp6.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_scepleniya_power_shift_dp6/,ON
-10,Замена цепи ГРМ,10,,Рудольф Дизель,,,,,,,ug-zamena-cepi-grm.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_cepi_grm/,ON
-11,Компьютерная диагностика,11,,Рудольф Дизель,,,,,,,ug-kompyuternaya-diagnostika.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/kompyuternaya_diagnostika/,ON
-12,Отопитель Webasto,12,,Рудольф Дизель,,,,,,,ug-otopitel-webasto.html,,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/otopitel_webasto/,ON
-13,Промывка сажевого фильтра,13,,Рудольф Дизель,,,,,,,ug-promyvka-sazhevogo-filtra.html,,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/promyvka_sazhevogo_filtra/,ON
-14,Ремонт 651 двигателя Mercedes,14,,Рудольф Дизель,,,,,,,ug-remont-651-dvigatelya-mercedes.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_651_dvigatelya_mercedes/,ON
-15,Ремонт АБС,15,,Рудольф Дизель,,,,,,,ug-remont-abs.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_abs/,ON
-16,Ремонт двигателя,16,,Рудольф Дизель,,,,,,,ug-remont-dvigatelya.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_dvigatelya/,FALSE
-17,Ремонт инжектора,17,,Рудольф Дизель,,,,,,,ug-remont-inzhektora.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_inzhektora/,FALSE
-18,Ремонт коробки передач DSG 7,18,,Рудольф Дизель,,,,,,,ug-remont-korobki-peredach-dsg-7.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_korobki_peredach_dsg_7/,FALSE
-19,Ремонт МКПП,19,,Рудольф Дизель,,,,,,,ug-remont-mkpp.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_mkpp/,FALSE
-20,Ремонт рулевого управления,20,,Рудольф Дизель,,,,,,,ug-remont-rulevogo-upravleniya.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_rulevogo_upravleniya/,FALSE
-21,Ремонт системы кондиционирования,21,,Рудольф Дизель,,,,,,,ug-remont-sistemy-kondicionirovaniya.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_sistemy_kondicionirovaniya/,FALSE
-22,Ремонт топливных систем,22,,Рудольф Дизель,,,,,,,ug-remont-toplivnyh-sistem.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_toplivnyh_sistem/,FALSE
-23,Ремонт тормозной системы,23,,Рудольф Дизель,,,,,,,ug-remont-tormoznoj-sistemy.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_tormoznoj_sistemy/,FALSE
-24,Ремонт ходовой,24,,Рудольф Дизель,,,,,,,ug-remont-hodovoj.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_hodovoj/,FALSE
-25,Ремонт электрики,25,,Рудольф Дизель,,,,,,,ug-remont-ehlektriki.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_ehlektriki/,FALSE
-26,Удаление сажевого фильтра,26,,Рудольф Дизель,,,,,,,ug-udalenie-sazhevogo-filtra.html,,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/udalenie_sazhevogo_filtra/,FALSE
-27,Чистка впускных каналов ГБЦ,27,,Рудольф Дизель,,,,,,,ug-chistka-vpusknyh-kanalov-gbc.html,,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/chistka_vpusknyh_kanalov_gbc/,FALSE
-28,Восстановление мехатроника DSG 7 VAG,28,,Рудольф Дизель,,,,,,,vosstanovlenie-mekhatronika-dsg-7-vag.html,,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/vosstanovlenie-mekhatronika-dsg-7-vag/,FALSE
+1,Engine diagnosis,1,Engine diagnosis,Рудольф Дизель,1,1,1,1,easy,2 red,ug-diagnostika-dvigatelya.html,1,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_dvigatelya/,TRUE
+2,Diagnostics before buying,2,Diagnostics before buying,Рудольф Дизель,1,1,1,1,easy,2 red,ug-diagnostika-pered-pokupkoj.html,1,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_pered_pokupkoj/,TRUE
+3,Suspension diagnosis,3,Suspension diagnosis,Рудольф Дизель,1,1,1,1,easy,2 red,ug-diagnostika-podveski.html,1,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_podveski/,TRUE
+4,Shock absorber replacement,4,Shock absorber replacement,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-amortizatorov.html,1,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_amortizatorov/,TRUE
+5,Oil change,5,Oil change,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-masla.html,1,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_masla/,TRUE
+6,Timing belt replacement,6,Timing belt replacement,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-remnya-grm.html,1,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm/,TRUE
+7,"Timing belt replacement FORD ECOBOOST, DURATORQ",7,"Timing belt replacement FORD ECOBOOST, DURATORQ",Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-remnya-grm-ford-ecoboost-duratorq.html,1,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm_ford_ecoboost_duratorq/,TRUE
+8,DSG clutch replacement,8,DSG clutch replacement,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-scepleniya-dsg.html,1,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_scepleniya_dsg/,TRUE
+9,Replacing of clutch Power Shift DP6,9,Replacing of clutch Power Shift DP6,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-scepleniya-power-shift-dp6.html,1,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_scepleniya_power_shift_dp6/,ON
+10,Timing chain replacement,10,Timing chain replacement,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-cepi-grm.html,1,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_cepi_grm/,ON
+11,Computer diagnostics,11,Computer diagnostics,Рудольф Дизель,1,1,1,1,easy,2 red,ug-kompyuternaya-diagnostika.html,1,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/kompyuternaya_diagnostika/,ON
+12,Webasto heater,12,Webasto heater,Рудольф Дизель,1,1,1,1,easy,2 red,ug-otopitel-webasto.html,1,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/otopitel_webasto/,ON
+13,Diesel particulate filter cleaning,13,Diesel particulate filter cleaning,Рудольф Дизель,1,1,1,1,easy,2 red,ug-promyvka-sazhevogo-filtra.html,1,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/promyvka_sazhevogo_filtra/,ON
+14,Mercedes Engine Repair 651,14,Mercedes Engine Repair 651,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-651-dvigatelya-mercedes.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_651_dvigatelya_mercedes/,YES
+15,ABS Repair,15,ABS Repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-abs.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_abs/,YES
+16,Engine Repair,16,Engine Repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-dvigatelya.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_dvigatelya/,YES
+17,Injector Repair,17,Injector Repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-inzhektora.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_inzhektora/,YES
+18,DSG 7 Transmission Repair,18,DSG 7 Transmission Repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-korobki-peredach-dsg-7.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_korobki_peredach_dsg_7/,YES
+19,Manual Transmission Repair,19,Manual Transmission Repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-mkpp.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_mkpp/,YES
+20,Steering repair,20,Steering repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-rulevogo-upravleniya.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_rulevogo_upravleniya/,FALSE
+21,Air Conditioning Repair,21,Air Conditioning Repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-sistemy-kondicionirovaniya.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_sistemy_kondicionirovaniya/,FALSE
+22,Fuel Repair,22,Fuel Repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-toplivnyh-sistem.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_toplivnyh_sistem/,FALSE
+23,Brake System Repair,23,Brake System Repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-tormoznoj-sistemy.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_tormoznoj_sistemy/,FALSE
+24,Chassis repair,24,Chassis repair,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-hodovoj.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_hodovoj/,FALSE
+25,Electrical Reparepairir,25,Electrical Reparepairir,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-ehlektriki.html,1,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_ehlektriki/,FALSE
+26,Diesel particulate filter removal,26,Diesel particulate filter removal,Рудольф Дизель,1,1,1,1,easy,2 red,ug-udalenie-sazhevogo-filtra.html,1,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/udalenie_sazhevogo_filtra/,FALSE
+27,Cylinder head intake duct cleaning,27,Cylinder head intake duct cleaning,Рудольф Дизель,1,1,1,1,easy,2 red,ug-chistka-vpusknyh-kanalov-gbc.html,1,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/chistka_vpusknyh_kanalov_gbc/,FALSE
+28,DSG 7 VAG mechatronic,28,DSG 7 VAG mechatronic,Рудольф Дизель,1,1,1,1,easy,2 red,vosstanovlenie-mekhatronika-dsg-7-vag.html,1,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/vosstanovlenie-mekhatronika-dsg-7-vag/,FALSE
