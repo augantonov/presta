@@ -439,7 +439,6 @@ class InstallHelper implements ContainerInjectionInterface {
       'type' => 'vidraboty',
       // Title field.
       'title' => $data['title'],
-      'promote' => $data['promote'],
       'moderation_state' => 'published',
       'langcode' => 'en',
     ];
@@ -448,9 +447,13 @@ class InstallHelper implements ContainerInjectionInterface {
       $values['uid'] = $this->getUser($data['author']);
     }
     // Set node alias if exists.
+    if (!empty($data['promote'])) {
+      $values['promote'] = [['value' => $data['promote']]];
+    }
+    // Set node alias if exists.
     if (!empty($data['slug'])) {
       $values['path'] = [['alias' => '/' . $data['slug']]];
-    }
+
     // Save node alias
     $this->saveNodePath($langcode, 'vidraboty', $data['id'], $data['slug']);
     // Set field_media_image field.
