@@ -1,9 +1,9 @@
 id,title,body,author,slug,image_reference,tags
-1,Автосервис,avtoservis_harkov.html,Готтлиб Даймлер,avtoservis_harkov,20,3
-2,Техобслуживание,tehobslujivanie-avtomobilya.html,Рудольф Дизель,avtoservis_harkov/tehobslujivanie_avtomobilya,21,3
-3,Капитальный ремонт,kapitalynyi-remont-avtomobilya.html,Карл Бенц,avtoservis_harkov/kapitalynyi_remont_avtomobilya,22,3
-4,Вакансии,vakansii.html,Рудольф Дизель,vakansii,23,3
-5,Диагностика двигателя,diagnostika-dvigatelya-avtomobilya.html,Рудольф Дизель,avtoservis_harkov/diagnostika_avtomobilya/diagnostika_dvigatelya_avtomobilya,24,1
-6,Диагностика подвески,diagnostika-podveski-avtomobilya.html,Рудольф Дизель,avtoservis_harkov/diagnostika_avtomobilya/diagnostika_podveski_avtomobilya,25,1
-7,Диагностика перед покупкой,diagnostika-pered-pokupkoi-avtomobilya.html,Карл Бенц,avtoservis_harkov/diagnostika_avtomobilya/diagnostika_pered_pokupkoi_avtomobilya,26,1
-8,Компьютерная диагностика,kompyuternaya-diagnostika-avtomobilya.html,Карл Бенц,avtoservis_harkov/diagnostika_avtomobilya/kompyuternaya_diagnostika_avtomobilya,27,1
+1,Автосервис,avtoservis_harkov.html,Готтлиб Даймлер,avtoservis_harkov,32,1
+2,Техобслуживание,tehobslujivanie-avtomobilya.html,Рудольф Дизель,avtoservis_harkov/tehobslujivanie_avtomobilya,33,1
+3,Капитальный ремонт,kapitalynyi-remont-avtomobilya.html,Карл Бенц,avtoservis_harkov/kapitalynyi_remont_avtomobilya,34,1
+4,Вакансии,vakansii.html,Рудольф Дизель,vakansii,35,1
+5,Диагностика двигателя,ug-diagnostika-dvigatelya.html,Рудольф Дизель,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_dvigatelya/,1,"1,2"
+6,Диагностика подвески,ug-diagnostika-podveski.html,Рудольф Дизель,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_podveski/,3,"1,2"
+7,Диагностика перед покупкой,ug-diagnostika-pered-pokupkoj.html,Карл Бенц,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_pered_pokupkoj/,2,"1,2"
+8,Компьютерная диагностика,ug-kompyuternaya-diagnostika.html,Карл Бенц,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/kompyuternaya_diagnostika/,11,"1,2"
