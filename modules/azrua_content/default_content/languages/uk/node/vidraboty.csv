@@ -2,11 +2,11 @@ id,title,image_reference,summary,author,vidraboty_category,preparation_time,cook
 1,Диагностика двигателя,1,,Рудольф Дизель,,,,,,,ug-diagnostika-dvigatelya.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_dvigatelya/,false
 2,Диагностика перед покупкой,2,,Рудольф Дизель,,,,,,,ug-diagnostika-pered-pokupkoj.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_pered_pokupkoj/,false
 3,Диагностика подвески,3,,Рудольф Дизель,,,,,,,ug-diagnostika-podveski.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_podveski/,true
-4,Замена амортизаторов,4,,Рудольф Дизель,,,,,,,ug-zamena-amortizatorov.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_amortizatorov/,true
-5,Замена масла,5,,Рудольф Дизель,,,,,,,ug-zamena-masla.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_masla/,true
-6,Замена ремня ГРМ,6,,Рудольф Дизель,,,,,,,ug-zamena-remnya-grm.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm/,true
-7,"Замена ремня ГРМ FORD ECOBOOST, DURATORQ",7,,Рудольф Дизель,,,,,,,ug-zamena-remnya-grm-ford-ecoboost-duratorq.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm_ford_ecoboost_duratorq/,true
-8,Замена сцепления DSG,8,,Рудольф Дизель,,,,,,,ug-zamena-scepleniya-dsg.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_scepleniya_dsg/,true
+4,Замена амортизаторов,4,,Рудольф Дизель,,,,,,,ug-zamena-amortizatorov.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_amortizatorov/,yes
+5,Замена масла,5,,Рудольф Дизель,,,,,,,ug-zamena-masla.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_masla/,yes
+6,Замена ремня ГРМ,6,,Рудольф Дизель,,,,,,,ug-zamena-remnya-grm.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm/,yes
+7,"Замена ремня ГРМ FORD ECOBOOST, DURATORQ",7,,Рудольф Дизель,,,,,,,ug-zamena-remnya-grm-ford-ecoboost-duratorq.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm_ford_ecoboost_duratorq/,yes
+8,Замена сцепления DSG,8,,Рудольф Дизель,,,,,,,ug-zamena-scepleniya-dsg.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_scepleniya_dsg/,yes
 9,Замена сцепления Power Shift DP6,9,,Рудольф Дизель,,,,,,,ug-zamena-scepleniya-power-shift-dp6.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_scepleniya_power_shift_dp6/,false
 10,Замена цепи ГРМ,10,,Рудольф Дизель,,,,,,,ug-zamena-cepi-grm.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_cepi_grm/,false
 11,Компьютерная диагностика,11,,Рудольф Дизель,,,,,,,ug-kompyuternaya-diagnostika.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/kompyuternaya_diagnostika/,false
