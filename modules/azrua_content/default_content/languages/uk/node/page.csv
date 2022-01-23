@@ -1,2 +1,86 @@
 id,title,body,author,slug
-1,Acerca de AZR,"<p> AZR es una revista ficticia de alimentos que se ha creado para demostrar cómo se puede construir un sitio de Drupal con la funcionalidad que se proporciona 'fuera de la caja'. </p> <p> Para obtener más información, visite <a href='https://www.drupal.org/docs/8/azr-drupal-8-demonstration-installation-profile'>https://www.drupal.org/docs/8/azr-drupal-8-demonstration-installation-profile</a>.</p> ",Samuel Adamson,acerca-de-azr
+1,Автозапчасти,"<div class=""column-content""><p>Автозапчасти «АЗР» — интернет магазин в Харькове, специализирующийся на продаже автозапчастей, более чем 1000 производителей для автомобилей производства стран Европы, США, Японии. У нас Вы можете купить автозапчасти с доставкой по Харькову и территории Украины.</p></div>
+<script type=""text/javascript"">
+	function CheckKey(e) {
+		if (e.keyCode == 13)
+		{
+			RedirectToComercialOffer();
+		}
+	}
+	
+	function FilterSubmitAction(event) {
+		var ev = (window.event) ? window.event : event;
+		var keyCode = ev.keyCode;
+		if (13 == keyCode) {
+			var btn = document.getElementById(""searchButton"");
+			btn.focus();
+			btn.click();
+			ev.cancel = true;
+			return false;
+		}
+		return true;
+	}
+
+	
+	function RedirectToComercialOffer() {
+		var code = document.getElementById('ctl00_ctl00_ctl00_cphMain_cph_articleSearchByCodeView_textBoxArticleCode').value;
+		window.location = 'http://azr.com.ua/Offer.aspx?code=' + code;
+	}
+</script>
+<div class=""column-content"">
+  <div class=""search"" onkeypress=""FilterSubmitAction(event)"">
+<div class=""widget gsc-heading  align-left style-4 text-dark ""><h4 class=""title""><span>Поиск по коду запчасти: *</span></h4></div>
+    <div class=""column-content"" id=""ctl00_ctl00_ctl00_cphMain_cph_articleSearchByCodeView_panelSearchByCode"">
+      <input name=""ctl00$ctl00$ctl00$cphMain$cph$articleSearchByCodeView$textBoxArticleCode"" type=""text"" maxlength=""50"" id=""ctl00_ctl00_ctl00_cphMain_cph_articleSearchByCodeView_textBoxArticleCode"" class=""inputStandart"" />&nbsp;
+      <input target=""_blank"" type=""button"" id=""searchButton"" value=""Найти запчасть"" class=""btnStandart"" onclick=""RedirectToComercialOffer()"" />
+    </div>
+  </div>
+</div>
+<div class=""column-content""><p><i>* Вы будете автоматически перемещены на сайт <a href=""http://azr.com.ua/"">интернет-магазина автозапачастей «АЗР»</a></i></p></div>",Вячеслав Ивченко,avtozapchasti_kharkov
+2,Контакты,"<div id=""map_canvas_8jzkg"" class=""map_canvas"" style=""width:100%; height:500px;""></div><script type=""text/javascript"">
+
+            jQuery(document).ready(function($) {
+
+               var stmapdefault = '49.9853904,36.2062346';
+
+               var marker = {position:stmapdefault}
+
+               var content = '';
+
+           
+
+               jQuery('#map_canvas_8jzkg').gmap({
+
+                  'scrollwheel':false,
+
+                  'zoom': 13  ,
+
+                  'center': stmapdefault,
+
+                  'mapTypeId':google.maps.MapTypeId.ROADMAP,
+
+                  'styles': [],
+
+                  'callback': function() {
+
+                     var self = this;
+
+                     self.addMarker(marker).click(function(){
+
+                        if(content){
+
+                           self.openInfoWindow({'content': content}, self.instance.markers[0]);
+
+                        }                     
+
+                     });
+
+                  },
+
+                  panControl: true
+
+               });
+
+            });
+
+         </script></div>",Вячеслав Ивченко,kontakty
