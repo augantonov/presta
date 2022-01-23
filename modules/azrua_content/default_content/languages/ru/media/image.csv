@@ -31,6 +31,24 @@ id,title,image,alt,author
 30,Виды работ,vidi-rabot.jpg,СТО «АЗР Южный» Харьков – выды работ,AZR
 31,Логотип,azr-logo.png,СТО «АЗР Южный» Харьков – логотип,AZR
 32,Автосервис,ug-avtoservis-harkov.jpg,СТО «АЗР Южный» Харьков – автосервис,AZR
-33,Техобслуживание,tekhobsluzhivanie.jpg,СТО «АЗР Южный» Харьков – техобслуживание,AZR
+33,Техобслуживание,ug-tekhobsluzhivanie.jpg,СТО «АЗР Южный» Харьков – техобслуживание,AZR
 34,Капитальный ремонт,ug-kapitalynyi-remont-avtomobilya.jpg,СТО «АЗР Южный» Харьков – капитальный ремонт,AZR
-35,Вакансии,ug-vakansii.jpg,СТО «АЗР Южный» Харьков – вакансии,
+35,Вакансии,ug-vakansii.jpg,СТО «АЗР Южный» Харьков – вакансии,AZR
+51,Ремонт и обслуживание Acura (Акура),logo-acura.png,Ремонт и обслуживание Acura (Акура),AZR Marki
+52,Ремонт и обслуживание Audi (Ауди),logo-audi.png,Ремонт и обслуживание Audi (Ауди),AZR Marki
+53,Ремонт и обслуживание BMW (БМВ),logo-bmw.png,Ремонт и обслуживание BMW (БМВ),AZR Marki
+54,Ремонт и обслуживание Ford (Форд),logo-ford.png,Ремонт и обслуживание Ford (Форд),AZR Marki
+55,Ремонт и обслуживание Honda (Хонда),logo-honda.png,Ремонт и обслуживание Honda (Хонда),AZR Marki
+56,Ремонт и обслуживание Hyundai (Хюндай),logo-hyundai.png,Ремонт и обслуживание Hyundai (Хюндай),AZR Marki
+57,Ремонт и обслуживание Infiniti (Инфинити),logo-infiniti.png,Ремонт и обслуживание Infiniti (Инфинити),AZR Marki
+58,Ремонт и обслуживание KIA (КИА),logo-kia.png,Ремонт и обслуживание KIA (КИА),AZR Marki
+59,Ремонт и обслуживание Lexus (Лексус),logo-lexus.png,Ремонт и обслуживание Lexus (Лексус),AZR Marki
+60,Ремонт и обслуживание Mazda (Мазда),logo-mazda.png,Ремонт и обслуживание Mazda (Мазда),AZR Marki
+61,Ремонт и обслуживание Mercedes (Мерседес),logo-mercedes.png,Ремонт и обслуживание Mercedes (Мерседес),AZR Marki
+62,Ремонт и обслуживание Mitsubishi (Митсубиши),logo-mitsubishi.png,Ремонт и обслуживание Mitsubishi (Митсубиши),AZR Marki
+63,Ремонт и обслуживание Nissan (Ниссан),logo-nissan.png,Ремонт и обслуживание Nissan (Ниссан),AZR Marki
+64,Ремонт и обслуживание Porsche (Порш),logo-porsche.png,Ремонт и обслуживание Porsche (Порш),AZR Marki
+65,Ремонт и обслуживание Seat (Сеат),logo-seat.png,Ремонт и обслуживание Seat (Сеат),AZR Marki
+66,Ремонт и обслуживание Skoda (Шкода),logo-skoda.png,Ремонт и обслуживание Skoda (Шкода),AZR Marki
+67,Ремонт и обслуживание Toyota (Тойота),logo-toyota.png,Ремонт и обслуживание Toyota (Тойота),AZR Marki
+68,Ремонт и обслуживание Volkswagen (Фольксваген),logo-volkswagen.png,Ремонт и обслуживание Volkswagen (Фольксваген),AZR Marki
