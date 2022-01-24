@@ -441,7 +441,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'title' => $data['title'],
       'promote' => $data['promote'],
       'moderation_state' => 'published',
-      'langcode' => 'en',
+      'langcode' => 'ru',
     ];
     // Set article author.
     if (!empty($data['author'])) {
@@ -461,7 +461,7 @@ class InstallHelper implements ContainerInjectionInterface {
     }
     // Set field_summary field.
     if (!empty($data['summary'])) {
-      $values['field_summary'] = [['value' => $data['summary'], 'format' => 'basic_html']];
+      $values['field_summary'] = [['value' => $data['summary'], 'format' => 'full_html']];
     }
     // Set field_vidraboty_category if exists.
     if (!empty($data['vidraboty_category'])) {
@@ -502,7 +502,7 @@ class InstallHelper implements ContainerInjectionInterface {
       $vidraboty_instruction_path = $this->module_path . '/default_content/languages/' . $langcode . '/vidraboty_instructions/' . $data['vidraboty_instruction'];
       $vidraboty_instructions = file_get_contents($vidraboty_instruction_path);
       if ($vidraboty_instructions !== FALSE) {
-        $values['field_vidraboty_instruction'] = [['value' => $vidraboty_instructions, 'format' => 'basic_html']];
+        $values['field_vidraboty_instruction'] = [['value' => $vidraboty_instructions, 'format' => 'full_html']];
       }
     }
     // Set field_tags if exists.
