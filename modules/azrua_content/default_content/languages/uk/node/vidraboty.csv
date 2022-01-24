@@ -2,7 +2,7 @@ id,title,image_reference,summary,author,vidraboty_category,preparation_time,cook
 1,Діагностика двигуна,1,Діагностика двигуна,Рудольф Дизель,1,1,1,1,easy,2 red,ug-diagnostika-dvigatelya.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_dvigatelya/,
 2,Діагноста перед покупкою,2,Діагноста перед покупкою,Рудольф Дизель,1,1,1,1,easy,2 red,ug-diagnostika-pered-pokupkoj.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_pered_pokupkoj/,
 3,Діагноста підвіски,3,Діагноста підвіски,Рудольф Дизель,1,1,1,1,easy,2 red,ug-diagnostika-podveski.html,,"1,2",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/diagnostika_podveski/,
-4,Заміна амортизаторів,4,Заміна амортизаторів,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-amortizatorov.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_amortizatorov/,
+4,Заміна амортизаторів,4,Заміна амортизаторів,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-amortizatorov.html,9,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_amortizatorov/,
 5,Заміна масла,5,Заміна масла,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-masla.html,6,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_masla/,1
 6,Заміна ременя ГРМ,6,Заміна ременя ГРМ,Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-remnya-grm.html,1,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm/,1
 7,"Заміна ременя ГРМ FORD ECOBOOST, DURATORQ",7,"Заміна ременя ГРМ FORD ECOBOOST, DURATORQ",Рудольф Дизель,1,1,1,1,easy,2 red,ug-zamena-remnya-grm-ford-ecoboost-duratorq.html,,"1,5",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/zamena_remnya_grm_ford_ecoboost_duratorq/,
@@ -21,7 +21,7 @@ id,title,image_reference,summary,author,vidraboty_category,preparation_time,cook
 20,Ремонт рульового управління,20,Ремонт рульового управління,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-rulevogo-upravleniya.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_rulevogo_upravleniya/,
 21,Ремонт системи кондиціонування,21,Ремонт системи кондиціонування,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-sistemy-kondicionirovaniya.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_sistemy_kondicionirovaniya/,
 22,Ремонт паливних систем,22,Ремонт паливних систем,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-toplivnyh-sistem.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_toplivnyh_sistem/,
-23,Ремонт гальмівної системи,23,Ремонт гальмівної системи,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-tormoznoj-sistemy.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_tormoznoj_sistemy/,
+23,Ремонт гальмівної системи,23,Ремонт гальмівної системи,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-tormoznoj-sistemy.html,8,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_tormoznoj_sistemy/,
 24,Ремонт ходовий,24,Ремонт ходовий,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-hodovoj.html,4,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_hodovoj/,1
 25,Ремонт електрики,25,Ремонт електрики,Рудольф Дизель,1,1,1,1,easy,2 red,ug-remont-ehlektriki.html,,"1,4",avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/remont_ehlektriki/,
 26,Видалення фільтру сажі,26,Видалення фільтру сажі,Рудольф Дизель,1,1,1,1,easy,2 red,ug-udalenie-sazhevogo-filtra.html,,1,avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya/udalenie_sazhevogo_filtra/,

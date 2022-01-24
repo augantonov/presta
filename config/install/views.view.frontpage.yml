@@ -1,4 +1,4 @@
-uuid: 84239138-e851-48ac-8689-73a3b55be59e
+uuid: b5fd1b95-7de1-4c2d-992e-7028d3823258
 langcode: ru
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - owlcarousel
     - user
 _core:
-  default_config_hash: yOnas3OTxdc9gDCBooHQHvdvD2lbJSExS60YMqsHXe0
+  default_config_hash: zWXGPo4NCV_Tu_haUsZGO9U9JNKaTe_rHweCeyfJ2qw
 id: frontpage
 label: Главная
 module: node
@@ -116,20 +116,18 @@ display:
             field_identifier: created
           exposed: false
           granularity: second
-        nid:
-          id: nid
-          table: node_field_data
-          field: nid
+        field_number_of_servings_value:
+          id: field_number_of_servings_value
+          table: node__field_number_of_servings
+          field: field_number_of_servings_value
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: nid
           plugin_id: standard
           order: ASC
           expose:
             label: ''
-            field_identifier: nid
+            field_identifier: ''
           exposed: false
       arguments: {  }
       filters:
