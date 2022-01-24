@@ -441,7 +441,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'title' => $data['title'],
       'promote' => $data['promote'],
       'moderation_state' => 'published',
-      'langcode' => 'ru',
+      'langcode' => 'uk',
     ];
     // Set article author.
     if (!empty($data['author'])) {
