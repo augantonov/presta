@@ -439,7 +439,7 @@ class InstallHelper implements ContainerInjectionInterface {
       'type' => 'vidraboty',
       // Title field.
       'title' => $data['title'],
-      'promote' => $data['promote'],
+      'promote' => '1',
       'moderation_state' => 'published',
       'langcode' => 'en',
     ];
