@@ -3,14 +3,19 @@ langcode: ru
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.card
+    - core.entity_view_mode.node.card_common
     - node.type.vidraboty
     - system.menu.main
+    - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:tags:d12caab9-211d-462e-8b89-3b60a657ec9e'
+    - 'taxonomy_term:tags:e97422ac-dc9e-44a3-9913-07dffd7493a9'
   module:
     - node
+    - taxonomy
     - user
 _core:
-  default_config_hash: v7BrFZegKn3zV39_oKQHo8PcJpV2jGqQRi7KYh0_WAE
+  default_config_hash: pKCxPZIaLT8b3PNYKB2zrEaT-khoE7ECKgvzW_ZS8ZU
 id: vidyrabot
 label: 'Виды работ'
 module: views
@@ -20,73 +25,34 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: none
-        options:
-          offset: 0
-      style:
-        type: default
-      row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: card
+      title: 'Виды работ'
       fields:
         title:
           id: title
           table: node_field_data
           field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: node
           entity_field: title
+          plugin_id: field
           label: ''
+          exclude: false
           alter:
             alter_text: false
             make_link: false
             absolute: false
-            trim: false
             word_boundary: false
             ellipsis: false
             strip_tags: false
+            trim: false
             html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exclude: false
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -96,9 +62,13 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
+          settings:
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -109,33 +79,88 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+      pager:
+        type: none
+        options:
+          offset: 0
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: nid
+          exposed: false
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            vidraboty: vidraboty
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            vidraboty: vidraboty
+          group: 1
           expose:
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         default_langcode:
           id: default_langcode
           table: node_field_data
@@ -143,6 +168,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: default_langcode
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -173,83 +201,113 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: default_langcode
-          plugin_id: boolean
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+        field_tags_target_id:
+          id: field_tags_target_id
+          table: node__field_tags
+          field: field_tags_target_id
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: not
+          value:
+            3: 3
+            2: 2
+          group: 1
           exposed: false
           expose:
+            operator_id: ''
             label: ''
-          granularity: second
-        nid:
-          id: nid
-          table: node_field_data
-          field: nid
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
             label: ''
-          entity_type: node
-          entity_field: nid
-          plugin_id: standard
-      title: 'Виды работ'
-      header: {  }
-      footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
-      display_extenders: {  }
-      css_class: grid--4
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: tags
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
       filter_groups:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card_common
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: grid--4
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
   page_1:
-    display_plugin: page
     id: page_1
     display_title: 'Виды работ'
+    display_plugin: page
     position: 1
     display_options:
+      display_description: ''
+      rendering_language: '***LANGUAGE_language_interface***'
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: avtoservis_harkov/vidy_remontnyh_rabot_avtomobilya
       menu:
         type: normal
         title: 'Виды работ'
         description: ''
-        expanded: false
-        parent: ''
         weight: 30
-        context: '0'
+        expanded: false
         menu_name: main
-      rendering_language: '***LANGUAGE_language_interface***'
-      display_description: ''
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
