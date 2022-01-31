@@ -40,7 +40,6 @@
 .block-views-blockvidraboty-collections-block .views-row a:active,
 .block-views-blockvidraboty-collections-block .views-row a:focus,
 .block-views-blockvidraboty-collections-block .views-row a:hover {
-  text-decoration: underline;
   outline-color: #fff;
   background: transparent;
 }
