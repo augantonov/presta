@@ -65,17 +65,17 @@
 }
 
 .owl-pagination {
-  	margin-top: 8em;
+  	margin-top: 6rem;
 }
 
 .owl-buttons {
-	margin-top: -12em;
+	margin-top: -10rem;
 }
 
 /* Small */
 @media screen and (min-width: 30rem) { /* 480px */
   .owl-buttons {
-	margin-top: -10em;
+	margin-top: -15rem;
 }
 }
 /* Medium */

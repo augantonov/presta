@@ -3,7 +3,7 @@
  * This file is used to style the 'Frontpage' view.
  */
 
-.view-frontpage .view-header {
+.vview-frontpage .vview-header {
   margin-top: 1.3rem;
   margin-bottom: 0.4rem;
   padding: 0 1.266rem;
@@ -13,7 +13,7 @@
 }
 /* Large */
 @media screen and (min-width: 60em) { /* 960px */
-  .view-frontpage .view-header {
+  .vview-frontpage .vview-header {
     margin-bottom: 0.3rem;
     padding-right: 2.37rem;
     padding-left: 2.37rem;
