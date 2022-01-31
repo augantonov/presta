@@ -22,6 +22,7 @@ html {
 
 a {
   color: #005dbe;
+  text-decoration: unset;
 }
 a:hover,
 a:focus {
@@ -133,6 +134,7 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.424rem; /* +3 based on 1.125 modular scale (major second) */
   line-height: 1.2;
+  text-transform: uppercase;
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */

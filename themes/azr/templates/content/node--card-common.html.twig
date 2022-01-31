@@ -85,6 +85,10 @@
 
 <article{{ attributes.addClass(classes) }}>
 
+<div{{ content_attributes.addClass('node__content') }}>
+  <a href="{{ url }}">{{ content }}</a>
+</div>
+
   {{ title_prefix }}
   {% if label and not page %}
     <a href="{{ url }}"><h4{{ title_attributes.addClass('node__title') }}>
@@ -92,9 +96,5 @@
     </h4></a>
   {% endif %}
   {{ title_suffix }}
-
-  <div{{ content_attributes.addClass('node__content') }}>
-    <a href="{{ url }}">{{ content }}</a>
-  </div>
 
 </article>
