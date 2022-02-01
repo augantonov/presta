@@ -1,7 +1,6 @@
 .block-views-blockvidraboty-collections-block {
-  padding: 3rem 1rem;
+  padding: 1rem 0rem;
   color: #fff;
-  background: #767775;
 }
 .block-views-blockvidraboty-collections-block .block__title {
   margin-bottom: 1.5rem;
@@ -34,12 +33,12 @@
 }
 .block-views-blockvidraboty-collections-block .views-row a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 .block-views-blockvidraboty-collections-block .views-row a:active,
 .block-views-blockvidraboty-collections-block .views-row a:focus,
 .block-views-blockvidraboty-collections-block .views-row a:hover {
-  outline-color: #fff;
+  outline-color: #000;
   background: transparent;
 }

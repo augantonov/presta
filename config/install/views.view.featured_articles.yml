@@ -8,14 +8,14 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:tags:0a8b0009-6d90-4644-b42a-bd55753d0298'
-    - 'taxonomy_term:tags:903c4f4e-a01f-48fb-a58b-ac2ad705797f'
+    - 'taxonomy_term:tags:1e0c15c1-5efc-4b94-b5ab-73c0e066f061'
+    - 'taxonomy_term:tags:5a38c868-5d09-4742-abdb-2e36f5627432'
   module:
     - node
     - taxonomy
     - user
 _core:
-  default_config_hash: F2tYjmri5uT2GGOSwLQUNBuEXwSWvT08vvJoMJ82nrc
+  default_config_hash: AGUgl_X0UbNgYkkkQ0kr-SE6ViXynSUSzrqHPRqTDD4
 id: featured_articles
 label: 'СТО «АЗР»'
 module: views
@@ -510,6 +510,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      enabled: false
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders:

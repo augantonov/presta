@@ -1,5 +1,5 @@
 langcode: ru
-status: false
+status: true
 dependencies:
   config:
     - views.view.vidraboty_collections

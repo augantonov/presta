@@ -323,3 +323,7 @@ th {
 .view-marki .view-id-marki {
   text-align: center;
 }
+.marki {
+  align-items: center;
+  justify-content: center;
+}
