@@ -11,7 +11,7 @@
 @media screen and (min-width: 48em) {
   .block-system-branding-block {
     flex: 0 1 61px;
-    margin: 2.5rem 0;
+    margin: 1rem 0;
     text-align: left;
   }
 }
