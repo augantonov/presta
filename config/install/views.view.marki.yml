@@ -3,14 +3,15 @@ langcode: ru
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.card_common_alt
+    - field.storage.node.field_media_image
     - node.type.marki
     - system.menu.main
   module:
+    - media
     - node
     - user
 _core:
-  default_config_hash: pKCxPZIaLT8b3PNYKB2zrEaT-khoE7ECKgvzW_ZS8ZU
+  default_config_hash: UsWEsP4rB7y1zNQAwRY4eahY-Y3vLujuRMXMpbC1ilY
 id: marki
 label: Марки
 module: views
@@ -25,34 +26,50 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Техническое обслуживание'
+      title: 'мы обслуживаем'
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_media_image:
+          id: field_media_image
+          table: node__field_media_image
+          field: field_media_image
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
           alter:
             alter_text: false
+            text: ''
             make_link: false
+            path: ''
             absolute: false
-            word_boundary: false
-            ellipsis: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
             trim: false
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -60,11 +77,12 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: string
+          click_sort_column: target_id
+          type: media_thumbnail
           settings:
-            link_to_entity: true
-          group_column: value
+            image_link: content
+            image_style: ''
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -231,11 +249,17 @@ display:
           1: AND
       style:
         type: default
-      row:
-        type: 'entity:node'
         options:
-          relationship: none
-          view_mode: card_common_alt
+          grouping: {  }
+          row_class: marki
+          default_row_class: true
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -256,7 +280,8 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_media_image'
   page_1:
     id: page_1
     display_title: Марки
@@ -285,4 +310,5 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_media_image'

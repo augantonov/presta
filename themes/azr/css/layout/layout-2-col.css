@@ -4,6 +4,7 @@
  */
 .layout-sidebar {
   margin: 0 1.562rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 60em) {
