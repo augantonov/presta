@@ -68,14 +68,14 @@
 .menu-main__link.is-active:hover,
 .menu-main__link:focus {
   text-decoration: none;
-  color: #4b96d4;
-  border-bottom-color: #4b96d4;
+  color: #4061ac;
+  border-bottom-color: #4061ac;
   background-color: inherit;
 }
 .menu-main__link:active,
 .menu-main__link.is-active {
   text-decoration: none;
-  border-bottom-color: #0195d3;
+  border-bottom-color: #4061ac;
 }
 
 @media screen and (min-width: 348em) {
@@ -160,7 +160,7 @@ input {
 
 .open {
   z-index: 501;
-  background-color: #0195d3;
+  background-color: #4061ac;
   width: 50px;
   height: 4px;
   display: block;
@@ -172,7 +172,7 @@ input {
 
 .open:before {
   content: "";
-  background-color: #0195d3;
+  background-color: #4061ac;
   width: 50px;
   height: 4px;
   display: block;
@@ -185,7 +185,7 @@ input {
 
 .open:after {
   content: "";
-  background-color: #0195d3;
+  background-color: #4061ac;
   width: 50px;
   height: 4px;
   display: block;
@@ -294,7 +294,7 @@ input {
 
 #menuToggle:checked ~ .menuOpen .open:before {
   content: "";
-  background-color: #0195d3;
+  background-color: #4061ac;
   transform: rotate(45deg);
   position: absolute;
   top: 0;
@@ -304,7 +304,7 @@ input {
 
 #menuToggle:checked ~ .menuOpen .open:after {
   content: "";
-  background-color: #0195d3;
+  background-color: #4061ac;
   transform: rotate(-45deg);
   position: relative;
   top: 0;
