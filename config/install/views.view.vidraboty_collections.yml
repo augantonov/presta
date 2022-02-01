@@ -7,7 +7,7 @@ dependencies:
     - taxonomy
     - user
 _core:
-  default_config_hash: 5UdeiH-JaaxqTZWqC87nEPW5hmPLGG7ulbGrli7h7y4
+  default_config_hash: nrKvU2BT3ZmKzIMU0kRI2i7vqfElBUzjO-XdQMX6p-c
 id: vidraboty_collections
 label: 'Vidraboty Collections'
 module: views
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'СТО «АЗР Южный»'
+      title: 'мы в центре'
       fields:
         name:
           id: name
