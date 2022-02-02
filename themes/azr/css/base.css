@@ -323,13 +323,14 @@ th {
 .view-marki .view-id-marki {
   text-align: center;
 }
-.marki .grid--4 .views-row {
+
+.marki .views-row {
   align-items: center;
   justify-content: center;
   padding: 0 8rem;
 }
 
-.grid--4 .views-row .marki {
+.views-row .marki {
   align-items: center;
   justify-content: center;
   padding: 0 8rem;
