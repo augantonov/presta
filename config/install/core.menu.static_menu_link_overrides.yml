@@ -1,6 +1,6 @@
 definitions:
   contact__site_page:
-    enabled: true
+    enabled: false
     menu_name: main
     parent: ''
     weight: 50
