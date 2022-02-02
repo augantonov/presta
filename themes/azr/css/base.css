@@ -135,6 +135,7 @@ h1 {
   font-size: 1.424rem; /* +3 based on 1.125 modular scale (major second) */
   line-height: 1.2;
   text-transform: uppercase;
+  color: #0077ca;
 }
 /* Large */
 @media screen and (min-width: 60rem) { /* 960px */
