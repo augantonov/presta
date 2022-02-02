@@ -37,4 +37,27 @@ id,title,body,author,slug
   </div>
 </div>
 <div class=""column-content""><p><i>* Вы будете автоматически перемещены на сайт <a href=""http://azr.com.ua/"">интернет-магазина автозапачастей «АЗР»</a></i></p></div>",Вячеслав Ивченко,avtozapchasti_kharkov
-2,Контакты,"<div class=""column-content-inner""><div class=""widget gsc-box-info padding-30 text-dark""><div class=""widget-title title"">Время работы:</div><div class=""content""><div class=""title"">Пн–пт: с 09:00 до 18:00</div><div class=""title"">Сб: с 09:00 до 15:00</div></div><div class=""info-item address""><i class=""gv-icon-1139""></i><span>Украина, город Харьков, ул. Гвардейцев-Железнодорожников 15</span></div><div class=""info-item email""><i class=""gv-icon-239""></i><span>azr.15ug@gmail.com</span></div><div class=""info-item phone""><i class="" gv-icon-266""></i><span><a href=""tel:+380505628501"" class=""binct-phone-number-4"" data-binct-original=""4"">+380 (50) 562-85-01</a></span></div></div></div>",Вячеслав Ивченко,kontakty
+2,Контакты,"<div class=""column-content-inner"">
+<div class=""widget gsc-box-info padding-30 text-dark"">
+<div class=""widget-title title""><span>Украина, город Харьков, ул. Гвардейцев-Железнодорожников 15</span></div>
+
+<div class=""widget-title title"">&nbsp;</div>
+
+<div class=""widget-title title"">Время работы:</div>
+
+<div class=""content"">
+<div class=""title"">Пн–пт: с 09:00 до 18:00</div>
+
+<div class=""title"">Сб: с 09:00 до 15:00</div>
+</div>
+
+<div class=""info-item address"">&nbsp;</div>
+
+<div class=""info-item email""><span>e-mail: azr.15ug@gmail.com</span></div>
+
+<div class=""info-item email"">&nbsp;</div>
+
+<div class=""info-item phone""><span>tel:&nbsp;<a class=""binct-phone-number-4"" data-binct-original=""4"" href=""tel:+380505628501"">+380 (50) 562-85-01</a></span></div>
+</div>
+</div>
+",Вячеслав Ивченко,kontakty
