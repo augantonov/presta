@@ -11,7 +11,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: UsWEsP4rB7y1zNQAwRY4eahY-Y3vLujuRMXMpbC1ilY
+  default_config_hash: GvnqEaAoyqgNky4n4dSNLXJ58STyEcdjcsKJ1Yuq8Dc
 id: marki
 label: Марки
 module: views
@@ -297,7 +297,7 @@ display:
       path: avtoservis_harkov/marki
       menu:
         type: normal
-        title: Авто
+        title: 'Марки авто'
         description: ''
         weight: 31
         expanded: false
