@@ -8,14 +8,14 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:tags:1e0c15c1-5efc-4b94-b5ab-73c0e066f061'
-    - 'taxonomy_term:tags:5a38c868-5d09-4742-abdb-2e36f5627432'
+    - 'taxonomy_term:tags:8b5bba8a-2648-4617-b27e-57667fe5fb5e'
+    - 'taxonomy_term:tags:da705f10-2d46-42cb-89ec-10eefd305045'
   module:
     - node
     - taxonomy
     - user
 _core:
-  default_config_hash: AGUgl_X0UbNgYkkkQ0kr-SE6ViXynSUSzrqHPRqTDD4
+  default_config_hash: Pd3W9bCh-l5kRja82Txtczh2V66RKWj3Z3kSGRw0DQY
 id: featured_articles
 label: 'СТО «АЗР»'
 module: views
@@ -530,6 +530,74 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_3:
+    id: page_3
+    display_title: kontakty
+    display_plugin: page
+    position: 3
+    display_options:
+      title: 'Наши контакты'
+      defaults:
+        title: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: kontakty
+      menu:
+        type: normal
+        title: Контакты
+        description: ''
+        weight: 50
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_4:
+    id: page_4
+    display_title: автозапчасти
+    display_plugin: page
+    position: 4
+    display_options:
+      title: Автозапчасти
+      defaults:
+        title: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: avtozapchasti_kharkov
+      menu:
+        type: normal
+        title: Автозапчасти
+        description: ''
+        weight: 49
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - user
