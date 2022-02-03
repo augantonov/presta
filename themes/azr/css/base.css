@@ -373,5 +373,6 @@ th {
   -ms-transition: all .35s;
   position: relative;
   text-align: center;
-  border-bottom: 1px solid #000;
+  border: 1px solid #dfe4e8;
+  margin: 0.2rem;
 }
