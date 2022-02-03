@@ -361,7 +361,17 @@ th {
   padding: 0 30%;
 }
 .view-id-vidy_rabot_aside a {
-  border-bottom: 1px solid rgb(223, 228, 232);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 15px 30px;
+  display: block;
+  text-transform: none;
+  font-size: 16px;
+  overflow: hidden;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+  -moz-transition: all .35s;
+  -ms-transition: all .35s;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #000;
 }
