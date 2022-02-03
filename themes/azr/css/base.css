@@ -36,7 +36,7 @@ a:focus {
     font-family: 'VW Head Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('VW Head Regular'), url('font/VWHeadRegular.woff') format('woff');
+    src: local('VW Head Regular'), url('VWHeadRegular.woff') format('woff');
     }
 
 
@@ -44,7 +44,7 @@ a:focus {
     font-family: 'VW Head Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('VW Head Bold'), url('font/VWHeadBold.woff') format('woff');
+    src: local('VW Head Bold'), url('VWHeadBold.woff') format('woff');
     }
 
 
@@ -52,7 +52,7 @@ a:focus {
     font-family: 'VW Text Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('VW Text Regular'), url('font/VWTextRegular.woff') format('woff');
+    src: local('VW Text Regular'), url('VWTextRegular.woff') format('woff');
     }
 
 
@@ -60,7 +60,7 @@ a:focus {
     font-family: 'VW Text Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('VW Text Bold'), url('font/VWTextBold.woff') format('woff');
+    src: local('VW Text Bold'), url('VWTextBold.woff') format('woff');
     }
 
 body {
