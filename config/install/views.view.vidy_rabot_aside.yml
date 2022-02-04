@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: xVpNGS4Xwr4znwbX3DKeXQItr_wFoHehOW7dUE0IT6I
+  default_config_hash: b2_WEK1Ldyevo8PQu44_70enT9y5oeLTV81wbPVTq2w
 id: vidy_rabot_aside
 label: 'Виды работ aside'
 module: views
@@ -95,6 +95,19 @@ display:
         options: {  }
       empty: {  }
       sorts:
+        field_preparation_time_value:
+          id: field_preparation_time_value
+          table: node__field_preparation_time
+          field: field_preparation_time_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
         created:
           id: created
           table: node_field_data

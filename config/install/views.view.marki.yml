@@ -11,7 +11,7 @@ dependencies:
     - node
     - user
 _core:
-  default_config_hash: GvnqEaAoyqgNky4n4dSNLXJ58STyEcdjcsKJ1Yuq8Dc
+  default_config_hash: mgqjvZmiuVukg8_LD5rz13wl60DNgFBVoSPTjMr6r5U
 id: marki
 label: Марки
 module: views
@@ -115,6 +115,19 @@ display:
         options: {  }
       empty: {  }
       sorts:
+        field_number_of_servings_value:
+          id: field_number_of_servings_value
+          table: node__field_number_of_servings
+          field: field_number_of_servings_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
         created:
           id: created
           table: node_field_data

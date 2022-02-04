@@ -8,14 +8,14 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.tags
   content:
-    - 'taxonomy_term:tags:d12caab9-211d-462e-8b89-3b60a657ec9e'
-    - 'taxonomy_term:tags:e97422ac-dc9e-44a3-9913-07dffd7493a9'
+    - 'taxonomy_term:tags:586f96c6-4bff-4fad-88fb-3c895e9c4805'
+    - 'taxonomy_term:tags:fb1dcc40-9139-4f61-a7ec-fc17d4f32ed5'
   module:
     - node
     - taxonomy
     - user
 _core:
-  default_config_hash: pKCxPZIaLT8b3PNYKB2zrEaT-khoE7ECKgvzW_ZS8ZU
+  default_config_hash: KBGBSdQaRTBlb5SNOUkeLJio_vLcDSb9Kyk0-ILv4j0
 id: vidyrabot
 label: 'Виды работ'
 module: views
@@ -102,6 +102,19 @@ display:
         options: {  }
       empty: {  }
       sorts:
+        field_preparation_time_value:
+          id: field_preparation_time_value
+          table: node__field_preparation_time
+          field: field_preparation_time_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
         created:
           id: created
           table: node_field_data
