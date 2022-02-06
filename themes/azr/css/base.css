@@ -361,10 +361,10 @@ th {
   padding: 0 30%;
 }
 .view-id-vidy_rabot_aside a {
-  padding: 15px 30px;
+  padding: 1rem 1rem;
   display: block;
   text-transform: none;
-  font-size: 16px;
+  font-size: 1rem;
   overflow: hidden;
   -webkit-transition: all .35s;
   -o-transition: all .35s;

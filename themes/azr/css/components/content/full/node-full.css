@@ -3,11 +3,11 @@
  * This file is used to style the 'full' view mode.
  */
 .node--view-mode-full {
-  margin: 0 auto 2.37rem;
+  margin: 0 auto 0.01rem;
   padding: 1.266rem;
-  border-top: 1px solid #e6eee0;
+  border-top: 1px solid #FFF;
   border-right: none;
-  border-bottom: 1px solid #e6eee0;
+  border-bottom: 1px solid #FFF;
   border-left: none;
   background-color: #fff;
 }
@@ -15,14 +15,14 @@
 @media screen and (min-width: 60rem) {
   /* 960px */
   .node--view-mode-full {
-    padding: 2.37rem;
-    border-right: 1px solid #e6eee0;
-    border-left: 1px solid #e6eee0;
+    padding: 0.01rem;
+    border-right: 1px solid #FFF;
+    border-left: 1px solid #FFF;
   }
 }
 
 .node--view-mode-full .node__submitted {
-  margin-bottom: 1.2em;
+  margin-bottom: 0em;
   font-size: 0.889em;
 }
 .node--view-mode-full .by-author::after {
