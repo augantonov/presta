@@ -6,14 +6,12 @@
 .block-type-disclaimer-block .field--name-field-disclaimer,
 .block-type-disclaimer-block .field--name-field-copyright {
   display: inline-flex;
-  text-align: center;
-  font-size: 0.94rem;
+  font-size: 1rem;
 }
 
-@media screen and (min-width: 75rem) {
   .block-type-disclaimer-block {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .block-type-disclaimer-block .field--name-field-disclaimer {
@@ -26,8 +24,8 @@
   }
 
   .block-type-disclaimer-block .field--name-field-disclaimer {
-    max-width: 50%;
-    margin-left: 0.5rem; /* LTR */
+
+    margin-left: 0.001rem; /* LTR */
   }
 
   [dir="rtl"] .block-type-disclaimer-block .field--name-field-disclaimer {
@@ -36,6 +34,6 @@
   }
 
   .block-type-disclaimer-block .field--name-field-copyright {
-    width: 50%;
+
   }
 }
