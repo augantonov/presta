@@ -167,7 +167,7 @@ h1 {
   margin: 0 0 1.07rem 0;
   font-family: 'VW Head Bold', Helvetica, Arial, sans-serif;
   font-size: 1.424rem; /* +3 based on 1.125 modular scale (major second) */
-  line-height: 2rem;
+  line-height: 1rem;
   text-transform: uppercase;
   color: #0077ca;
 }
