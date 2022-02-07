@@ -1,6 +1,6 @@
 id,uuid,info,type,field_disclaimer,field_copyright
 azr_frontcar,b344443c-5c07-4724-83f6-e766a9fc479e,Автомобили на морде,frontcar_block,СТО «АЗР Южный» - ремонт легковых и комерческих автомобилей в Харькове,"<div class=""tdr-front"">
-<p class=""text-align-center"">техобслуживание</p>
-<p class=""text-align-center"">диагностика</p>
-<p class=""text-align-center"">ремонт</p>
+<h1 class=""text-align-center"">техобслуживание</h1>
+<h1 class=""text-align-center"">диагностика</h1>
+<h1 class=""text-align-center"">ремонт</h1>
 </div>"

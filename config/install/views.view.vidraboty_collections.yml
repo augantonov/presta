@@ -7,7 +7,7 @@ dependencies:
     - taxonomy
     - user
 _core:
-  default_config_hash: nrKvU2BT3ZmKzIMU0kRI2i7vqfElBUzjO-XdQMX6p-c
+  default_config_hash: 8VZakefO29ew4ZxGgr82Wuvo_pBBulc1_wUU2wVlXyU
 id: vidraboty_collections
 label: 'Vidraboty Collections'
 module: views
@@ -187,7 +187,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.3861807746594!2d36.203793815134865!3d49.98536882864823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a123783a6f4b%3A0xac80806aed8fe16a!2z0KHQotCeINCQ0JfQoCDQrtC20L3Ri9C5!5e0!3m2!1sru!2suk!4v1643737352212!5m2!1sru!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
+            value: '<iframe title="Мы в центре Харькова" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.3861807746594!2d36.203793815134865!3d49.98536882864823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a123783a6f4b%3A0xac80806aed8fe16a!2z0KHQotCeINCQ0JfQoCDQrtC20L3Ri9C5!5e0!3m2!1sru!2suk!4v1643737352212!5m2!1sru!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
             format: full_html
           tokenize: false
       footer: {  }
