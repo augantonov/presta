@@ -20,6 +20,6 @@
 /* Large */
 @media screen and (min-width: 77rem) { /* 1200px + 2rem */
   .block-page-title-block {
-    padding: 0;
+    padding-bottom: 1rem;
   }
 }
