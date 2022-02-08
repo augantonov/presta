@@ -175,6 +175,7 @@ h1 {
 @media screen and (min-width: 60rem) { /* 960px */
   h1 {
     font-size: 2.369rem;
+    padding-bottom: 0.7rem;
   }
 }
 
