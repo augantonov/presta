@@ -51,4 +51,8 @@ id,title,image,alt,author
 65,Ремонт и обслуживание Seat (Сеат),logo-seat.png,Ремонт и обслуживание Seat (Сеат),AZR Marki
 66,Ремонт и обслуживание Skoda (Шкода),logo-skoda.png,Ремонт и обслуживание Skoda (Шкода),AZR Marki
 67,Ремонт и обслуживание Toyota (Тойота),logo-toyota.png,Ремонт и обслуживание Toyota (Тойота),AZR Marki
+<<<<<<< HEAD
 68,Ремонт и обслуживание Volkswagen (Фольксваген),logo-volkswagen.png,Ремонт и обслуживание Volkswagen (Фольксваген),AZR Marki
+=======
+68,Ремонт и обслуживание Volkswagen (Фольксваген),logo-volkswagen.png,Ремонт и обслуживание Volkswagen (Фольксваген),AZR Marki
+>>>>>>> parent of c5b1940 (new images)
