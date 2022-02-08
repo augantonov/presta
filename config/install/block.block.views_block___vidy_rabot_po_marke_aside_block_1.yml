@@ -1,24 +1,22 @@
-uuid: 4f908628-62b7-4d24-84cf-36654c57b4b3
+uuid: 4ac4e960-41d6-4b5e-930f-e62ad9024e3f
 langcode: ru
 status: true
 dependencies:
   config:
-    - views.view.vidy_rabot_aside
+    - views.view._vidy_rabot_po_marke_aside
   module:
     - node
     - views
   theme:
     - azr
-_core:
-  default_config_hash: aGqxrhCnk0mCpZ_4ugwotCpbrV36Pp9niOyeO0k9EQA
-id: views_block__vidy_rabot_aside_block_1
+id: views_block___vidy_rabot_po_marke_aside_block_1
 theme: azr
 region: sidebar
 weight: 0
 provider: null
-plugin: 'views_block:vidy_rabot_aside-block_1'
+plugin: 'views_block:_vidy_rabot_po_marke_aside-block_1'
 settings:
-  id: 'views_block:vidy_rabot_aside-block_1'
+  id: 'views_block:_vidy_rabot_po_marke_aside-block_1'
   label: ''
   label_display: visible
   provider: views
@@ -32,4 +30,4 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      vidraboty: vidraboty
+      marki: marki
