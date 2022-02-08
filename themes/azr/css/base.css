@@ -377,3 +377,20 @@ th {
   border: 1px solid #dfe4e8;
   margin: 0.2rem;
 }
+
+.view-id-_vidy_rabot_po_marke_aside a {
+  padding: 1rem 1rem;
+  display: block;
+  text-transform: none;
+  font-size: 1rem;
+  overflow: hidden;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+  -moz-transition: all .35s;
+  -ms-transition: all .35s;
+  position: relative;
+  text-align: center;
+  border: 1px solid #dfe4e8;
+  margin: 0.2rem;
+}
