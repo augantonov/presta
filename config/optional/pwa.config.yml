@@ -18,4 +18,4 @@ cross_origin: false
 skip_waiting: false
 image: /sites/default/files/android-chrome-512x512.png
 image_small: /sites/default/files/android-chrome-192x192.png
-image_very_small: /sites/default/files/mstile-150x150y2.png
+image_very_small: /sites/default/files/mstile-150x150.png
